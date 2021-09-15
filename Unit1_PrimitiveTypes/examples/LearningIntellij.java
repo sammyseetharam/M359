@@ -17,7 +17,7 @@ public class LearningIntellij{
         double z = 1/0;
 
         double result1 = (x / (y + z));
-
+        //GitHub Test
         //prints 1.0 and 2.0
 
     }
