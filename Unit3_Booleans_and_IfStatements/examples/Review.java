@@ -34,11 +34,19 @@ public class Review {
     public int getRating() {
         return rating;
     }
-/*
-    public String toString(){
 
+    public String toString(){
+    String output = name + ", " + businessName + ", " + rating;
+
+    if(rating == 5){
+        output += "\n\t**Highly Recommended";
     }
-  */
+    else if(rating == 1){
+        output += "\n\t**Strongly Discouraged";
+    }
+    return output;
+    }
+
 
 
 }
