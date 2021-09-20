@@ -4,6 +4,7 @@ public class Review {
     private String name;
     private String businessName;
     private int rating;
+    private int test;
 
     public Review(String reviewName, String bizName, int restRating){
         name = reviewName;
