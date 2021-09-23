@@ -17,5 +17,9 @@ public class PizzaTester {
         System.out.println();
         //Prints if both pizzas are the same in all attributes
         System.out.println("Are the pizzas completely the same: " + myNewPizza.areThePizzasEqual(myNewPizza2));
+        //Prints if the have the same inches
+        System.out.println("Are they the same size? " + myNewPizza.equals(myNewPizza2));
+        //Prints how much they differ by
+        System.out.println("How much do they differ by? " + myNewPizza.compareTo(myNewPizza2));
     }
 }

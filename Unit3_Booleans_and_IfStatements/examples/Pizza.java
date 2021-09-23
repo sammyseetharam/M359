@@ -77,11 +77,18 @@ public class Pizza {
         return output;
     }
 
+    public boolean equals(Pizza other){
+        //Longer version
+        return this.inches == other.inches;
+    }
     public boolean areThePizzasEqual(Pizza pizza2){
-        if(this.store.equals(pizza2.store) && this.inches == pizza2.inches && this.numToppings == pizza2.numToppings && this.isDeepDish == pizza2.isDeepDish){
-            return true;
-        }
-        return false;
+        return(this.store.equals(pizza2.store) && this.inches == pizza2.inches && this.numToppings == pizza2.numToppings && this.isDeepDish == pizza2.isDeepDish);
+    }
+
+    //return neg if it comes before, return pos if it comes after, return 0 if same
+    public int compareTo(Pizza other){
+        //no matter what it subtracts them
+        return (this.inches - other.inches);
     }
 }
 
