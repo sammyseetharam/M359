@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriver.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
