@@ -43,8 +43,8 @@ public class Chevy {
         this.sportsPack = sportsPack;
     }
     //compareTo method
-    public boolean compareTo(Chevy other){
-        return(this.price == other.price);
+    public double compareTo(Chevy other){
+        return(this.price - other.price);
     }
     //equals method
     public boolean equals(Chevy other){
@@ -70,7 +70,7 @@ public class Chevy {
         if(fourWDPack == true){
             toString += "\n\t-4WD Package";
         }
-        if(sportsPack == true){
+        else if(sportsPack == true){
             toString += "\n\t-Sports Package";
         }else{
             toString += "\n\t-None";
