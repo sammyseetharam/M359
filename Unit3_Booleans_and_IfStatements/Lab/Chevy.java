@@ -90,7 +90,7 @@ public class Chevy {
             taxPrice += (taxPrice * sprtRate);
             other.fuelEfficiency -= (other.fuelEfficiency * sprtFuel);
         }
-        return taxPrice * taxRate;
+        return taxPrice += (taxPrice * taxRate);
     }
     //Getters and Setters
     public int getYear() {
