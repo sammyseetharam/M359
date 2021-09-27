@@ -59,38 +59,36 @@ public class Chevy {
     //toString method
     public String toString(){
         String toString = year + " " + make + " " + model + " " + "(" + color + ")";
-        toString += "\n\tPRICE\t\t" + "$" + price;
-        toString += "\n\tMILES\t\t" + mileage;
-        toString += "\n\tFUEL EFFICIENCY\t" + fuelEfficiency + " mpg";
+        toString += "\n\tPRICE:\t\t\t" + "$" + price;
+        toString += "\n\tMILES:\t\t\t" + mileage;
+        toString += "\n\tFUEL EFFICIENCY:\t" + fuelEfficiency + " mpg";
         toString += "\n\tPACKAGES:";
 
         if(luxPackageStatus == true){
-            toString += "\n\t-Luxury Package";
+            toString += "\n\t\t-Luxury Package";
         }
         if(fourWDPack == true){
-            toString += "\n\t-4WD Package";
+            toString += "\n\t\t-4WD Package";
         }
         else if(sportsPack == true){
-            toString += "\n\t-Sports Package";
+            toString += "\n\t\t-Sports Package";
         }else{
-            toString += "\n\t-None";
+            toString += "\n\t\t-None";
         }
         return toString;
     }
     //CalcPrice method
-    public double calcPrice(Chevy other){
-        double taxPrice = other.price;
-        if(other.luxPackageStatus == true){
-            taxPrice += (taxPrice * luxRate);
+    public double calcPrice(){
+        double orgPrice = this.price;
+        if(this.luxPackageStatus == true) {
+            orgPrice += this.price * luxRate;
+        }if(this.fourWDPack == true){
+            orgPrice += fourWDRate;
+        }if(this.sportsPack == true){
+            orgPrice += (this.price * sprtRate);
+            this.fuelEfficiency -= (this.fuelEfficiency * sprtFuel);
         }
-        if(other.fourWDPack == true){
-            taxPrice += fourWDRate;
-        }
-        if(other.sportsPack == true){
-            taxPrice += (taxPrice * sprtRate);
-            other.fuelEfficiency -= (other.fuelEfficiency * sprtFuel);
-        }
-        return taxPrice += (taxPrice * taxRate);
+        return orgPrice += (orgPrice * taxRate);
     }
     //Getters and Setters
     public int getYear() {
@@ -146,6 +144,24 @@ public class Chevy {
     }
     public void setSportsPack(boolean sportsPack) {
         this.sportsPack = sportsPack;
+    }
+    public String getMake() {
+        return make;
+    }
+    public double getTaxRate() {
+        return taxRate;
+    }
+    public double getLuxRate() {
+        return luxRate;
+    }
+    public int getFourWDRate() {
+        return fourWDRate;
+    }
+    public double getSprtRate() {
+        return sprtRate;
+    }
+    public double getSprtFuel() {
+        return sprtFuel;
     }
 }
 

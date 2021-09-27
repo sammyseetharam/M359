@@ -10,6 +10,7 @@ public class ChevyDriverStudent
         Chevy corvetteSport = new Chevy(2020, 1500, 18.5, 58900, "Corvette (Sport)", "Fire Red", true, false, true);
         Chevy corvetteClassic = new Chevy(1963, 123500, 13.5, 61500, "Corvette (Classic)", "Fire Red", true, false, false);
 
+        System.out.println("The price of the corvette sport: " + "$" + corvetteSport.calcPrice());
         // *** UTILIZE SETTER METHODS TO COMPLETE THE FOLLOWING: ***
         // Set traxBase mileage to 15
         traxBase.setMileage(15);
@@ -21,10 +22,13 @@ public class ChevyDriverStudent
 
         // Printouts
         System.out.println("*** VEHICLE PRINTOUTS ***");
+        System.out.println(" ");
         System.out.println(traxBase);
+        System.out.println(" ");
         System.out.println(traxLux);
 
         // Display price comparison
+        System.out.println(" ");
         System.out.println("*** COMPARE BY PRICE ***");
         System.out.println("\tClassic Corvette vs. Sport Corvette");
         System.out.print("\tLowest price:\t");
@@ -43,7 +47,7 @@ public class ChevyDriverStudent
         System.out.print("\tStatus:\t");
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
-        if (corvetteSport.equals(corvetteClassic))
+        if (traxBase.equals(traxLux))
             System.out.println("Same car");
         else
             System.out.println("Not same car");
