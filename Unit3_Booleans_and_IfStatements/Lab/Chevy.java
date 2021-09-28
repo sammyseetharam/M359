@@ -59,7 +59,7 @@ public class Chevy {
     //toString method
     public String toString(){
         String toString = year + " " + make + " " + model + " " + "(" + color + ")";
-        toString += "\n\tPRICE:\t\t\t\t" + "$" + price;
+        toString += "\n\tPRICE:\t\t\t\t" + "$" + calcPrice();
         toString += "\n\tMILES:\t\t\t\t" + mileage;
         toString += "\n\tFUEL EFFICIENCY:\t" + fuelEfficiency + " mpg";
         toString += "\n\tPACKAGES:";
