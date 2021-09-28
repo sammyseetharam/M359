@@ -9,6 +9,8 @@ public class ChevyDriverStudent
         Chevy traxLux = new Chevy();
         Chevy corvetteSport = new Chevy(2020, 1500, 18.5, 58900, "Corvette (Sport)", "Fire Red", true, false, true);
         Chevy corvetteClassic = new Chevy(1963, 123500, 13.5, 61500, "Corvette (Classic)", "Fire Red", true, false, false);
+        Chevy blueSilverado = new Chevy(1990, 15000, 16.5, 37850, "Silverado", "Blue", true, true, false);
+
 
         System.out.println("The price of the corvette sport: " + "$" + corvetteSport.calcPrice());
         // *** UTILIZE SETTER METHODS TO COMPLETE THE FOLLOWING: ***
@@ -35,11 +37,11 @@ public class ChevyDriverStudent
 
         // *** COMPLETE THE FOLLOWING DECISION STATEMENTS ***
         if (corvetteClassic.compareTo(corvetteSport) < 0)
-            System.out.println("Classic Corvette at $" + corvetteClassic.getPrice());
+            System.out.println("Classic Corvette at $" + corvetteClassic.calcPrice());
         else if (corvetteClassic.compareTo(corvetteSport) > 0)
-            System.out.println("Sport Corvette at $" + corvetteSport.getPrice());
+            System.out.println("Sport Corvette at $" + corvetteSport.calcPrice());
         else
-            System.out.println("Tie at $" + corvetteClassic.getPrice());
+            System.out.println("Tie at $" + corvetteClassic.calcPrice());
 
         // Display equality
         System.out.println("\n*** CHECK EQUALITY ***");

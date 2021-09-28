@@ -5,19 +5,19 @@ public class Chevy {
     private int year;
     private int mileage;
     private double fuelEfficiency;
-    private int price;
+    private double price;
     private String model;
     private String color;
     private boolean luxPackageStatus;
     private boolean fourWDPack;
     private boolean sportsPack;
     //constants
-    final private String make = "Chevrolet";
-    final private double taxRate = .122; //percentage as a double
-    final private double luxRate = 0.2; //percentage as a double
-    final private int fourWDRate = 3500;
-    final private double sprtRate = 0.15;
-    final private double sprtFuel = 0.2;
+    final public String make = "Chevrolet";
+    final public double taxRate = .122; //percentage as a double
+    final public double luxRate = 0.2; //percentage as a double
+    final public int fourWDRate = 3500;
+    final public double sprtRate = 0.15;
+    final public double sprtFuel = 0.2;
     //default constructor
     public Chevy(){
         year = 2021;
@@ -25,13 +25,13 @@ public class Chevy {
         color = "White";
         model = "Trax";
         fuelEfficiency = 35;
-        price = 16000;
+        price = 16000.0;
         luxPackageStatus = false;
         fourWDPack = false;
         sportsPack = false;
     }
     //Full Constructor
-    public Chevy(int year, int mileage, double fuelEfficiency, int price, String model, String color, boolean luxPackageStatus, boolean fourWDPack, boolean sportsPack) {
+    public Chevy(int year, int mileage, double fuelEfficiency, double price, String model, String color, boolean luxPackageStatus, boolean fourWDPack, boolean sportsPack) {
         this.year = year;
         this.mileage = mileage;
         this.fuelEfficiency = fuelEfficiency;
@@ -44,7 +44,7 @@ public class Chevy {
     }
     //compareTo method
     public double compareTo(Chevy other){
-        return(this.price - other.price);
+        return(this.calcPrice() - other.calcPrice());
     }
     //equals method
     public boolean equals(Chevy other){
@@ -57,6 +57,7 @@ public class Chevy {
         return false;
     }
     //toString method
+    //the two string method should return the price with the tax and lux packages
     public String toString(){
         String toString = year + " " + make + " " + model + " " + "(" + color + ")";
         toString += "\n\tPRICE:\t\t\t\t" + "$" + calcPrice();
@@ -109,7 +110,7 @@ public class Chevy {
     public void setFuelEfficiency(double fuelEfficiency) {
         this.fuelEfficiency = fuelEfficiency;
     }
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
     public void setPrice(int price) {
@@ -163,5 +164,7 @@ public class Chevy {
     public double getSprtFuel() {
         return sprtFuel;
     }
+
+
 }
 

@@ -4,7 +4,6 @@
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,32 +146,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>144</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy" method="setSportsPack">
+          <line>142</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
-          <line>4</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>129</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy" method="isLuxPackageStatus">
+          <line>127</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>123</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy" method="getColor">
+          <line>121</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="9" />
@@ -184,12 +175,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>140</line>
+          <line>138</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>139</line>
+          <line>137</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
