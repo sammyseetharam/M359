@@ -12,7 +12,7 @@ public class ChevyDriverStudent
         Chevy blueSilverado = new Chevy(1990, 15000, 16.5, 37850, "Silverado", "Blue", true, true, false);
 
 
-        System.out.println("The price of the corvette sport: " + "$" + corvetteSport.calcPrice());
+
         // *** UTILIZE SETTER METHODS TO COMPLETE THE FOLLOWING: ***
         // Set traxBase mileage to 15
         traxBase.setMileage(15);
@@ -24,10 +24,14 @@ public class ChevyDriverStudent
 
         // Printouts
         System.out.println("*** VEHICLE PRINTOUTS ***");
-        System.out.println(" ");
+
         System.out.println(traxBase);
-        System.out.println(" ");
+
         System.out.println(traxLux);
+
+        System.out.println(corvetteClassic);
+
+        System.out.println(corvetteSport);
 
         // Display price comparison
         System.out.println(" ");

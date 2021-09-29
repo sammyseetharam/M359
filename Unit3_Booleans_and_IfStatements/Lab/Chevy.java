@@ -1,4 +1,5 @@
 package Unit3_Booleans_and_IfStatements.Lab;
+import java.text.DecimalFormat; //for extra credit
 
 public class Chevy {
     //instance variables
@@ -59,8 +60,10 @@ public class Chevy {
     //toString method
     //the two string method should return the price with the tax and lux packages
     public String toString(){
+        //for extra credit
+        DecimalFormat order = new DecimalFormat("###.00");
         String toString = year + " " + make + " " + model + " " + "(" + color + ")";
-        toString += "\n\tPRICE:\t\t\t\t" + "$" + calcPrice();
+        toString += "\n\tPRICE:\t\t\t\t" + "$" + order.format(calcPrice());
         toString += "\n\tMILES:\t\t\t\t" + mileage;
         toString += "\n\tFUEL EFFICIENCY:\t" + fuelEfficiency + " mpg";
         toString += "\n\tPACKAGES:";
@@ -146,25 +149,6 @@ public class Chevy {
     public void setSportsPack(boolean sportsPack) {
         this.sportsPack = sportsPack;
     }
-    public String getMake() {
-        return make;
-    }
-    public double getTaxRate() {
-        return taxRate;
-    }
-    public double getLuxRate() {
-        return luxRate;
-    }
-    public int getFourWDRate() {
-        return fourWDRate;
-    }
-    public double getSprtRate() {
-        return sprtRate;
-    }
-    public double getSprtFuel() {
-        return sprtFuel;
-    }
-
 
 }
 

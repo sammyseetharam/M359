@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" afterDir="false" />
-    </list>
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,7 +143,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>142</line>
+          <line>143</line>
           <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
@@ -154,7 +151,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>127</line>
+          <line>128</line>
           <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
@@ -162,11 +159,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>121</line>
+          <line>122</line>
           <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
+          <line>4</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
+          <line>115</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy" method="setPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -175,13 +188,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>138</line>
+          <line>139</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>137</line>
+          <line>138</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
