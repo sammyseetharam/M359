@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +14,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -37,13 +42,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ChevyDriverStudent">
+  <component name="RunManager" selected="Application.Notes">
     <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.Lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Notes" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes" />
         <item itemvalue="Application.ChevyDriverStudent" />
         <item itemvalue="Application.StudentDriver" />
         <item itemvalue="Application.PizzaTester" />
@@ -142,44 +161,12 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>143</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>128</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>122</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
           <line>4</line>
           <properties class="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>115</line>
-          <properties class="Unit3_Booleans_and_IfStatements.Lab.Chevy" method="setPrice">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -187,19 +174,9 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
