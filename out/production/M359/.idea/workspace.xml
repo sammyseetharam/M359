@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Notes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Four_Two_Notes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/StringAlgorithmsFour_Three.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +44,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Notes">
+  <component name="RunManager" selected="Application.StringAlgorithmsFour_Three">
     <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.Lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Four_Two_Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Four_Two_Notes" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Guess_A_Number" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Guess_A_Number" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,38 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PizzaTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.examples.PizzaTester" />
+    <configuration name="StringAlgorithmsFour_Three" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.StringAlgorithmsFour_Three" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.examples.ReviewTester" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.examples.StudentDriver" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringAlgorithmsFour_Three" />
+        <item itemvalue="Application.Four_Two_Notes" />
+        <item itemvalue="Application.Guess_A_Number" />
         <item itemvalue="Application.Notes" />
         <item itemvalue="Application.ChevyDriverStudent" />
-        <item itemvalue="Application.StudentDriver" />
-        <item itemvalue="Application.PizzaTester" />
-        <item itemvalue="Application.ReviewTester" />
       </list>
     </recent_temporary>
   </component>
@@ -168,6 +170,14 @@
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Guess_A_Number.java</url>
+          <line>5</line>
+          <properties class="Unit4_Iteration.examples.Guess_A_Number" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
           <line>2</line>
@@ -177,6 +187,11 @@
           <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
           <line>55</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Four_Two_Notes.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
