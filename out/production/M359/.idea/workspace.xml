@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Four_Two_Notes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/StringAlgorithmsFour_Three.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Four_Point_Five_Notes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +41,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.StringAlgorithmsFour_Three">
-    <configuration name="ChevyDriverStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" />
+  <component name="RunManager" selected="Application.Four_Point_Five_Notes">
+    <configuration name="Four_Point_Five_Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Four_Point_Five_Notes" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit3_Booleans_and_IfStatements.Lab.*" />
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Four_Point_Five_Notes" />
         <item itemvalue="Application.StringAlgorithmsFour_Three" />
         <item itemvalue="Application.Four_Two_Notes" />
         <item itemvalue="Application.Guess_A_Number" />
         <item itemvalue="Application.Notes" />
-        <item itemvalue="Application.ChevyDriverStudent" />
       </list>
     </recent_temporary>
   </component>
