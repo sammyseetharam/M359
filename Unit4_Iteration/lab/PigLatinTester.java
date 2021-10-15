@@ -20,4 +20,5 @@ public class PigLatinTester {
         System.out.println();
     }
 */
+    }
 }
