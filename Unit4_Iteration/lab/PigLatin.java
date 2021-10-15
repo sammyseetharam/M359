@@ -4,11 +4,11 @@ public class PigLatin {
 
     public static String toPigLatin(String phrase){
         String finalResult = "";
-        for (int i = 0; i < phrase.length() - 1; i++) {
-            if(phrase.charAt(i) == ' '){
-
-            }
+        while(phrase.indexOf(' ') > 0){
+            finalResult += translateWordToPigLatin(phrase.substring(0, phrase.indexOf(' ')));
+            phrase = phrase.substring(phrase.indexOf(' '));
         }
+        return finalResult; 
     }
 
     public static String translateWordToPigLatin(String str){
