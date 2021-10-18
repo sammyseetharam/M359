@@ -1,19 +1,224 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e61baf8c-57b9-48dd-91d7-244ccaa310e8" name="Default Changelist" comment="" />
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatinTester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/Chevy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/Chevy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Point_Five_Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Point_Five_Notes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Two_Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Two_Notes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/StringAlgorithmsFour_Three.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/StringAlgorithmsFour_Three.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1yBH0PQzDB2cYjRFeSsuuwtdWA4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP_Java359/src" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
+  </component>
+  <component name="RunManager" selected="Application.PigLatinTester">
+    <configuration name="Four_Point_Five_Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Four_Point_Five_Notes" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Four_Two_Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Four_Two_Notes" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Guess_A_Number" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Guess_A_Number" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PigLatinTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.lab.PigLatinTester" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.lab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringAlgorithmsFour_Three" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.StringAlgorithmsFour_Three" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PigLatinTester" />
+        <item itemvalue="Application.Four_Point_Five_Notes" />
+        <item itemvalue="Application.StringAlgorithmsFour_Three" />
+        <item itemvalue="Application.Four_Two_Notes" />
+        <item itemvalue="Application.Guess_A_Number" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
+      <created>1631717840074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631717840074</updated>
+    </task>
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/examples/PizzaTester.java</url>
+          <line>3</line>
+          <properties class="Unit3_Booleans_and_IfStatements.examples.PizzaTester" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/examples/StudentDriver.java</url>
+          <line>3</line>
+          <properties class="Unit3_Booleans_and_IfStatements.examples.StudentDriver" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
+          <line>4</line>
+          <properties class="Unit3_Booleans_and_IfStatements.Lab.ChevyDriverStudent" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Guess_A_Number.java</url>
+          <line>5</line>
+          <properties class="Unit4_Iteration.examples.Guess_A_Number" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Four_Two_Notes.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Four_Point_Five_Notes.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/examples/Four_Point_Five_Notes.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
