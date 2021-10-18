@@ -29,12 +29,14 @@ public class PigLatin {
             for (int i = 0; i < str.length() - 1; i++) {
                 if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
                     result += str.substring(i) + str.substring(0, i) + "ay";
+                    break;
                 }
             }
-            return result;
         }
+        return result;
+    }
 
-        public static boolean ifVowel (String str){
+        public static boolean ifVowel(String str){
             String vowelList = "aeiouAEIOU";
             boolean checkCondition = false;
             for (int i = 0; i < vowelList.length(); i++) {
@@ -46,7 +48,8 @@ public class PigLatin {
             }
             return checkCondition;
         }
-    }
 }
+
+
 
 
