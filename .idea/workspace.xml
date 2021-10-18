@@ -2,24 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/M359/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatinTester.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/Chevy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/Chevy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/Lab/ChevyDriverStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit3_Booleans_and_IfStatements/examples/StudentDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Point_Five_Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Point_Five_Notes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Two_Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Four_Two_Notes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Guess_A_Number.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/Notes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/StringAlgorithmsFour_Three.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/examples/StringAlgorithmsFour_Three.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatin.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatinTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit4_Iteration/lab/PigLatinTester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,6 +179,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java</url>
+          <line>3</line>
+          <properties class="Unit4_Iteration.lab.PigLatinTester" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
