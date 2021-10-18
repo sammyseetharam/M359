@@ -4,11 +4,14 @@ public class PigLatin {
 
     public static String toPigLatin(String phrase){
         String finalResult = "";
-        while(phrase.indexOf(' ') > 0){
-            finalResult += translateWordToPigLatin(phrase.substring(0, phrase.indexOf(' ')));
-            phrase = phrase.substring(phrase.indexOf(' '));
+        int count = 0;
+        for(int i = 0; i < phrase.length() - 1; i++) {
+           if(phrase.charAt(i + 1) == ' '){
+               finalResult += translateWordToPigLatin(phrase.substring(count, i + 1));
+               count += i + 1;
+           }
         }
-        return finalResult; 
+        return finalResult;
     }
 
     public static String translateWordToPigLatin(String str){
@@ -35,7 +38,5 @@ public class PigLatin {
         }
         return checkCondition;
     }
-
-
 }
 

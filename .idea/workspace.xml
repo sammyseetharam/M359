@@ -4,6 +4,7 @@
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/lab/PigLatinTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP_Java359/src" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
-  <component name="RunManager" selected="Application.Four_Point_Five_Notes">
+  <component name="RunManager" selected="Application.PigLatinTester">
     <configuration name="Four_Point_Five_Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Four_Point_Five_Notes" />
       <module name="M359" />
@@ -83,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Notes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.Notes" />
+    <configuration name="PigLatinTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.lab.PigLatinTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
+          <option name="PATTERN" value="Unit4_Iteration.lab.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PigLatinTester" />
         <item itemvalue="Application.Four_Point_Five_Notes" />
         <item itemvalue="Application.StringAlgorithmsFour_Three" />
         <item itemvalue="Application.Four_Two_Notes" />
         <item itemvalue="Application.Guess_A_Number" />
-        <item itemvalue="Application.Notes" />
       </list>
     </recent_temporary>
   </component>
