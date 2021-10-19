@@ -16,17 +16,18 @@ public class PigLatin {
                 isDone = true;
             }
         }
+
         return finalResult;
     }
 
     public static String translateWordToPigLatin(String str) {
         String result = "";
-        if (ifVowel(str) == true) {
+        if (ifVowel(str, 0) == true) {
             //translates vowels to pig latin
-            result = str + "yay";
+            result += str + "yay ";
         } else {
             //translates a consonant to pig latin
-            for (int i = 0; i < str.length() - 1; i++) {
+            for (int i = 0; i < str.length(); i++) {
                 if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
                     result += str.substring(i) + str.substring(0, i) + "ay";
                     break;
@@ -35,20 +36,20 @@ public class PigLatin {
         }
         return result;
     }
-
-        public static boolean ifVowel(String str){
+        public static boolean ifVowel (String str,int numCheck){
             String vowelList = "aeiouAEIOU";
             boolean checkCondition = false;
             for (int i = 0; i < vowelList.length(); i++) {
-                if (str.charAt(0) == vowelList.charAt(i)) {
+                if (str.charAt(numCheck) == vowelList.charAt(i)) {
                     checkCondition = true;
-                }else{
-                    checkCondition = false; 
+                } else {
+                    checkCondition = false;
                 }
             }
             return checkCondition;
         }
-}
+    }
+
 
 
 

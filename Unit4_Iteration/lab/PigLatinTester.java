@@ -10,7 +10,7 @@ public class PigLatinTester {
         translatePhrase(phrase1);
         translatePhrase(phrase2);
         translatePhrase(phrase3);
-        System.out.println(PigLatin.translateWordToPigLatin("is"));
+        System.out.println(PigLatin.translateWordToPigLatin("to"));
     }
 
     public static void translatePhrase(String phrase) {
