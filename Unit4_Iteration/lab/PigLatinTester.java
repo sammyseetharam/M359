@@ -2,7 +2,6 @@ package Unit4_Iteration.lab;
 
 public class PigLatinTester {
     public static void main(String[] args) {
-
         String phrase1 = "The black cat ate a red apple";
         String phrase2 = "Writing college essays is driving me crazy";
         String phrase3 = "Everyone loves to code in Java";
@@ -10,7 +9,6 @@ public class PigLatinTester {
         translatePhrase(phrase1);
         translatePhrase(phrase2);
         translatePhrase(phrase3);
-        System.out.println(PigLatin.translateWordToPigLatin("to"));
     }
 
     public static void translatePhrase(String phrase) {
