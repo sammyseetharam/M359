@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/TestReview.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit5_Writing/examples/MarvelMovieTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit5_Writing/examples/Power.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit5_Writing/examples/SuperHero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit5_Writing/examples/Villain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit4_Iteration/examples/Four_Point_Five_Notes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit4_Iteration/examples/Four_Point_Five_Notes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit3_Booleans_and_IfStatements/Lab/Chevy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,6 +181,30 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/examples/Power.java</url>
+          <line>14</line>
+          <properties class="Unit5_Writing.examples.Power" method="setPwrName">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/examples/SuperHero.java</url>
+          <line>10</line>
+          <properties class="Unit5_Writing.examples.SuperHero" method="setHeroName">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/examples/SuperHero.java</url>
+          <line>16</line>
+          <properties class="Unit5_Writing.examples.SuperHero" method="setSuperPower">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>

@@ -49,6 +49,7 @@ public class Chevy {
     }
     //equals method
     public boolean equals(Chevy other){
+        int num = 0;
         if(this.model.equals(other.model) && this.color.equals(other.color)){
             if(this.mileage < 200 && other.mileage < 200 ||
                this.mileage >= 200 && other.mileage >= 200){
