@@ -1,4 +1,4 @@
-package Unit5_Writing.examples;
+package Unit5_Writing.HeroVilliainExample;
 
 public class SuperHero {
     private String heroName;
@@ -19,5 +19,10 @@ public class SuperHero {
     }
     public Power getSuperPower(){
         return superPower;
+    }
+
+    public String toString(){
+        return "Hero Name: " + heroName + "\n" + superPower;
+
     }
 }

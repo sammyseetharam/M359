@@ -1,4 +1,6 @@
-package Unit5_Writing.examples;
+package Unit5_Writing.HeroVilliainExample;
+
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 
 public class Power {
     private String pwrName;
@@ -20,5 +22,9 @@ public class Power {
     }
     public void setPwrStrength(int pwrStrength) {
         this.pwrStrength = pwrStrength;
+    }
+
+    public String toString(){
+        return "Power Name: " + pwrName + "\nPower Strength: " + pwrStrength;
     }
 }

@@ -1,4 +1,4 @@
-package Unit5_Writing.examples;
+package Unit5_Writing.HeroVilliainExample;
 
 public class Villain {
     private String villainName;
@@ -20,5 +20,9 @@ public class Villain {
     }
     public void setVillainSP(Power villainSP) {
         this.villainSP = villainSP;
+    }
+
+    public String toString(){
+        return "Villain name: " + villainName + "\n" + villainSP;
     }
 }
