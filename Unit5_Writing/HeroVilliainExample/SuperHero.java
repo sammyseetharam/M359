@@ -6,7 +6,7 @@ public class SuperHero {
 
     public SuperHero(String heroName, Power superPower) {
         this.heroName = heroName;
-        this.superPower = superPower;
+        this.superPower = new Power(superPower.getPwrName(), superPower.getPwrStrength());
     }
     public void setHeroName(String setHeroName){
         heroName = setHeroName;

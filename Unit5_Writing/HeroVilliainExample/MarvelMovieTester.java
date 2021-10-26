@@ -7,6 +7,7 @@ public class MarvelMovieTester {
 
 
         //Hero / villain declarations
+        //Will store separate objects for superman and hulk when it comes to the "power" instance variable
         SuperHero superman = new SuperHero("Superman", superStrength);
         System.out.println(superman);
 
