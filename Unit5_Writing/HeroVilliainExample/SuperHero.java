@@ -22,7 +22,7 @@ public class SuperHero {
     }
 
     public String toString(){
-        return "Hero Name: " + heroName + "\n" + superPower;
+        return "Hero Name: " + heroName + "\n" + superPower.toString();
 
     }
 }

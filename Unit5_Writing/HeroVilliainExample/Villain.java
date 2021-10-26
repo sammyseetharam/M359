@@ -23,6 +23,6 @@ public class Villain {
     }
 
     public String toString(){
-        return "Villain name: " + villainName + "\n" + villainSP;
+        return "Villain name: " + villainName + "\n" + villainSP.toString();
     }
 }

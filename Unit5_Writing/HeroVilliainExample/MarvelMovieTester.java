@@ -3,18 +3,25 @@ package Unit5_Writing.HeroVilliainExample;
 public class MarvelMovieTester {
     public static void main(String[] args) {
         //Powers for heroes and villains
-        Power myNewPower = new Power("Dragons inferno", 10);
-        Power villainPower = new Power("Super Chill", 5);
+        Power superStrength = new Power("Brawny", 10);
+
+
         //Hero / villain declarations
-        SuperHero MrArson = new SuperHero("Mr. Arson", myNewPower);
-        Villain MsFreeze = new Villain("Mr. Freeze", villainPower);
-        //Printing out the info.
-        System.out.println(MrArson);
+        SuperHero superman = new SuperHero("Superman", superStrength);
+        System.out.println(superman);
+
         System.out.println();
-        System.out.println(MsFreeze);
 
-        myNewPower.setPwrStrength(23);
+        Villain hulk = new Villain("Hulk", superStrength);
+        System.out.println(hulk);
 
+        //Will change both of their powers
+        hulk.getVillainSP().setPwrStrength(15);
+
+        System.out.println();
+        System.out.println(superman.toString());
+        System.out.println();
+        System.out.println(hulk);
     }
 }
 

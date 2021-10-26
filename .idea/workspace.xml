@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/examples/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/examples/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/examples/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/examples/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Villain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Villain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,8 +183,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java</url>
-          <line>14</line>
-          <properties class="Unit5_Writing.examples.Power" method="setPwrName">
+          <line>13</line>
+          <properties class="Unit5_Writing.HeroVilliainExample.Power">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="21" />
@@ -212,7 +211,7 @@
           <properties class="Unit5_Writing.HeroVilliainExample.MarvelMovieTester" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
