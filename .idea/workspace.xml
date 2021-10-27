@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Villain.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Villain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/HeroVilliainExample/Power.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/HeroVilliainExample/Power.class" afterDir="false" />
@@ -209,14 +207,6 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java</url>
-          <line>3</line>
-          <properties class="Unit5_Writing.HeroVilliainExample.MarvelMovieTester" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
