@@ -69,7 +69,7 @@ public class MarvelMovieTester {
             hero.getSuperPower().setPwrStrength(hero.getSuperPower().getPwrStrength() - (randomPercent * hero.getSuperPower().getPwrStrength()));
         }
         System.out.println();
-        System.out.println("The percentage lost was " + (int)randomPercent * 10 + );
+        System.out.println("The percentage lost was about: " + (int)(randomPercent * 100 + 0.5) + "%");
     }
 }
 
