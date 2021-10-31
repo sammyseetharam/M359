@@ -23,6 +23,7 @@ public class MarvelMovieTester {
         System.out.println(superman.toString());
         System.out.println();
         System.out.println(LexLuthor);
+        System.out.println();
         battle(superman, LexLuthor);
 
         System.out.println();
