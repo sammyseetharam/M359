@@ -8,8 +8,63 @@ public class Shoe {
     private boolean isNew;
     private String releaseDate;
     //A price has not been set yet for the shoe
+    public Shoe(String shoeName, String colorway, int size, boolean isNew, String releaseDate) {
+        this.shoeName = shoeName;
+        retailPrice = 0;
+        this.colorway = colorway;
+        this.size = size;
+        this.isNew = isNew;
+        this.releaseDate = releaseDate;
+    }
+    //constructor for all the values
+    public Shoe(String shoeName, double retailPrice, String colorway, int size, boolean isNew, String releaseDate) {
+        this.shoeName = shoeName;
+        this.retailPrice = retailPrice;
+        this.colorway = colorway;
+        this.size = size;
+        this.isNew = isNew;
+        this.releaseDate = releaseDate;
+    }
+    public String toString(){
+        String output = "";
+        output += "Name: " + shoeName + "\nRetail Price: " + retailPrice + "\nColor Way: " + colorway + "\nSize: " + size + "\nCondition: " + isNew + "\nRelease Date: " + releaseDate;
+        return output;
+    }
 
-
-
-
+    public String getShoeName() {
+        return shoeName;
+    }
+    public void setShoeName(String shoeName) {
+        this.shoeName = shoeName;
+    }
+    public double getRetailPrice() {
+        return retailPrice;
+    }
+    public void setRetailPrice(double retailPrice) {
+        this.retailPrice = retailPrice;
+    }
+    public String getColorway() {
+        return colorway;
+    }
+    public void setColorway(String colorway) {
+        this.colorway = colorway;
+    }
+    public int getSize() {
+        return size;
+    }
+    public void setSize(int size) {
+        this.size = size;
+    }
+    public boolean isNew() {
+        return isNew;
+    }
+    public void setNew(boolean aNew) {
+        isNew = aNew;
+    }
+    public String getReleaseDate() {
+        return releaseDate;
+    }
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
 }
