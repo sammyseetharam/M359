@@ -4,11 +4,12 @@ public class Shoe {
     private String shoeName;
     private double retailPrice;
     private String colorway;
-    private int size;
+    private double size;
     private boolean isNew;
     private String releaseDate;
+
     //A price has not been set yet for the shoe
-    public Shoe(String shoeName, String colorway, int size, boolean isNew, String releaseDate) {
+    public Shoe(String shoeName, String colorway, double size, boolean isNew, String releaseDate) {
         this.shoeName = shoeName;
         retailPrice = 0;
         this.colorway = colorway;
@@ -17,7 +18,7 @@ public class Shoe {
         this.releaseDate = releaseDate;
     }
     //constructor for all the values
-    public Shoe(String shoeName, double retailPrice, String colorway, int size, boolean isNew, String releaseDate) {
+    public Shoe(String shoeName, double retailPrice, String colorway, double size, boolean isNew, String releaseDate) {
         this.shoeName = shoeName;
         this.retailPrice = retailPrice;
         this.colorway = colorway;
@@ -27,7 +28,7 @@ public class Shoe {
     }
     public String toString(){
         String output = "";
-        output += "Name: " + shoeName + "\nRetail Price: " + retailPrice + "\nColor Way: " + colorway + "\nSize: " + size + "\nCondition: " + isNew + "\nRelease Date: " + releaseDate;
+        output += "\nName: " + shoeName + "\nRetail Price: $" + retailPrice + "\nColor Way: " + colorway + "\nSize: " + size + "\nIs it new? : " + isNew + "\nRelease Date: " + releaseDate + "\n";
         return output;
     }
 
@@ -49,7 +50,7 @@ public class Shoe {
     public void setColorway(String colorway) {
         this.colorway = colorway;
     }
-    public int getSize() {
+    public double getSize() {
         return size;
     }
     public void setSize(int size) {
