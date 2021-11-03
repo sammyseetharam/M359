@@ -1,5 +1,6 @@
 package Unit5_Writing.PartnerLab;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Tester {
@@ -11,8 +12,14 @@ public class Tester {
         Shoe dunks = new Shoe("Nike Dunk Low Retros", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
         Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2", 150, "ZYON", 10.5, false,  "07/18/2020");
         // inventory of shoes
-        Shoe[] inventory = {mochas, breds, ultraBoosts, dunks, yeezy};
-        System.out.println(Arrays.toString(inventory));
+
+        ArrayList<Shoe> inventory = new ArrayList<Shoe>();
+        inventory.add(breds);
+        inventory.add(mochas);
+        inventory.add(ultraBoosts);
+        inventory.add(dunks);
+        inventory.add(yeezy);
+        System.out.println(inventory.toString());
         //Buyer info
         System.out.println();
         Buyer sammy = new Buyer("Sammy", 11, 200.00);

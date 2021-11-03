@@ -8,6 +8,10 @@ public class MarvelMovieTester {
 
         //Hero / villain declarations
         //Will store separate objects for superman and hulk when it comes to the "power" instance variable
+        System.out.println("The number of heroes that have been created are: " + SuperHero.getNumHeroes());
+        System.out.println("The number of villains that have been created are: " + Villain.getNumVillain());
+
+        System.out.println();
         SuperHero superman = new SuperHero("Superman", superStrength);
         System.out.println(superman);
 
@@ -30,7 +34,11 @@ public class MarvelMovieTester {
         System.out.println(superman.toString());
         System.out.println();
         System.out.println(LexLuthor);
-
+        System.out.println("The number of heroes that have been created are: " + SuperHero.getNumHeroes());
+        System.out.println("The number of villains that have been created are: " + Villain.getNumVillain());
+        System.out.println("The total strength for both heroes is: " + Power.getTotalStrength());
+        System.out.println("The average strength per hero is: " + SuperHero.getAverageHeroStrength());
+        System.out.println("The average strength per villain is: " + SuperHero.getAverageHeroStrength());
 
 
     }
@@ -52,25 +60,28 @@ public class MarvelMovieTester {
             //hero wins
             if(difference > 0){
                 //adds to hero and substracts from villain
-                System.out.println("The hero wins, hooray");
+                System.out.println("The hero WINS, hooray");
                 hero.getSuperPower().setPwrStrength(hero.getSuperPower().getPwrStrength() + (villain.getVillainSP().getPwrStrength() * 0.1));
                 villain.getVillainSP().setPwrStrength(villain.getVillainSP().getPwrStrength() - (randomPercent * villain.getVillainSP().getPwrStrength()));
             }else{
                 //villain wins
-                System.out.println("The villain wins, boo");
+                System.out.println("The villain WINS, boo");
                 //Adds to the villain and subtracts from hero
                 villain.getVillainSP().setPwrStrength(villain.getVillainSP().getPwrStrength() + (hero.getSuperPower().getPwrStrength() * 0.1));
                 hero.getSuperPower().setPwrStrength(hero.getSuperPower().getPwrStrength() - (randomPercent * hero.getSuperPower().getPwrStrength()));
             }
         }else{
             //they tied
-            System.out.println("They tied...");
+            System.out.println("They TIED...");
             //Sets the hero and villain powerStrength to 5 - 35% less than orginal
             villain.getVillainSP().setPwrStrength(villain.getVillainSP().getPwrStrength() - (randomPercent * villain.getVillainSP().getPwrStrength()));
             hero.getSuperPower().setPwrStrength(hero.getSuperPower().getPwrStrength() - (randomPercent * hero.getSuperPower().getPwrStrength()));
         }
         System.out.println();
-        System.out.println("The percentage lost was about: " + (int)(randomPercent * 100 + 0.5) + "%");
+        System.out.println("The percentage lost was about: " + (int)(randomPercent * 100) + "%");
     }
+
+
+
 }
 

@@ -3,7 +3,8 @@ package Unit5_Writing.HeroVilliainExample;
 
 public class Power {
     private String pwrName;
-    private double pwrStrength;
+    private  double pwrStrength;
+    //var for totalStrength
 
     public Power(String name, double strength){
         pwrName = name;
@@ -19,8 +20,8 @@ public class Power {
     public double getPwrStrength() {
         return pwrStrength;
     }
-    public void setPwrStrength(double pwrStrength) {
-        this.pwrStrength = pwrStrength;
+    public void setPwrStrength(double newPwrStrength) {
+        pwrStrength = newPwrStrength;
     }
 
     public String toString(){
