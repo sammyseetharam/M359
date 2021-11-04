@@ -1,4 +1,4 @@
-package Unit5_Writing.HeroVilliainExample;
+/*package Unit5_Writing.HeroVilliainExample;
 
 public class Villain {
     private String villainName;
@@ -29,11 +29,12 @@ public class Villain {
     }
 
     public static double getAverageVillainStrength(){
-        double calc = Power.getTotalStrength()/getNumVillain();
-        return calc;
+        //double calc = Power.getTotalStrength()/getNumVillain();
+        //return calc;
     }
 
     public String toString(){
         return "Villain name: " + villainName + "\n" + villainSP.toString();
     }
 }
+*/

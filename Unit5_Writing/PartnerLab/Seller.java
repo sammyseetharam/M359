@@ -1,5 +1,8 @@
 package Unit5_Writing.PartnerLab;
 
+// Students : Kuldeep Debnath and Samahith Seetharam
+// Teacher : Mr.Moon, Period 3
+
 public class Seller {
     private String name;
     private Shoe theShoe;
@@ -54,11 +57,10 @@ public class Seller {
      */
     public String toString(){
         String output = "";
-        output += "Name: " + name + "\nShoe(s) available: " + theShoe.getShoeName() + "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numSales;
+        output += "Seller: " + name + "\nShoe(s) available: " + theShoe.getShoeName() + "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numSales;
         return output;
     }
 }
-
 //const StockXAPI = require('stockx-api');
 //const stockX = new StockXAPI();
 //

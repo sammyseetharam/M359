@@ -1,5 +1,8 @@
 package Unit5_Writing.PartnerLab;
 
+// Students : Kuldeep Debnath and Samahith Seetharam
+// Teacher : Mr.Moon, Period 3
+
 public class Shoe {
     private String shoeName;
     private double retailPrice;
@@ -7,6 +10,7 @@ public class Shoe {
     private double size;
     private boolean isNew;
     private String releaseDate;
+    private static int numShoesSold;
 
     //A price has not been set yet for the shoe
     public Shoe(String shoeName, String colorway, double size, boolean isNew, String releaseDate) {
@@ -16,6 +20,7 @@ public class Shoe {
         this.size = size;
         this.isNew = isNew;
         this.releaseDate = releaseDate;
+        numShoesSold++;
     }
     //constructor for all the values
     public Shoe(String shoeName, double retailPrice, String colorway, double size, boolean isNew, String releaseDate) {
@@ -28,7 +33,7 @@ public class Shoe {
     }
     public String toString(){
         String output = "";
-        output += "\nName: " + shoeName + "\nRetail Price: $" + retailPrice + "\nColor Way: " + colorway + "\nSize: " + size + "\nIs it new? : " + isNew + "\nRelease Date: " + releaseDate + "\n";
+        output += "Name: " + shoeName + "\nRetail Price: $" + retailPrice + "\nColor Way: " + colorway + "\nSize: " + size + "\nIs it new? : " + isNew + "\nRelease Date: " + releaseDate;
         return output;
     }
 

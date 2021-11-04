@@ -1,5 +1,6 @@
 package Unit5_Writing.HeroVilliainExample;
 
+/*
 public class MarvelMovieTester {
     public static void main(String[] args) {
         //Powers for heroes and villains
@@ -36,7 +37,7 @@ public class MarvelMovieTester {
         System.out.println(LexLuthor);
         System.out.println("The number of heroes that have been created are: " + SuperHero.getNumHeroes());
         System.out.println("The number of villains that have been created are: " + Villain.getNumVillain());
-        System.out.println("The total strength for both heroes is: " + Power.getTotalStrength());
+        //System.out.println("The total strength for both heroes is: " + Power.getTotalStrength());
         System.out.println("The average strength per hero is: " + SuperHero.getAverageHeroStrength());
         System.out.println("The average strength per villain is: " + SuperHero.getAverageHeroStrength());
 
@@ -52,7 +53,7 @@ public class MarvelMovieTester {
      * @param hero
      * @param villain
      */
-
+/*
     public static void battle(SuperHero hero, Villain villain){
         double difference = hero.getSuperPower().getPwrStrength() - villain.getVillainSP().getPwrStrength();
         double randomPercent = ((double) (Math.random() * 35) + 5)/100;
@@ -82,6 +83,6 @@ public class MarvelMovieTester {
     }
 
 
-
+/*
 }
-
+*/
