@@ -177,24 +177,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/Power.java</url>
-          <line>12</line>
-          <properties class="Unit5_Writing.HeroVilliainExample.Power" method="getPwrName">
+          <line>11</line>
+          <properties class="Unit5_Writing.HeroVilliainExample.Power">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java</url>
-          <line>13</line>
-          <properties class="Unit5_Writing.HeroVilliainExample.SuperHero" method="setHeroName">
+          <line>20</line>
+          <properties class="Unit5_Writing.HeroVilliainExample.SuperHero">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/SuperHero.java</url>
-          <line>19</line>
-          <properties class="Unit5_Writing.HeroVilliainExample.SuperHero" method="setSuperPower">
+          <line>35</line>
+          <properties class="Unit5_Writing.HeroVilliainExample.SuperHero">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="23" />

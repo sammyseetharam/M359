@@ -21,7 +21,7 @@ public class SuperHero {
     }
     public void setSuperPower(Power setSuperPower){
         superPower = setSuperPower;
-        totalHStrength += Power.setPwrStrength(setSuperPower);
+        totalHStrength += superPower.getPwrStrength();
     }
     public Power getSuperPower(){
         return superPower;

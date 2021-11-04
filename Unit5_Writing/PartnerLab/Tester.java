@@ -18,7 +18,7 @@ public class Tester {
         inventory.add(mochas);
         inventory.add(ultraBoosts);
         inventory.add(dunks);
-        inventory.add(yeezy);
+        inventory.add(yeezy); 
         System.out.println(inventory.toString());
         //Buyer info
         System.out.println();

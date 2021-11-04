@@ -36,9 +36,10 @@ public class MarvelMovieTester {
         System.out.println(LexLuthor);
         System.out.println("The number of heroes that have been created are: " + SuperHero.getNumHeroes());
         System.out.println("The number of villains that have been created are: " + Villain.getNumVillain());
-        System.out.println("The total strength for both heroes is: " + Power.getTotalStrength());
+        System.out.println("The total strength for SuperHero Objects is: " + SuperHero.totalHStrength);
+        System.out.println("The total strength for the Villain Object is: " + Villain.totalVStrength);
         System.out.println("The average strength per hero is: " + SuperHero.getAverageHeroStrength());
-        System.out.println("The average strength per villain is: " + SuperHero.getAverageHeroStrength());
+        System.out.println("The average strength per villain is: " + Villain.getAverageVillainStrength());
 
 
     }
