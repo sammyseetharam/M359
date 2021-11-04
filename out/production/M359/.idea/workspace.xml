@@ -196,8 +196,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/HeroVilliainExample/MarvelMovieTester.java</url>
-          <line>3</line>
-          <properties class="Unit5_Writing.HeroVilliainExample.MarvelMovieTester" method="main">
+          <line>4</line>
+          <properties class="MarvelMovieTester" method="main">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="30" />
@@ -229,7 +229,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>5</line>
+          <line>8</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>

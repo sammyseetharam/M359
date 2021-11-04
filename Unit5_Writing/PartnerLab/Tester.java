@@ -9,12 +9,14 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String[] args) {
         //Shoe info
+        System.out.println("Welcome to Kuldeep's Sneaker Shop!");
         Shoe breds = new Shoe("Jordan 1 Retro Breds", 971.00, "BLACK/VARSITY/RED-WHITE", 9 , true, "09/03/2016");
         Shoe mochas = new Shoe("Jordan 1 Mocha", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
         Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons", 244,"BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
         Shoe dunks = new Shoe("Nike Dunk Low Retros", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
         Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2", 150, "ZYON", 10.5, false,  "07/18/2020");
         // inventory of shoes
+
         ArrayList<Shoe> inventory = new ArrayList<Shoe>();
         inventory.add(breds);
         inventory.add(mochas);
@@ -22,14 +24,18 @@ public class Tester {
         inventory.add(dunks);
         inventory.add(yeezy);
         System.out.println(inventory.toString());
+        addDivider();
+
+        System.out.println(inventory.toString());
 
         addDivider();
+
         Buyer sammy = new Buyer("Sammy", 11, 200.00, 600.00);
         System.out.println(sammy);
 
         addDivider();
 
-        Seller kuldeep = new Seller("Kuldeep", mochas, true, 3);
+        Seller kuldeep = new Seller("Kuldeep", inventory, true, 3);
         System.out.println(kuldeep);
         addDivider();
         bargain(sammy,kuldeep,mochas);
@@ -129,15 +135,13 @@ public class Tester {
      * @param shoe
      * @return
      */
-    public String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
+    public static String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
         double priceSold = shoe.getRetailPrice();
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
         double newBalance = buyer.getBankAmount() - priceSold;
         buyer.setBankAmount(newBalance);
         result += " for $" + newBalance;
-        return 
-
-
+        return result;
         // ask sammy how to add and remove form inventory
     }
     // include the price going out and deduction

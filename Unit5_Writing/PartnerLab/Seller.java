@@ -7,13 +7,13 @@ public class Seller {
     private String name;
     private Shoe theShoe;
     private boolean negotiable;
-    private int numSales;
+    private static int numShoesSold= 0;
 
-    public Seller(String name, Shoe theShoe, boolean negotiable, int numSales) {
+    public Seller(String name, Shoe theShoe, boolean negotiable) {
         this.name = name;
         this.theShoe = theShoe;
         this.negotiable = negotiable;
-        this.numSales = numSales;
+        numShoesSold++;
     }
 
     public String getName() {
@@ -39,15 +39,18 @@ public class Seller {
     public void setNegotiable(boolean negotiable) {
         this.negotiable = negotiable;
     }
-
-    public int getNumSales() {
-        return numSales;
-    }
-
-    public void setNumSales(int numSales) {
-        this.numSales = numSales;
-    }
+//
+//    public int getNumSales() {
+//        return numSales;
+//    }
+//
+//    public void setNumSales(int numSales) {
+//        this.numSales = numSales;
+//    }
     //make toString
+    public static int getNumShoesSold(){
+        return numShoesSold;
+    }
 
 
     /**
@@ -57,7 +60,7 @@ public class Seller {
      */
     public String toString(){
         String output = "";
-        output += "Seller: " + name + "\nShoe(s) available: " + theShoe.getShoeName() + "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numSales;
+        output += "Seller: " + name + "\nShoe(s) available: " + theShoe.getShoeName() + "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numShoesSold;
         return output;
     }
 }
