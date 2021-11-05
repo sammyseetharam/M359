@@ -4,11 +4,17 @@ public class Buyer {
     private String buyerName;
     private int shoeSize;
     private double budget;
+    private double bankAmount;
+    public static int numBuyers = 0;
+    public static double totalBudget = 0.0;
 
-    public Buyer(String buyerName, int shoeSize, double budget) {
+    public Buyer(String buyerName, int shoeSize, double budget, double bankAmount) {
         this.buyerName = buyerName;
         this.shoeSize = shoeSize;
         this.budget = budget;
+        this.bankAmount = bankAmount;
+        numBuyers++;
+        totalBudget += budget;
     }
 
     public String getName() {
@@ -33,6 +39,18 @@ public class Buyer {
 
     public void setBudget(double budget) {
         this.budget = budget;
+    }
+
+    public double getBankAmount() {
+        return bankAmount;
+    }
+
+    public void setBankAmount(double bankAmount) {
+        this.bankAmount = bankAmount;
+    }
+
+    public static double averagePrice(){
+        return totalBudget/numBuyers;
     }
     // make toString
 
