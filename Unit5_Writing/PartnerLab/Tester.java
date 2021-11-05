@@ -19,7 +19,9 @@ public class Tester {
         System.out.println("Welcome to Kuldeep's Sneaker Store: ");
         addDivider();
         Shoe mochas = new Shoe("Jordan 1 Mocha", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
+        Shoe breds = new Shoe("Jordan 1 Retro Breds", 971.00, "BLACK/VARSITY/RED-WHITE", 9 , true, "09/03/2016");
         System.out.println(mochas);
+        System.out.println(breds);
 
         //Buyer info:
         addDivider();
@@ -32,8 +34,11 @@ public class Tester {
         System.out.println(Kuldeep);
         addDivider();
 
+        //new buyer
+        Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
         //Bargain Method:
         bargain(Sammy,Kuldeep,mochas);
+        bargain(Jeff, Kuldeep,breds);
 
         addDivider();
 
@@ -63,7 +68,7 @@ public class Tester {
     public static String bargain(Buyer buyer,Seller seller, Shoe shoe){
         String output = "";
         Scanner buyerInput = new Scanner(System.in);
-        System.out.println("Does " + buyer.getName() + " want to bargain? : (y/n)");
+        System.out.println("Does " + buyer.getName() + " want to bargain for the  " + shoe.getShoeName() + "? (y/n)");
         String name = buyerInput.nextLine(); // input is a scanner
 
         Scanner sellerInput = new Scanner(System.in);
