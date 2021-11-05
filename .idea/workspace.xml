@@ -4,6 +4,8 @@
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +47,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP_Java359/src" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.MarvelMovieTester">
+  <component name="RunManager" selected="Application.Tester">
     <configuration name="AP_FRQ_PRACTICE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5_Writing.homework.AP_FRQ_PRACTICE" />
       <module name="M359" />
@@ -113,8 +115,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.Tester" />
+        <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.AP_FRQ_PRACTICE" />
         <item itemvalue="Application.Four_Point_Five_Notes" />
         <item itemvalue="Application.StringAlgorithmsFour_Three" />
@@ -251,11 +253,6 @@
           <url>file://$PROJECT_DIR$/Unit5_Writing/homework/AP_FRQ_PRACTICE.java</url>
           <line>2</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>

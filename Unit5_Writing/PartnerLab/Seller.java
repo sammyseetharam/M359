@@ -5,12 +5,14 @@ public class Seller {
     private Shoe theShoe;
     private boolean negotiable;
     private int numSales;
+    private static int numSeller = 0;
 
     public Seller(String name, Shoe theShoe, boolean negotiable, int numSales) {
         this.name = name;
         this.theShoe = theShoe;
         this.negotiable = negotiable;
         this.numSales = numSales;
+        numSeller++;
     }
 
     public String getName() {
@@ -45,6 +47,9 @@ public class Seller {
         this.numSales = numSales;
     }
     //make toString
+    public static int getNumSeller(){
+        return numSeller;
+    }
 
 
     /**

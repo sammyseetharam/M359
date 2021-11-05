@@ -7,6 +7,8 @@ public class Shoe {
     private double size;
     private boolean isNew;
     private String releaseDate;
+    public static int numShoes = 0;
+    private final double TAX = .10;
 
     //A price has not been set yet for the shoe
     public Shoe(String shoeName, String colorway, double size, boolean isNew, String releaseDate) {
@@ -16,6 +18,7 @@ public class Shoe {
         this.size = size;
         this.isNew = isNew;
         this.releaseDate = releaseDate;
+        numShoes++;
     }
     //constructor for all the values
     public Shoe(String shoeName, double retailPrice, String colorway, double size, boolean isNew, String releaseDate) {
@@ -25,6 +28,7 @@ public class Shoe {
         this.size = size;
         this.isNew = isNew;
         this.releaseDate = releaseDate;
+        numShoes++;
     }
     public String toString(){
         String output = "";
@@ -68,4 +72,9 @@ public class Shoe {
     public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
+    public static int getNumShoes(){return numShoes;}
+    public double getTAX(){
+        return TAX;
+    }
 }
+

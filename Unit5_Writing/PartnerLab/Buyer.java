@@ -6,7 +6,7 @@ public class Buyer {
     private double budget;
     private double bankAmount;
     public static int numBuyers = 0;
-    public static double totalBudget = 0.0;
+    public static double totalSpent = 0.0;
 
     public Buyer(String buyerName, int shoeSize, double budget, double bankAmount) {
         this.buyerName = buyerName;
@@ -14,7 +14,6 @@ public class Buyer {
         this.budget = budget;
         this.bankAmount = bankAmount;
         numBuyers++;
-        totalBudget += budget;
     }
 
     public String getName() {
@@ -37,6 +36,7 @@ public class Buyer {
         return budget;
     }
 
+
     public void setBudget(double budget) {
         this.budget = budget;
     }
@@ -48,10 +48,17 @@ public class Buyer {
     public void setBankAmount(double bankAmount) {
         this.bankAmount = bankAmount;
     }
+    public static int getnumBuyers(){ return numBuyers;}
+
+    public static void setTotalSpent(double totalSpent) {
+        Buyer.totalSpent = totalSpent;
+    }
 
     public static double averagePrice(){
-        return totalBudget/numBuyers;
+        double average= (double)Buyer.totalSpent/Buyer.getnumBuyers();
+        return average;
     }
+
     // make toString
 
     /**
@@ -62,10 +69,9 @@ public class Buyer {
     public String toString(){
         String output = "";
         output += "Name: " + buyerName + '\n' +
-                    "Shoe Size : " + shoeSize + '\n' +
-                    "Buyer Budget: $" + budget;
+                "Shoe Size : " + shoeSize + '\n' +
+                "Buyer Budget: $" + budget;
         return output;
     }
 
 }
-

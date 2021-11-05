@@ -14,14 +14,12 @@ public class Tester {
     public static void addDivider(){
         System.out.println( "\n------------------------\n");
     }
-    public static void main(String[] args) {
+    public static void main(String[] args){
         //Shoe info:
         System.out.println("Welcome to Kuldeep's Sneaker Store: ");
         addDivider();
         Shoe mochas = new Shoe("Jordan 1 Mocha", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
         System.out.println(mochas);
-
-        
 
         //Buyer info:
         addDivider();
@@ -36,10 +34,11 @@ public class Tester {
 
         //Bargain Method:
         bargain(Sammy,Kuldeep,mochas);
+
         addDivider();
 
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
-        System.out.println("He concluded that the average customer spends about: " + Buyer.averagePrice());
+        System.out.println("He concluded that the average customer spends about: $" + Buyer.averagePrice());
 
 
     }
@@ -84,14 +83,17 @@ public class Tester {
                 String sellerTalk = sellerInput.nextLine();
                 if (sellerTalk.equals("y")) {
                     shoe.setRetailPrice(price);
+                    Buyer.totalSpent += price;
                     System.out.println(shoe.getShoeName() + " has been marked down to $" + shoe.getRetailPrice());
                     if(shoe.getRetailPrice() > buyer.getBudget()) {
                         System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
                         isDone = false;
                         // maybe add a part where they can increase thier budget till the bank AMount?
                     }
+
                 } else if (sellerTalk.equals("n")) {
                     System.out.println("The seller decided not to negotiate ");
+                    isDone = false;
                 } else {
                     System.out.println("Seller doesn't like that price, try again");
                     buyerInput.nextDouble();
@@ -103,7 +105,7 @@ public class Tester {
             }
 
             Scanner input = new Scanner(System.in);
-            System.out.println("\nDo you want to bargain? : (y/n)");
+            System.out.println("\nDo you want to bargain more? : (y/n)");
             String finalResult = input.nextLine(); // input is a scanner
             if(finalResult.equals("y")){
                 isDone = true;
