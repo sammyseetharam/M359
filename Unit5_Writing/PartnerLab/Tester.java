@@ -2,6 +2,7 @@ package Unit5_Writing.PartnerLab;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 // Students : Kuldeep Debnath and Samahith Seetharam
@@ -16,51 +17,85 @@ public class Tester {
         System.out.println( "\n------------------------\n");
     }
 
-    public static String welcomeToTheStore(){
-        Shoe mochas = new Shoe("Jordan 1 Mocha", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
-        Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons", 244,"BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
-        Shoe dunks = new Shoe("Nike Dunk Low Retros", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
-        Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2", 150, "ZYON", 10.5, false,  "07/18/2020");
-        Shoe breds = new Shoe("Jordan 1 Retro Breds", 971.00, "BLACK/VARSITY/RED-WHITE", 9 , true, "09/03/2016");
-        Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds}
+    public static void welcomeToTheStore(Buyer buyer, Seller seller) {
+        Shoe mochas = new Shoe("Jordan 1 Mocha (mochas)", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
+        Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons (ultraBoosts)", 244, "BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
+        Shoe dunks = new Shoe("Nike Dunk Low Retros (dunks)", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
+        Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2 (yeezy)", 150, "ZYON", 10.5, false, "07/18/2020");
+        Shoe breds = new Shoe("Jordan 1 Retro Breds (breds)", 971.00, "BLACK/VARSITY/RED-WHITE", 9, true, "09/03/2016");
+        Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
 
         Scanner welcomeMessage = new Scanner(System.in);
-        System.out.println("Do you want to buy a pair of shoes? (Y/N)");
-        String inp = welcomeMessage.nextLine();
-        if(inp.equalsIgnoreCase("y")){
-            System.out.println("Cool, do any of these pairs interest you? (Y/N)");
-            System.out.println(inventory.toString());
-
+        boolean isDone = false;
+        while (isDone != true) {
+            System.out.println("Do you want to buy a pair of shoes? (Y/N)");
+            String inp = welcomeMessage.nextLine();
+            System.out.println(" ");
+            if (inp.equalsIgnoreCase("y")) {
+                Scanner sizeCheck = new Scanner(System.in);
+                System.out.println("Sounds good, what size are you?");
+                double size = sizeCheck.nextDouble();
+                System.out.println(" ");
+                if (size == 9 || size == 9.5 || size == 10 || size == 10.5 || size == 11) {
+                    Scanner askShoe = new Scanner(System.in);
+                    System.out.println("Cool, do any of these pairs interest you? (Enter shoe name like this: mochas)");
+                    System.out.println(Arrays.toString(inventory));
+                    System.out.println("Enter here: ");
+                    String interest = askShoe.nextLine();
+                    System.out.println(" ");
+                    if (interest.equalsIgnoreCase("mochas")) {
+                        bargain(buyer, seller, mochas);
+                    }
+                    if (interest.equalsIgnoreCase("ultraBoosts")) {
+                        bargain(buyer, seller, ultraBoosts);
+                    }
+                    if (interest.equalsIgnoreCase("dunks")) {
+                        bargain(buyer, seller, dunks);
+                    }
+                    if (interest.equalsIgnoreCase("yeezy")) {
+                        bargain(buyer, seller, yeezy);
+                    }
+                    if (interest.equalsIgnoreCase("breds")) {
+                        bargain(buyer, seller, breds);
+                    }
+                    isDone = true;
+                } else {
+                    System.out.println("Sorry, we don't have your size :(");
+                    System.out.println("Let us know if you need anything!");
+                    isDone = true;
+                }
+            } else {
+                System.out.println("Okay, let us know if you need anything!");
+                isDone = true;
+            }
         }
     }
+
     public static void main(String[] args){
-        //Shoe info:
-        System.out.println("Welcome to Kuldeep's Sneaker Store: ");
+        System.out.println("Welcome to Kuldeep's Meet - Up Sneaker Store: ");
         addDivider();
-        Shoe mochas = new Shoe("Jordan 1 Mocha", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
-        Shoe breds = new Shoe("Jordan 1 Retro Breds", 971.00, "BLACK/VARSITY/RED-WHITE", 9 , true, "09/03/2016");
-        System.out.println(mochas);
-        System.out.println(breds);
 
         //Buyer info:
-        addDivider();
+        System.out.println("CUSTOMER INFO: ");
         Buyer Sammy = new Buyer("Sammy", 11, 200.00, 600.00);
         System.out.println(Sammy);
 
         addDivider();
+
         //Seller Info:
-        Seller Kuldeep = new Seller("Kuldeep", mochas, true, 3);
+        System.out.println("SELLER INFO:");
+        Seller Kuldeep = new Seller("Kuldeep", true, 3);
         System.out.println(Kuldeep);
+
         addDivider();
 
         //new buyer
-        Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
+        //Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
         //Bargain Method:
-        bargain(Sammy,Kuldeep,mochas);
+        welcomeToTheStore(Sammy, Kuldeep);
         addDivider();
-        bargain(Jeff, Kuldeep,breds);
+        //welcomeToTheStore(Jeff, Kuldeep);
 
-        addDivider();
 
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
         System.out.println("He concluded that the average customer spends about: $" + Buyer.averagePrice());
@@ -158,6 +193,7 @@ public class Tester {
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
         result += " for $" + shoe.getRetailPrice();
+        //add updated bank balance 
         System.out.println(result);
         return " ";
         // ask sammy how to add and remove form inventory

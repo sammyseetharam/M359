@@ -2,14 +2,12 @@ package Unit5_Writing.PartnerLab;
 
 public class Seller {
     private String name;
-    private Shoe theShoe;
     private boolean negotiable;
     private int numSales;
     private static int numSeller = 0;
 
-    public Seller(String name, Shoe theShoe, boolean negotiable, int numSales) {
+    public Seller(String name, boolean negotiable, int numSales) {
         this.name = name;
-        this.theShoe = theShoe;
         this.negotiable = negotiable;
         this.numSales = numSales;
         numSeller++;
@@ -21,14 +19,6 @@ public class Seller {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Shoe getTheShoe() {
-        return theShoe;
-    }
-
-    public void setTheShoe(Shoe theShoe) {
-        this.theShoe = theShoe;
     }
 
     public boolean isNegotiable() {
@@ -59,7 +49,7 @@ public class Seller {
      */
     public String toString(){
         String output = "";
-        output += "Name: " + name + "\nShoe(s) available: " + theShoe.getShoeName() + "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numSales;
+        output += "Name: " + name +  "\nWilling to bargain: " + negotiable + "\nTotal number of sales: " + numSales;
         return output;
     }
 }
