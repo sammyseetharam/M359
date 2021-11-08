@@ -36,7 +36,7 @@ public class Tester {
                 System.out.println("Sounds good, what size are you?");
                 double size = sizeCheck.nextDouble();
                 System.out.println(" ");
-                if (size == 9 || size == 9.5 || size == 10 || size == 10.5 || size == 11) {
+                if(size == 9 || size == 9.5 || size == 10 || size == 10.5 || size == 11) {
                     Scanner askShoe = new Scanner(System.in);
                     System.out.println("Cool, do any of these pairs interest you? (Enter shoe name like this: mochas)");
                     System.out.println(Arrays.toString(inventory));
@@ -90,12 +90,17 @@ public class Tester {
         addDivider();
 
         //new buyer
-        //Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
+
         //Bargain Method:
         welcomeToTheStore(Sammy, Kuldeep);
         addDivider();
-        //welcomeToTheStore(Jeff, Kuldeep);
-
+        /*
+        System.out.println("NEXT CUSTOMER INFO: ");
+        Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
+        System.out.println(Jeff);
+        welcomeToTheStore(Jeff, Kuldeep);
+        addDivider();
+        */
 
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
         System.out.println("He concluded that the average customer spends about: $" + Buyer.averagePrice());
@@ -112,9 +117,9 @@ public class Tester {
 
     /**
      * This method allows for the buyer to negotiate
-     * @param buyer the buyer is the person who will purchase the shoe by deducting their money and obtaioning the shoe
-     * @param seller the seller will sell his show in exhacnge for moeny via the buyer's bnk account
-     * @param shoe the shoe is the object being trandsferd form the seller to the buyer, each one is different
+     * @param buyer the buyer is the person who will purchase the shoe by deducting their money and obtaining the shoe
+     * @param seller the seller will sell his show in exchange for money via the buyer's bnk account
+     * @param shoe the shoe is the object being transfered from the seller to the buyer, each one is different
      * @return
      */
 // add specification for shoe size
@@ -149,7 +154,7 @@ public class Tester {
                     if(shoe.getRetailPrice() > buyer.getBudget()) {
                         System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
                         isDone = false;
-                        // maybe add a part where they can increase thier budget till the bank AMount?
+                        // maybe add a part where they can increase their budget till the bank AMount?
                     }
 
                 } else if (sellerTalk.equals("n")) {
@@ -192,6 +197,7 @@ public class Tester {
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
+        System.out.println(buyer.getBankAmount());
         result += " for $" + shoe.getRetailPrice();
         //add updated bank balance 
         System.out.println(result);
