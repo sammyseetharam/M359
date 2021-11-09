@@ -4,6 +4,8 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.List;
 
 // Students : Kuldeep Debnath and Samahith Seetharam
 // Teacher : Mr.Moon, Period 3
@@ -16,7 +18,8 @@ public class Tester {
     public static Shoe dunks = new Shoe("Nike Dunk Low Retros (dunks)", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
     public static Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2 (yeezy)", 150, "ZYON", 10.5, false, "07/18/2020");
     public static Shoe breds = new Shoe("Jordan 1 Retro Breds (breds)", 971.00, "BLACK/VARSITY/RED-WHITE", 9, true, "09/03/2016");
-    public static Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
+
+    //make the static array list 
 
     /*
      *This method adds a divider between sections of text
@@ -50,6 +53,8 @@ public class Tester {
                     }
                     if (interest.equalsIgnoreCase("ultraBoosts")) {
                         bargain(buyer, seller, ultraBoosts);
+                        int index = indexOf("ultraboost");
+                        inv1 = ArrayUtils.remove(inv1, index);
                     }
                     if (interest.equalsIgnoreCase("dunks")) {
                         bargain(buyer, seller, dunks);
@@ -103,13 +108,12 @@ public class Tester {
         addDivider();
         System.out.println(Kuldeep);
         addDivider();
-        /*
+
         System.out.println("NEXT CUSTOMER INFO: ");
         Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
         System.out.println(Jeff);
         welcomeToTheStore(Jeff, Kuldeep);
         addDivider();
-        */
 
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
         System.out.println("He concluded that the average customer spends about: $" + Buyer.averagePrice());
@@ -204,6 +208,7 @@ public class Tester {
      */
     public static String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
+        int index = inventory.
         Seller.setNumSales(1);
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
@@ -213,4 +218,5 @@ public class Tester {
         return " ";
         // ask sammy how to add and remove form inventory
     }
+
 }
