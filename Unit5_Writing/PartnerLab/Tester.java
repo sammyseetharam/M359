@@ -9,6 +9,15 @@ import java.util.Scanner;
 // Teacher : Mr.Moon, Period 3
 
 public class Tester {
+
+    //Code for the static array (inventory) of all of the shoes we have available
+    public static Shoe mochas = new Shoe("Jordan 1 Mocha (mochas)", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
+    public static Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons (ultraBoosts)", 244, "BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
+    public static Shoe dunks = new Shoe("Nike Dunk Low Retros (dunks)", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
+    public static Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2 (yeezy)", 150, "ZYON", 10.5, false, "07/18/2020");
+    public static Shoe breds = new Shoe("Jordan 1 Retro Breds (breds)", 971.00, "BLACK/VARSITY/RED-WHITE", 9, true, "09/03/2016");
+    public static Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
+
     /*
      *This method adds a divider between sections of text
      *@return a space and a line divider between texts
@@ -18,13 +27,6 @@ public class Tester {
     }
 
     public static void welcomeToTheStore(Buyer buyer, Seller seller) {
-        Shoe mochas = new Shoe("Jordan 1 Mocha (mochas)", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
-        Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons (ultraBoosts)", 244, "BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
-        Shoe dunks = new Shoe("Nike Dunk Low Retros (dunks)", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
-        Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2 (yeezy)", 150, "ZYON", 10.5, false, "07/18/2020");
-        Shoe breds = new Shoe("Jordan 1 Retro Breds (breds)", 971.00, "BLACK/VARSITY/RED-WHITE", 9, true, "09/03/2016");
-        Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
-
         Scanner welcomeMessage = new Scanner(System.in);
         boolean isDone = false;
         while (isDone != true) {
@@ -84,15 +86,22 @@ public class Tester {
 
         //Seller Info:
         System.out.println("SELLER INFO:");
-        Seller Kuldeep = new Seller("Kuldeep", true, 3);
+        Seller Kuldeep = new Seller("Kuldeep", mochas, true);
         System.out.println(Kuldeep);
 
         addDivider();
 
+        //SEPARATE BUYERS AND SELLERS?
         //new buyer
 
         //Bargain Method:
         welcomeToTheStore(Sammy, Kuldeep);
+        addDivider();
+
+        System.out.println("New Information: ");
+        System.out.println(Sammy);
+        addDivider();
+        System.out.println(Kuldeep);
         addDivider();
         /*
         System.out.println("NEXT CUSTOMER INFO: ");
@@ -149,7 +158,6 @@ public class Tester {
                 String sellerTalk = sellerInput.nextLine();
                 if (sellerTalk.equals("y")) {
                     shoe.setRetailPrice(price);
-                    Buyer.totalSpent += price;
                     System.out.println(shoe.getShoeName() + " has been marked down to $" + shoe.getRetailPrice());
                     if(shoe.getRetailPrice() > buyer.getBudget()) {
                         System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
@@ -164,7 +172,6 @@ public class Tester {
                     System.out.println("Seller doesn't like that price, try again");
                     buyerInput.nextDouble();
                 }
-
             } else {
                 System.out.println("Seller does not want to negotiate");
                 isDone = false;
@@ -176,8 +183,10 @@ public class Tester {
             if(finalResult.equals("y")){
                 isDone = true;
             }else{
-                isDone = false;
+                Buyer.setSingleSpent(shoe.getRetailPrice());
+                Buyer.totalSpent += Buyer.getSingleSpent();
                 output += (sellShoe(buyer, seller, shoe));
+                isDone = false;
             }
         }
         return output;
@@ -195,9 +204,9 @@ public class Tester {
      */
     public static String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
+        Seller.setNumSales(1);
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
-        System.out.println(buyer.getBankAmount());
         result += " for $" + shoe.getRetailPrice();
         //add updated bank balance 
         System.out.println(result);

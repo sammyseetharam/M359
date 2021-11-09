@@ -4,7 +4,8 @@ public class Buyer {
     private String buyerName;
     private int shoeSize;
     private double budget;
-    private double bankAmount;
+    private static double bankAmount;
+    private static double singleSpent;
     public static int numBuyers = 0;
     public static double totalSpent = 0.0;
 
@@ -19,39 +20,42 @@ public class Buyer {
     public String getName() {
         return buyerName;
     }
-
     public void setName(String name) {
         this.buyerName = name;
     }
-
     public int getShoeSize() {
         return shoeSize;
     }
-
     public void setShoeSize(int shoeSize) {
         this.shoeSize = shoeSize;
     }
-
     public double getBudget() {
         return budget;
     }
-
-
     public void setBudget(double budget) {
         this.budget = budget;
     }
-
-    public double getBankAmount() {
+    public static double getBankAmount() {
         return bankAmount;
     }
-
-    public void setBankAmount(double bankAmount) {
-        this.bankAmount = bankAmount;
+    public static void setBankAmount(double bankAmount) {
+        Buyer.bankAmount = bankAmount;
     }
     public static int getnumBuyers(){ return numBuyers;}
-
     public static void setTotalSpent(double totalSpent) {
         Buyer.totalSpent = totalSpent;
+    }
+    public String getBuyerName() {
+        return buyerName;
+    }
+    public void setBuyerName(String buyerName) {
+        this.buyerName = buyerName;
+    }
+    public static double getSingleSpent() {
+        return singleSpent;
+    }
+    public static void setSingleSpent(double singleSpent) {
+        Buyer.singleSpent = singleSpent;
     }
 
     public static double averagePrice(){
@@ -70,8 +74,10 @@ public class Buyer {
         String output = "";
         output += "Name: " + buyerName + '\n' +
                 "Shoe Size : " + shoeSize + '\n' +
-                "Buyer Budget: $" + budget;
+                "Buyer Budget: $" + budget + '\n' +
+                "TOTAL BANK BALANCE: $" + Buyer.getBankAmount();
         return output;
+        //add bank amount
     }
 
 }

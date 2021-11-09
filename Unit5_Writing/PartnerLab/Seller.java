@@ -3,13 +3,14 @@ package Unit5_Writing.PartnerLab;
 public class Seller {
     private String name;
     private boolean negotiable;
-    private int numSales;
+    private static int numSales;
     private static int numSeller = 0;
-
-    public Seller(String name, boolean negotiable, int numSales) {
+    private Shoe stock;
+    public Seller(String name, Shoe stock, boolean negotiable) {
         this.name = name;
         this.negotiable = negotiable;
-        this.numSales = numSales;
+        this.stock = stock;
+        this.numSales = 0;
         numSeller++;
     }
 
@@ -29,13 +30,25 @@ public class Seller {
         this.negotiable = negotiable;
     }
 
-    public int getNumSales() {
+    public static int getNumSales() {
         return numSales;
     }
-
-    public void setNumSales(int numSales) {
-        this.numSales = numSales;
+    public static void setNumSales(int numSales) {
+        Seller.numSales = numSales;
     }
+
+    public static void setNumSeller(int numSeller) {
+        Seller.numSeller = numSeller;
+    }
+
+    public Shoe getStock() {
+        return stock;
+    }
+
+    public void setStock(Shoe stock) {
+        this.stock = stock;
+    }
+
     //make toString
     public static int getNumSeller(){
         return numSeller;
