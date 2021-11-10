@@ -7,9 +7,6 @@ public class Seller {
     private static int numSeller = 0;
     public Seller(String name) {
         int isNegotiable = (int)(Math.random()*3);
-        if(){
-
-        }
         this.name = name;
         this.numSales = 0;
         numSeller++;
@@ -26,9 +23,9 @@ public class Seller {
      *@return if the seller is wiling to negotiate price of shoe
      */
 
-    public boolean isNegotiable() {
-        return negotiable;
-    }
+    //public boolean isNegotiable() {
+      //  return negotiable;
+    //}
 
     public static int getNumSales() {
         return numSales;

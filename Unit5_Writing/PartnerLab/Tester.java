@@ -2,6 +2,7 @@ package Unit5_Writing.PartnerLab;
 
 
 import java.sql.SQLOutput;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -90,21 +91,17 @@ public class Tester {
         System.out.println("CUSTOMER INFO: ");
         Buyer Sammy = new Buyer("Sammy", 11, 200.00, 600.00);
         System.out.println(Sammy);
-
         addDivider();
 
         //Seller Info:
         System.out.println("SELLER INFO:");
-        Seller Kuldeep = new Seller("Kuldeep", true);
+        Seller Kuldeep = new Seller("Kuldeep");
         System.out.println(Kuldeep);
-
         addDivider();
 
-        //SEPARATE BUYERS AND SELLERS?
-        //new buyer
-
-        //Bargain Method:
         welcomeToTheStore(Sammy, Kuldeep);
+        addDivider();
+        removeShoe();
         addDivider();
 
         System.out.println("New Information: ");
@@ -117,6 +114,7 @@ public class Tester {
         Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
         System.out.println(Jeff);
         welcomeToTheStore(Jeff, Kuldeep);
+        removeShoe();
         addDivider();
 
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
@@ -200,6 +198,19 @@ public class Tester {
         return output;
     }
 
+    public static void removeShoe(){
+        //removing element from an array.
+        ArrayList<Shoe> arr_new = new ArrayList<Shoe>();
+        for (int i = 0; i < inventory.length; i++)
+        {
+            arr_new.add(inventory[i]);
+        }
+        arr_new.remove(index);
+        inventory = arr_new.toArray(new Shoe[0]);
+        System.out.println();
+        System.out.println(Arrays.toString(inventory));
+    }
+
     //sell method add
 
     /**
@@ -218,10 +229,17 @@ public class Tester {
         result += " for $" + shoe.getRetailPrice();
         //add updated bank balance 
         System.out.println(result);
-
-        
-        inventory = inventory.remove(inventory, index);
-        System.out.println(Arrays.toString(inventory));
+        /*
+        Shoe[] tempArr = new Shoe[inventory.length-1];
+        for (int i = 0, k = 0; i < inventory.length; i++) {
+            if(i!=index){
+                tempArr[k] = inventory[i];
+                k++;
+            }
+        }
+        inventory = tempArr;
+        System.out.println(Arrays.toString(tempArr));
+        */
         return " ";
 
 
