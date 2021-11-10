@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +220,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>75</line>
+          <line>78</line>
           <properties class="Unit5_Writing.PartnerLab.Tester" method="main">
             <option name="EMULATED" value="true" />
           </properties>
