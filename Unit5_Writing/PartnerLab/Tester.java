@@ -66,7 +66,7 @@ public class Tester {
                     }
                     if (interest.equalsIgnoreCase("breds")) {
                         bargain(buyer, seller, breds);
-                        index = 4; 
+                        index = 4;
                     }
                     isDone = true;
                 } else {
@@ -217,7 +217,18 @@ public class Tester {
         result += " for $" + shoe.getRetailPrice();
         //add updated bank balance 
         System.out.println(result);
+
+        int[] arr_new = new int[inventory.length-1];
+        // j = index
+        for(int i=0, i<inventory.length;i++){
+            if(inventory[i]!=index){
+
+            }
+        }
+        System.out.println(Arrays.toString(inventory));
         return " ";
+
+
         // ask sammy how to add and remove form inventory
     }
 

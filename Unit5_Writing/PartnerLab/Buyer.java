@@ -58,12 +58,15 @@ public class Buyer {
         Buyer.singleSpent = singleSpent;
     }
 
+    /**
+     * This method is called when all the customers have baught something and/or left the store
+     * @return the average amount of money a customer spends when buying the shoe
+     */
+
     public static double averagePrice(){
         double average= (double)Buyer.totalSpent/Buyer.getnumBuyers();
         return average;
     }
-
-    // make toString
 
     /**
      * This method informs the user about the buyer's shoe size, name, and budget
