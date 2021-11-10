@@ -27,6 +27,7 @@ public class Tester {
     public static Shoe yeezy = new Shoe("Adidas Yeezy Boost 350 V2 (yeezy)", 150, "ZYON", 10.5, false, "07/18/2020");
     public static Shoe breds = new Shoe("Jordan 1 Retro Breds (breds)", 971.00, "BLACK/VARSITY/RED-WHITE", 9, true, "09/03/2016");
     public static Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
+    public static int index;
 
     public static void welcomeToTheStore(Buyer buyer, Seller seller) {
         Scanner welcomeMessage = new Scanner(System.in);
@@ -49,18 +50,23 @@ public class Tester {
                     System.out.println(" ");
                     if (interest.equalsIgnoreCase("mochas")) {
                         bargain(buyer, seller, mochas);
+                        index = 0;
                     }
                     if (interest.equalsIgnoreCase("ultraBoosts")) {
                         bargain(buyer, seller, ultraBoosts);
+                        index = 1;
                     }
                     if (interest.equalsIgnoreCase("dunks")) {
                         bargain(buyer, seller, dunks);
+                        index = 2;
                     }
                     if (interest.equalsIgnoreCase("yeezy")) {
                         bargain(buyer, seller, yeezy);
+                        index = 3;
                     }
                     if (interest.equalsIgnoreCase("breds")) {
                         bargain(buyer, seller, breds);
+                        index = 4; 
                     }
                     isDone = true;
                 } else {
@@ -88,7 +94,7 @@ public class Tester {
 
         //Seller Info:
         System.out.println("SELLER INFO:");
-        Seller Kuldeep = new Seller("Kuldeep", mochas, true);
+        Seller Kuldeep = new Seller("Kuldeep", true);
         System.out.println(Kuldeep);
 
         addDivider();

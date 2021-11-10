@@ -5,11 +5,10 @@ public class Seller {
     private boolean negotiable;
     private static int numSales;
     private static int numSeller = 0;
-    private Shoe stock;
-    public Seller(String name, Shoe stock, boolean negotiable) {
+    public Seller(String name,  boolean negotiable) {
         this.name = name;
         this.negotiable = negotiable;
-        this.stock = stock;
+
         this.numSales = 0;
         numSeller++;
     }
@@ -41,13 +40,6 @@ public class Seller {
         Seller.numSeller = numSeller;
     }
 
-    public Shoe getStock() {
-        return stock;
-    }
-
-    public void setStock(Shoe stock) {
-        this.stock = stock;
-    }
 
     //make toString
     public static int getNumSeller(){
