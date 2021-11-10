@@ -5,6 +5,7 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -218,13 +219,8 @@ public class Tester {
         //add updated bank balance 
         System.out.println(result);
 
-        int[] arr_new = new int[inventory.length-1];
-        // j = index
-        for(int i=0, i<inventory.length;i++){
-            if(inventory[i]!=index){
-
-            }
-        }
+        
+        inventory = inventory.remove(inventory, index);
         System.out.println(Arrays.toString(inventory));
         return " ";
 
