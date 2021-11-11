@@ -14,9 +14,8 @@ import java.util.List;
 // Teacher : Mr.Moon, Period 3
 
 public class Tester {
-    /*
-     *This method adds a divider between sections of text
-     *@return a space and a line divider between texts
+    /**
+     * This method just divides lines of output
      */
     public static void addDivider(){
         System.out.println( "\n------------------------\n");
@@ -31,6 +30,12 @@ public class Tester {
     public static Shoe[] inventory = {mochas, ultraBoosts, dunks, yeezy, breds};
     public static int index;
 
+    /**
+     * This method welcomes the user to the store and provided a transition to if they want to bargain or not.
+     * @param buyer
+     * @param seller
+     * It doesn't return anything, just provided values
+     */
     public static void welcomeToTheStore(Buyer buyer, Seller seller) {
         Scanner welcomeMessage = new Scanner(System.in);
         boolean isDone = false;
@@ -95,20 +100,19 @@ public class Tester {
 
         //Seller Info:
         System.out.println("SELLER INFO:");
-        Seller Kuldeep = new Seller("Kuldeep");
+        Seller Kuldeep = new Seller("Kuldeep", true);
         System.out.println(Kuldeep);
         addDivider();
 
         welcomeToTheStore(Sammy, Kuldeep);
-        addDivider();
-        removeShoe();
-        addDivider();
-
+        System.out.println();
         System.out.println("New Information: ");
         System.out.println(Sammy);
         addDivider();
         System.out.println(Kuldeep);
+        removeShoe();
         addDivider();
+
 
         System.out.println("NEXT CUSTOMER INFO: ");
         Buyer Jeff = new Buyer("Jeff", 9, 500.00, 1000.00);
@@ -122,27 +126,18 @@ public class Tester {
 
 
     }
-    // budget of buyer
-    // negotiable or not
-    // add total sales
-    // inventory and num size shoe
-    //bargain method
-    // sell method
-
 
     /**
      * This method allows for the buyer to negotiate
      * @param buyer the buyer is the person who will purchase the shoe by deducting their money and obtaining the shoe
      * @param seller the seller will sell his show in exchange for money via the buyer's bnk account
      * @param shoe the shoe is the object being transfered from the seller to the buyer, each one is different
-     * @return
+     * @return numerous lines from the program for the user in interact with
      */
-// add specification for shoe size
-    // has the shor
-    // not the size
+
     public static String bargain(Buyer buyer,Seller seller, Shoe shoe){
         String output = "";
-
+        double orgPrice = shoe.getRetailPrice();
         Scanner buyerInput = new Scanner(System.in);
         System.out.println("Does " + buyer.getName() + " want to bargain for the  " + shoe.getShoeName() + "? (y/n)");
         String name = buyerInput.nextLine(); // input is a scanner
@@ -153,7 +148,7 @@ public class Tester {
         boolean isDone = true;
         while (isDone) {
             if (name.equals("y") && bank.equals("y")) {
-                // asks buyer for desried price
+                // asks buyer for desired price
                 Scanner buyerPrice = new Scanner(System.in);
                 System.out.println("What price would " + buyer.getName() + " like?");
                 // add buyer name
@@ -165,13 +160,12 @@ public class Tester {
                 if (sellerTalk.equals("y")) {
                     shoe.setRetailPrice(price);
                     System.out.println(shoe.getShoeName() + " has been marked down to $" + shoe.getRetailPrice());
-                    if(shoe.getRetailPrice() > buyer.getBudget()) {
-                        System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
-                        isDone = false;
-                        // maybe add a part where they can increase their budget till the bank AMount?
-                    }
-
-                } else if (sellerTalk.equals("n")) {
+                }
+                if(shoe.getRetailPrice() > buyer.getBudget()) {
+                    System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
+                    isDone = false;
+                    // maybe add a part where they can increase their budget till the bank AMount?
+                }else if (sellerTalk.equals("n")) {
                     System.out.println("The seller decided not to negotiate ");
                     isDone = false;
                 } else {
@@ -198,6 +192,9 @@ public class Tester {
         return output;
     }
 
+    /**
+     *This method is void and all it does is remove the bought values from the array
+     */
     public static void removeShoe(){
         //removing element from an array.
         ArrayList<Shoe> arr_new = new ArrayList<Shoe>();
@@ -211,8 +208,6 @@ public class Tester {
         System.out.println(Arrays.toString(inventory));
     }
 
-    //sell method add
-
     /**
      * This method sells the Shoe object to the buyer
      * It deducts the price from the buyers budget
@@ -221,29 +216,15 @@ public class Tester {
      * @param shoe
      * @return
      */
+
     public static String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
         Seller.setNumSales(1);
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
         result += " for $" + shoe.getRetailPrice();
-        //add updated bank balance 
         System.out.println(result);
-        /*
-        Shoe[] tempArr = new Shoe[inventory.length-1];
-        for (int i = 0, k = 0; i < inventory.length; i++) {
-            if(i!=index){
-                tempArr[k] = inventory[i];
-                k++;
-            }
-        }
-        inventory = tempArr;
-        System.out.println(Arrays.toString(tempArr));
-        */
         return " ";
-
-
-        // ask sammy how to add and remove form inventory
     }
 
 }

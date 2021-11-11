@@ -218,7 +218,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>84</line>
+          <line>85</line>
           <properties class="Unit5_Writing.PartnerLab.Tester" method="main">
             <option name="EMULATED" value="true" />
           </properties>
@@ -266,6 +266,16 @@
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java</url>
           <line>21</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
