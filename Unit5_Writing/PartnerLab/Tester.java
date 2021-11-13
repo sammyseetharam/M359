@@ -22,6 +22,7 @@ public class Tester {
     }
 
     //Code for the static array (inventory) of all of the shoes we have available
+    public static int bought = 0;
     public static Shoe mochas = new Shoe("Jordan 1 Mocha (mochas)", 545.00, "MOCHA/BLACK/BROWN/WHITE", 10, true, "10/31/2020");
     public static Shoe ultraBoosts = new Shoe("Adidas UBs 4.0 GOT Targaryen Dragons (ultraBoosts)", 244, "BLACK/FIREORANGE/INFERNO", 11, true, "03/22/2019");
     public static Shoe dunks = new Shoe("Nike Dunk Low Retros (dunks)", 265, "WHITE/BLACK", 9.5, true, "03/10/2021");
@@ -34,7 +35,7 @@ public class Tester {
      * This method welcomes the user to the store and provided a transition to if they want to bargain or not.
      * @param buyer
      * @param seller
-     * It doesn't return anything, just provided values
+     * @return It doesn't return anything, just provided values
      */
     public static void welcomeToTheStore(Buyer buyer, Seller seller) {
         Scanner welcomeMessage = new Scanner(System.in);
@@ -106,7 +107,7 @@ public class Tester {
 
         welcomeToTheStore(Sammy, Kuldeep);
         System.out.println();
-        System.out.println("New Information: ");
+        System.out.println("NEW INFORMATION: ");
         System.out.println(Sammy);
         addDivider();
         System.out.println(Kuldeep);
@@ -121,6 +122,11 @@ public class Tester {
         removeShoe();
         addDivider();
 
+        System.out.println("NEW INFORMATION: ");
+        System.out.println(Jeff);
+        addDivider();
+        System.out.println(Kuldeep);
+        addDivider();
         System.out.println("After customers left, Kuldeep decided to crunch some numbers");
         System.out.println("He concluded that the average customer spends about: $" + Buyer.averagePrice());
 
@@ -135,11 +141,11 @@ public class Tester {
      * @return numerous lines from the program for the user in interact with
      */
 
-    public static String bargain(Buyer buyer,Seller seller, Shoe shoe){
+    public static String bargain(Buyer buyer,Seller seller, Shoe shoe) {
         String output = "";
         double orgPrice = shoe.getRetailPrice();
         Scanner buyerInput = new Scanner(System.in);
-        System.out.println("Does " + buyer.getName() + " want to bargain for the  " + shoe.getShoeName() + "? (y/n)");
+        System.out.println("Do you" + " want to bargain for the " + shoe.getShoeName() + "? (y/n)");
         String name = buyerInput.nextLine(); // input is a scanner
 
         Scanner sellerInput = new Scanner(System.in);
@@ -150,26 +156,20 @@ public class Tester {
             if (name.equals("y") && bank.equals("y")) {
                 // asks buyer for desired price
                 Scanner buyerPrice = new Scanner(System.in);
-                System.out.println("What price would " + buyer.getName() + " like?");
-                // add buyer name
+                System.out.println("What price would you" + " like?");
                 double price = buyerInput.nextDouble(); // input is a scanner
-
                 //asks seller if they are ok with it
                 System.out.println("Is " + seller.getName() + " willing to go to this price?: (y/n)");
                 String sellerTalk = sellerInput.nextLine();
                 if (sellerTalk.equals("y")) {
                     shoe.setRetailPrice(price);
                     System.out.println(shoe.getShoeName() + " has been marked down to $" + shoe.getRetailPrice());
-                }
-                if(shoe.getRetailPrice() > buyer.getBudget()) {
-                    System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
-                    isDone = false;
-                    // maybe add a part where they can increase their budget till the bank AMount?
-                }else if (sellerTalk.equals("n")) {
-                    System.out.println("The seller decided not to negotiate ");
-                    isDone = false;
-                } else {
-                    System.out.println("Seller doesn't like that price, try again");
+
+                    if (shoe.getRetailPrice() > buyer.getBudget()) {
+                        System.out.println("Unfortunately the shoes are out of your budget. Try negotiating again");
+                    }
+                } else if (sellerTalk.equals("n")) {
+                    System.out.println("Seller doesn't like that price, try again: ");
                     buyerInput.nextDouble();
                 }
             } else {
@@ -180,9 +180,9 @@ public class Tester {
             Scanner input = new Scanner(System.in);
             System.out.println("\nDo you want to bargain more? : (y/n)");
             String finalResult = input.nextLine(); // input is a scanner
-            if(finalResult.equals("y")){
+            if (finalResult.equals("y")) {
                 isDone = true;
-            }else{
+            } else {
                 Buyer.setSingleSpent(shoe.getRetailPrice());
                 Buyer.totalSpent += Buyer.getSingleSpent();
                 output += (sellShoe(buyer, seller, shoe));
@@ -191,7 +191,6 @@ public class Tester {
         }
         return output;
     }
-
     /**
      *This method is void and all it does is remove the bought values from the array
      */
@@ -214,17 +213,16 @@ public class Tester {
      * @param buyer
      * @param seller
      * @param shoe
-     * @return
+     * @return this returns the final purchase statement
      */
-
     public static String sellShoe(Buyer buyer ,Seller seller, Shoe shoe){
         String result = buyer.getName() + " has bought " + shoe.getShoeName() + " from " + seller.getName();
-        Seller.setNumSales(1);
+        bought++;
+        Seller.setNumSales(bought);
         double newBalance = buyer.getBankAmount() - shoe.getRetailPrice();
         buyer.setBankAmount(newBalance);
         result += " for $" + shoe.getRetailPrice();
         System.out.println(result);
         return " ";
     }
-
 }

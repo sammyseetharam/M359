@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/PartnerLab/Seller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/PartnerLab/Seller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/PartnerLab/Tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit5_Writing/PartnerLab/Tester.class" afterDir="false" />
     </list>
-    <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" afterDir="false" />
-    </list>
+    <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,30 +34,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java">
-      <ranges>
-        <range start1="16" end1="19" start2="16" end2="18" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="33" end1="33" start2="32" end2="38" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="97" end1="98" start2="102" end2="103" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="102" end1="102" start2="107" end2="110" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="103" end1="103" start2="111" end2="112" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="106" end1="111" start2="115" end2="115" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="124" end1="131" start2="128" end2="128" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="137" end1="138" start2="134" end2="135" changelist="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" />
-        <range start1="139" end1="142" start2="136" end2="137" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="144" end1="145" start2="139" end2="140" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="155" end1="156" start2="150" end2="151" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="167" end1="174" start2="162" end2="169" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="200" end1="200" start2="195" end2="198" changelist="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" />
-        <range start1="212" end1="214" start2="210" end2="210" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="223" end1="223" start2="219" end2="220" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="229" end1="230" start2="226" end2="226" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="231" end1="242" start2="227" end2="227" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-        <range start1="243" end1="246" start2="228" end2="228" changelist="8563a3da-7f7e-400f-aac9-f545fdd61747" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectId" id="1yBH0PQzDB2cYjRFeSsuuwtdWA4" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -72,6 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="ToolWindowDebug.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP_Java359/src" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -252,7 +226,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>85</line>
+          <line>86</line>
           <properties class="Unit5_Writing.PartnerLab.Tester">
             <option name="EMULATED" value="true" />
           </properties>
@@ -260,7 +234,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java</url>
-          <line>18</line>
+          <line>16</line>
           <properties class="Unit5_Writing.PartnerLab.Seller">
             <option name="EMULATED" value="true" />
           </properties>
@@ -268,7 +242,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java</url>
-          <line>13</line>
+          <line>12</line>
           <properties class="Unit5_Writing.PartnerLab.Seller" method="getName">
             <option name="EMULATED" value="true" />
           </properties>
@@ -308,6 +282,11 @@
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java</url>
           <line>21</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
