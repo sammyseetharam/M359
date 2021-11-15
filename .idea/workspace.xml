@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java" afterDir="false" />
+    </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,14 +223,6 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>86</line>
-          <properties class="Unit5_Writing.PartnerLab.Tester">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java</url>
           <line>16</line>
           <properties class="Unit5_Writing.PartnerLab.Seller">
@@ -240,6 +237,30 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>56</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="getSize">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>47</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="setRetailPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>65</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="setNew">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -267,24 +288,9 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
-          <line>2</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>227</line>
+          <line>220</line>
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

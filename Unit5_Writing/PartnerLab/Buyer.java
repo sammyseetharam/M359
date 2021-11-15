@@ -5,7 +5,7 @@ public class Buyer {
     private int shoeSize;
     private double budget;
     private static double bankAmount;
-    private static double singleSpent;
+    private static double singleSpent = 0.0;
     public static int numBuyers = 0;
     public static double totalSpent = 0.0;
 
@@ -62,12 +62,10 @@ public class Buyer {
      * This method is called when all the customers have baught something and/or left the store
      * @return the average amount of money a customer spends when buying the shoe
      */
-
     public static double averagePrice(){
         double average= (double)Buyer.totalSpent/Buyer.getnumBuyers();
         return average;
     }
-
     /**
      * This method informs the user about the buyer's shoe size, name, and budget
      *
@@ -80,7 +78,5 @@ public class Buyer {
                 "Buyer Budget: $" + budget + '\n' +
                 "TOTAL BANK BALANCE: $" + Buyer.getBankAmount();
         return output;
-        //add bank amount
     }
-
 }
