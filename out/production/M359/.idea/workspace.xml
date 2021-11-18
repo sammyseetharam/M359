@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/CourseTester.java" afterDir="false" />
+    </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +46,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AP_Java359/src" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Tester">
+  <component name="RunManager" selected="Application.CourseTester">
     <configuration name="AP_FRQ_PRACTICE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5_Writing.homework.AP_FRQ_PRACTICE" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit5_Writing.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.CourseTester" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit6_Arrays.CourseExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,19 +99,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringAlgorithmsFour_Three" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit4_Iteration.examples.StringAlgorithmsFour_Three" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit4_Iteration.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit5_Writing.PartnerLab.Tester" />
       <module name="M359" />
@@ -111,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CourseTester" />
         <item itemvalue="Application.Tester" />
         <item itemvalue="Application.MarvelMovieTester" />
         <item itemvalue="Application.AP_FRQ_PRACTICE" />
         <item itemvalue="Application.Four_Point_Five_Notes" />
-        <item itemvalue="Application.StringAlgorithmsFour_Three" />
       </list>
     </recent_temporary>
   </component>
@@ -218,16 +221,8 @@
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>86</line>
-          <properties class="Unit5_Writing.PartnerLab.Tester">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java</url>
-          <line>16</line>
+          <line>12</line>
           <properties class="Unit5_Writing.PartnerLab.Seller">
             <option name="EMULATED" value="true" />
           </properties>
@@ -235,11 +230,43 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Seller.java</url>
-          <line>12</line>
+          <line>9</line>
           <properties class="Unit5_Writing.PartnerLab.Seller" method="getName">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>56</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="getSize">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>47</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="setRetailPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
+          <line>65</line>
+          <properties class="Unit5_Writing.PartnerLab.Shoe" method="setNew">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/CourseExample/CourseTester.java</url>
+          <line>3</line>
+          <properties class="Unit6_Arrays.CourseExample.CourseTester" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -267,24 +294,9 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Shoe.java</url>
-          <line>2</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Buyer.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>227</line>
+          <line>220</line>
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Unit5_Writing/PartnerLab/Tester.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
