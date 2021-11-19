@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/CourseTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/CourseTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/CourseTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Student.java" afterDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />

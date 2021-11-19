@@ -23,9 +23,9 @@ public class Course {
     }
 
     public String toString() {
-        return "Teacher Name: " + teacherName + " , " +
-                "Subject: " + subject + " , " +
-                "Grade: " + currentGrade + " , " +
+        return "Teacher Name: " + teacherName + "\t" +
+                "Subject: " + subject + "\t" +
+                "Grade: " + currentGrade + "\t" +
                 "Period: " + period;
     }
 }
