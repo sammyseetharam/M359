@@ -8,7 +8,7 @@ public class CourseTester {
         String name = "Jeffery";
         System.out.println();
         Course per1 = new Course("O'donell", "english", "A", 1);
-        Course per2 = new Course("carlson", "chemisty", "A", 2);
+        Course per2 = new Course("carlson", "chemisty", "B", 2);
         Course per3 = new Course("moon", "java", "A", 3);
         Course per4 = new Course("matarattzo", "gym", "A", 4);
         Course per5 = new Course("study hall", 5);
