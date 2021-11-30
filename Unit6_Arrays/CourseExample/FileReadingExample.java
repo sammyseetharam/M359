@@ -10,6 +10,8 @@ import java.util.Scanner;
 
 
 //When opening a file make sure you remember the "throws" exception and the import statement
+
+
 public class FileReadingExample {
     public static void main(String[] args) throws FileNotFoundException {
         File myFile = new File("courseData.txt");

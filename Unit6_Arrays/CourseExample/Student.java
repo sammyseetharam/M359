@@ -17,7 +17,7 @@ public class Student {
     //write a toString method that will print the students name and all of the course objects
 
     public String toString() {
-        String output = "Name: " + name + "\n" + "Courses: " + "" + "\n";
+        String output = "Name: " + name + "\n" + "\nCourses: " + "" + "\n" + "\n";
 
         if (this.myClasses[0] != null) {
 
