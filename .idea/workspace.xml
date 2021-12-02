@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/ScheduleReadingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scheduleData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/FileReadingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/FileReadingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/CourseExample/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trivia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trivia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/CourseExample/FileReadingExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/CourseExample/FileReadingExample.class" afterDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +55,7 @@
       <recent name="C:\Users\seetharam1725\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ScheduleReadingExample">
+  <component name="RunManager" selected="Application.TriviaDriver">
     <configuration name="CourseTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.CourseTester" />
       <module name="M359" />
@@ -77,19 +75,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit6_Arrays.CourseExample.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MarvelMovieTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit5_Writing.HeroVilliainExample.MarvelMovieTester" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit5_Writing.HeroVilliainExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,13 +108,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriviaDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.TriviaGame.TriviaDriver" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit6_Arrays.TriviaGame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.ScheduleReadingExample" />
         <item itemvalue="Application.FileReadingExample" />
         <item itemvalue="Application.CourseTester" />
         <item itemvalue="Application.Tester" />
-        <item itemvalue="Application.MarvelMovieTester" />
       </list>
     </recent_temporary>
   </component>
@@ -287,6 +285,30 @@
           </properties>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java</url>
+          <line>38</line>
+          <properties class="Unit6_Arrays.TriviaGame.Question" method="getB">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java</url>
+          <line>46</line>
+          <properties class="Unit6_Arrays.TriviaGame.Question" method="getC">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
+          <line>3</line>
+          <properties class="Unit6_Arrays.TriviaGame.TriviaDriver" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
           <line>2</line>
@@ -331,6 +353,11 @@
           <url>file://$PROJECT_DIR$/Unit6_Arrays/CourseExample/ScheduleReadingExample.java</url>
           <line>13</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
