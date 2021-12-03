@@ -5,6 +5,6 @@ public class TriviaGame {
     private static int totalPts = 0;
     private static int currStreak = 0;
 
-    
+
 
 }
