@@ -1,4 +1,5 @@
-Which NFL Team is based in Kansas City? 
+10
+Which NFL Team is based in Kansas City?
 A. Indians 
 B. Choo Choos 
 C. Chiefs 

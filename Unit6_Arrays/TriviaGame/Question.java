@@ -10,7 +10,7 @@ public class Question {
     private int ptVal;
 
     //Contructor for a completely customized question
-    public Question(String questionTxt, String a, String b, String c, String d, String correct, int ptVal) {
+    public Question(String questionTxt, String a, String b, String c, String d, int ptVal, String correct) {
         this.questionTxt = questionTxt;
         this.a = a;
         this.b = b;

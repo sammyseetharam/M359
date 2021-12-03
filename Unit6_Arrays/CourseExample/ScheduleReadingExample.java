@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 public class ScheduleReadingExample  {
     public static void main(String[] args) throws FileNotFoundException {
         //Access the data
+
         File scheduleData = new File("scheduleData.txt");
         //Read the data
         Scanner readme = new Scanner(scheduleData);
