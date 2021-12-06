@@ -1,6 +1,6 @@
 Which NFL Team is based in Kansas City?
 A. Indians 
-B. Choo Choos 
+B. Choo Choos
 C. Chiefs 
 D. Warriors 
 100
@@ -12,7 +12,7 @@ C. Dallas
 D. New Orleans  
 100
 D
-Who does star quarterback Jimmy Garappolo play for currently? 
+Who does quarterback Jimmy Garappolo play for currently?
 A. New England Patriots 
 B. The San Francisco 49ers 
 C. Clemson University 
@@ -22,7 +22,7 @@ B
 Which player has the record for most touchdowns caught?
 A. Jerry Rice 
 B. Antonio Brown  
-C. Odell Beckam Jr.  
+C. Odell Beckham Jr.
 D. Randall Cobb 
 200
 A
@@ -46,7 +46,7 @@ B. Dak Prescott, QB
 C. Russell Wilson, QB
 D. Patrick Mahomes, QB
 150
-C
+D
 What is the average height of an NFL player? 
 A. 6'0"
 B. 6'2"  
