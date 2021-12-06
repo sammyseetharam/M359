@@ -9,15 +9,15 @@ public class Question {
     private String correct;
     private int ptVal;
 
-    //Contructor for a completely customized question
+    //Constructor for a completely customized question
     public Question(String questionTxt, String a, String b, String c, String d, int ptVal, String correct) {
         this.questionTxt = questionTxt;
         this.a = a;
         this.b = b;
         this.c = c;
         this.d = d;
-        this.correct = correct;
         this.ptVal = ptVal;
+        this.correct = correct;
     }
 
     public String getQuestionTxt() {

@@ -1,4 +1,3 @@
-10
 Which NFL Team is based in Kansas City?
 A. Indians 
 B. Choo Choos 
@@ -68,7 +67,22 @@ B. Notre Dame
 C. University of Illinois 
 D. UCLA 
 150
-B 
+B
+What is the median salary for all NFL player?
+A. $8,500,000
+B. $4,000,000
+C. $860,000
+D. $1,200,000
+200
+C
+Which NFL team has recorded the most losses?
+A. Tampa Bay Buccaneers
+B. New York Jets
+C. Jacksonville Jaguars
+D. Arizona Cardinals
+200
+D
+
 
  
 
