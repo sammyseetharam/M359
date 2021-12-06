@@ -68,7 +68,7 @@ C. University of Illinois
 D. UCLA 
 150
 B
-What is the median salary for all NFL player?
+What is the median salary for all NFL players?
 A. $8,500,000
 B. $4,000,000
 C. $860,000

@@ -11,17 +11,25 @@ public class TriviaGame{
     private static int totalPts = 0;
     private static int currStreak = 0;
 
-    public TriviaGame() {
+    public TriviaGame() throws FileNotFoundException {
+        allQuestions = fillArray();
     }
 
+    public Question[] getAllQuestions() {
+        return allQuestions;
+    }
 
-    public void fillArray(String txtFile) throws FileNotFoundException {
-        File questionData = new File(txtFile);
+    public void setAllQuestions(Question[] allQuestions) {
+        this.allQuestions = allQuestions;
+    }
+
+    public Question[] fillArray() throws FileNotFoundException {
+        File questionData = new File("Trivia.txt");
         //Start reading the data
         Scanner readMe = new Scanner(questionData);
 
-        Question[] problems = new Question[9];
-        for (int i = 0; i < 9; i++) {
+        Question[] problems = new Question[12];
+        for (int i = 0; i < 11; i++) {
             Question myNewQuestion = new Question(
                     readMe.nextLine(), //question
                     readMe.nextLine(), //choice a
@@ -36,8 +44,7 @@ public class TriviaGame{
             }
             problems[i] = myNewQuestion;
         }
-        allQuestions = problems;
-        System.out.println(allQuestions);
+        return(problems);
     }
 
     public static void printAllQuestions(Question[] allQuestions){
