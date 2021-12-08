@@ -8,8 +8,8 @@ import java.io.FileNotFoundException;
 
 public class TriviaGame{
     private Question[] allQuestions;
-    private static int totalPts = 0;
-    private static int currStreak = 0;
+    public static int totalPts = 0;
+    public static int currStreak = 0;
 
     public TriviaGame() throws FileNotFoundException {
         allQuestions = fillArray();
