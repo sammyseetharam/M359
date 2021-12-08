@@ -32,31 +32,25 @@ public class TriviaDriver {
 
         boolean isDone = true;
 
-
-
-        while(isDone){
-            if(wantToPlay.equalsIgnoreCase("y")){
+        if(wantToPlay.equalsIgnoreCase("y")){
                 System.out.println("Excellent, so here is your first question:");
                 System.out.println();
-                questionChecker();
                 questionChecker();
             }else{
                 System.out.println("Ur kinda weird dawg the quiz is lit.");
             }
-        }
-
-
     }
 
     public static void questionChecker() throws FileNotFoundException{
         TriviaGame myNewGame = new TriviaGame();
         Question[] questions = myNewGame.getAllQuestions();
 
-        int randomIncrement = 11;
-        int random = (int) Math.random() * randomIncrement + 1;
+        int randomIncrement = 12;
+        int random = (int) (Math.random() * randomIncrement) + 1;
         int prevRandom = random;
 
         Question question = questions[random];
+
         Scanner ans1 = new Scanner(System.in);
         System.out.println(question);
         String response = ans1.nextLine();
@@ -76,11 +70,11 @@ public class TriviaDriver {
                     System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
                     System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far.");
                 }
-                    Scanner next = new Scanner(System.in);
-                    System.out.println("Do you want to continue? (Y or N)");
-                    String nextInput = next.nextLine();
+                Scanner next = new Scanner(System.in);
+                System.out.println("Do you want to continue? (Y or N)");
+                String nextInput = next.nextLine();
 
-                    if(nextInput.equalsIgnoreCase("y")){
+                if(nextInput.equalsIgnoreCase("y")){
                         randomIncrement--;
                         random = (int) Math.random() * randomIncrement + 1;
                         while(random != prevRandom){
@@ -90,7 +84,7 @@ public class TriviaDriver {
                             response = nextQuestion.nextLine();
                             random = prevRandom;
                         }
-                    }else{
+                }else{
                         isDone = false;
                     }
             }
