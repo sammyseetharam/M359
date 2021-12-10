@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class TriviaDriver {
     public static void main(String[] args) throws FileNotFoundException{
 
+
         welcomeToTheQuiz();
         /*for (Question s: questions) {
             System.out.println(s);
@@ -45,28 +46,30 @@ public class TriviaDriver {
         TriviaGame myNewGame = new TriviaGame();
         Question[] questions = myNewGame.getAllQuestions();
 
-        int randomIncrement = 12;
-        int random = (int) (Math.random() * randomIncrement) + 1;
-        int prevRandom = random;
-
-        Question question = questions[random];
-
-        Scanner ans1 = new Scanner(System.in);
-        System.out.println(question);
-        String response = ans1.nextLine();
-
         boolean isDone = true;
         while (isDone) {
-                if(response.equalsIgnoreCase(question.getCorrect())) {
+
+            int randomIncrement = 12;
+            int random = (int) (Math.random() * randomIncrement) + 1;
+            int prevRandom = random;
+
+            Question ask = questions[random];
+
+            Scanner ans1 = new Scanner(System.in);
+            System.out.println(ask);
+            System.out.println(ask.getCorrect());
+            String response = ans1.nextLine();
+
+                if(response.equalsIgnoreCase(ask.getCorrect())) {
                     TriviaGame.currStreak++;
-                    TriviaGame.totalPts += question.getPtVal();
-                    System.out.println("Nice you got it right, that's +" + question.getPtVal() + " points.");
+                    TriviaGame.totalPts += ask.getPtVal();
+                    System.out.println("Nice you got it right, that's +" + ask.getPtVal() + " points.");
                     System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
                     System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far.");
                 }else{
-                    TriviaGame.totalPts -= question.getPtVal();
+                    TriviaGame.totalPts -= ask.getPtVal();
                     TriviaGame.currStreak = 0;
-                    System.out.println("Oh no, you got it wrong, that's -" + question.getPtVal() + " points.");
+                    System.out.println("Oh no, you got it wrong, that's -" + ask.getPtVal() + " points.");
                     System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
                     System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far.");
                 }
