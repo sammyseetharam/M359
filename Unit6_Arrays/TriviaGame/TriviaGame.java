@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 public class TriviaGame{
-    private Question[] allQuestions;
+    public Question[] allQuestions;
     public static int totalPts = 0;
     public static int currStreak = 0;
 
@@ -29,19 +29,20 @@ public class TriviaGame{
         Scanner readMe = new Scanner(questionData);
 
         Question[] problems = new Question[12];
-        for (int i = 0; i < 11; i++) {
+        for (int i = 0; i < 12; i++) {
             Question myNewQuestion = new Question(
                     readMe.nextLine(), //question
                     readMe.nextLine(), //choice a
                     readMe.nextLine(), //choice b
                     readMe.nextLine(), //choice c
                     readMe.nextLine(), //choice d
-                    readMe.nextInt(), // pt val
+                    readMe.nextLine(), // pt val
                     readMe.nextLine()); // correct answer
 
-            if (readMe.hasNextLine()) {
+            /*
+            if(readMe.hasNextLine()){
                 readMe.nextLine();
-            }
+            }*/
             problems[i] = myNewQuestion;
         }
         return(problems);

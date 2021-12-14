@@ -33,35 +33,35 @@ C. Mercedes - Benz Stadium, Atlanta Falcons
 D. SoFi Stadium, LA Rams 
 150
 D
-What team has the most Super Bowl Wins? 
+What team has the most Super Bowl Wins?
 A. Pittsburgh Steelers 
 B. Dallas Cowboys 
 C. New England Patriots 
 D. New York Giants 
 125
 C
-Who is the NFL's highest paid player? 
+Who is the NFL's highest paid player?
 A. Josh Allen, QB 
 B. Dak Prescott, QB
 C. Russell Wilson, QB
 D. Patrick Mahomes, QB
 150
 D
-What is the average height of an NFL player? 
+What is the average height of an NFL player?
 A. 6'0"
 B. 6'2"  
 C. 5'11" 
 D. 6'3"
 100
 B
-How are players tested in the NFL combine? 
+How are players tested in the NFL combine?
 A. 40-yard dash, the vertical jump, the shuttle run, the bench press and the broad jump
 B. 40-yard dash, lateral jump, the shuttle run, the incline press and the sit and reach 
 C. 50-yard dash, the vertical jump, one - mile run, the bench press and the broad jump
 D. 50-yard dash, 1 rep max squat, one - mile run, the bench press and max number of box jumps 
-200 
+200
 A
-Which university has produced the most NFL players? 
+Which university has produced the most NFL players?
 A. Clemson 
 B. Notre Dame
 C. University of Illinois 
@@ -82,7 +82,3 @@ C. Jacksonville Jaguars
 D. Arizona Cardinals
 200
 D
-
-
- 
-

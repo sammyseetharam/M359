@@ -7,10 +7,11 @@ public class Question {
     private String c;
     private String d;
     private String correct;
-    private int ptVal;
+    private String ptVal;
+    private String placeHolder;
 
     //Constructor for a completely customized question
-    public Question(String questionTxt, String a, String b, String c, String d, int ptVal, String correct) {
+    public Question(String questionTxt, String a, String b, String c, String d, String ptVal, String correct) {
         this.questionTxt = questionTxt;
         this.a = a;
         this.b = b;
@@ -68,11 +69,11 @@ public class Question {
         this.correct = correct;
     }
 
-    public int getPtVal() {
+    public String getPtVal() {
         return ptVal;
     }
 
-    public void setPtVal(int ptVal) {
+    public void setPtVal(String ptVal) {
         this.ptVal = ptVal;
     }
 
