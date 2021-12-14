@@ -8,7 +8,10 @@
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Trivia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Trivia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" afterDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,6 +304,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
+          <line>7</line>
+          <properties class="Unit6_Arrays.TriviaGame.TriviaDriver" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>

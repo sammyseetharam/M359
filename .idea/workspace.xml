@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trivia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Trivia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Trivia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Trivia.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/Question.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" afterDir="false" />
@@ -291,27 +289,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java</url>
-          <line>39</line>
-          <properties class="Unit6_Arrays.TriviaGame.Question" method="getB">
+          <line>44</line>
+          <properties class="Unit6_Arrays.TriviaGame.Question">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java</url>
-          <line>47</line>
-          <properties class="Unit6_Arrays.TriviaGame.Question" method="getC">
+          <line>52</line>
+          <properties class="Unit6_Arrays.TriviaGame.Question">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
-          <line>7</line>
+          <line>8</line>
           <properties class="Unit6_Arrays.TriviaGame.TriviaDriver" method="main">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="64" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -365,7 +363,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

@@ -10,6 +10,9 @@ public class Question {
     private String ptVal;
     private String placeHolder;
 
+    private boolean used;
+
+
     //Constructor for a completely customized question
     public Question(String questionTxt, String a, String b, String c, String d, String ptVal, String correct) {
         this.questionTxt = questionTxt;
@@ -19,6 +22,7 @@ public class Question {
         this.d = d;
         this.ptVal = ptVal;
         this.correct = correct;
+        this.used = false;
     }
 
     public String getQuestionTxt() {
@@ -75,6 +79,14 @@ public class Question {
 
     public void setPtVal(String ptVal) {
         this.ptVal = ptVal;
+    }
+
+    public boolean isUsed() {
+        return used;
+    }
+
+    public void setUsed(boolean used) {
+        this.used = used;
     }
 
     public String toString(){
