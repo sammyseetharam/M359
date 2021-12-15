@@ -89,6 +89,10 @@ public class Question {
         this.used = used;
     }
 
+    /**
+     * This method is used to print out every question in a nicely ordered format.
+     * @return This method returns all the information about a question (text, pt value, answer choices)
+     */
     public String toString(){
         return          "Question: " + questionTxt
                         + "\n" + "Point Value: " + ptVal

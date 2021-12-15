@@ -6,24 +6,15 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class TriviaDriver {
+
     public static void main(String[] args) throws FileNotFoundException{
         welcomeToTheQuiz();
-
-
-        /*
-        TriviaGame myNewGame = new TriviaGame();
-        Question[] questions = myNewGame.allQuestions;
-        for (Question s: questions) {
-            System.out.println(s);
-        }
-            */
-
     }
 
-    public static void addDivider(){
-        System.out.println("--------------");
-    }
-
+    /**
+     * This method welcomes prints out the game information for the user.
+     * @return It doesn't return anything, just prints
+     */
     public static void gameInstructions(){
         System.out.println();
         System.out.println();
@@ -35,6 +26,10 @@ public class TriviaDriver {
         System.out.println();
     }
 
+    /**
+     * This method controls a lot of the intro gameplay and gets the user started.
+     * @return It doesn't return anything, just prints
+     */
     public static void welcomeToTheQuiz() throws FileNotFoundException{
         System.out.println("**** WELCOME TO SAMMY'S EPIC NFL QUIZ! ****");
         System.out.println();
@@ -54,13 +49,18 @@ public class TriviaDriver {
 
                 TriviaGame myNewGame = new TriviaGame();
                 Question[] questions = myNewGame.getAllQuestions();
-                questionChecker(myNewGame, questions);
+                questionChecker(questions);
             }else{
-                System.out.println("Ur kinda weird dawg the quiz is lit.");
+                System.out.println("Okay then, have a nice day!");
             }
     }
 
-    public static void questionChecker(TriviaGame newGame, Question[] questions) throws FileNotFoundException{
+    /**
+     * This method is the backbone of the class and is responsible for randomizing, marking as used, and checking questions.
+     * @param questions: Name of the questions array being tested
+     * @return It doesn't return anything, just prints information about each questions and updates to the user's point values.
+     */
+    public static void questionChecker( Question[] questions) throws FileNotFoundException{
         int count = 1;
         int correct = 0;
         int randomIncrement = 12;
@@ -102,6 +102,7 @@ public class TriviaDriver {
                 if(count == 12){
                     endGameSummary(count, correct);
                     isDone = false;
+                    break;
                 }
 
                 System.out.println();
@@ -116,23 +117,21 @@ public class TriviaDriver {
                         random = (int) (Math.random() * randomIncrement) + 0;
                     }
                     // at this point, random is guaranteed to be good
-
                 }else{
                     endGameSummary(count, correct);
                     //do the restarting thing. 
                     isDone = false;
-                    }
+                    break;
+                }
             }
         }
 
 
     /**
-     * This method sells the Shoe object to the buyer
-     * It deducts the price from the buyers budget
-     * @param buyer
-     * @param seller
-     * @param shoe
-     * @return this returns the final purchase statement
+     * This method is a summary of the users point values at the end when they stop playing
+     * @param count
+     * @param correct
+     * @return this doesn't return but instead prints out the total points earned, # of correctly answered questions, a final percentage.
      */
         public static void endGameSummary(int count, int correct){
             System.out.println();
@@ -142,5 +141,6 @@ public class TriviaDriver {
             double percentage = (double) correct/ count;
             System.out.println("You answered " + (int)percentage * 100 + "% questions correctly.");
         }
+
     }
 

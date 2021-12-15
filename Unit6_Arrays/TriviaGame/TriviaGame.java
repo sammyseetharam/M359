@@ -23,6 +23,10 @@ public class TriviaGame{
         this.allQuestions = allQuestions;
     }
 
+    /**
+     * This method is intended to read in all the information from a text file to an array
+     * @return the filled array with a question object at every index
+     */
     public Question[] fillArray() throws FileNotFoundException {
         File questionData = new File("Trivia.txt");
         //Start reading the data
@@ -46,14 +50,5 @@ public class TriviaGame{
             problems[i] = myNewQuestion;
         }
         return(problems);
-    }
-
-    public static void printAllQuestions(Question[] allQuestions){
-        for (Question q:allQuestions) {
-            if(q != null){
-                System.out.println(q);
-                System.out.println();
-            }
-        }
     }
 }
