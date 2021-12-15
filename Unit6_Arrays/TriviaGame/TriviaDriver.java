@@ -7,6 +7,21 @@ import java.util.Scanner;
 
 public class TriviaDriver {
 
+    // Reset
+    public static final String RESET = "\033[0m";  // Text Reset
+
+    // Regular Colors
+    public static final String BLACK = "\033[0;30m";   // BLACK
+    public static final String RED = "\033[0;31m";     // RED
+    public static final String GREEN = "\033[0;32m";   // GREEN
+    public static final String YELLOW = "\033[0;33m";  // YELLOW
+    public static final String BLUE = "\033[0;34m";    // BLUE
+    public static final String PURPLE = "\033[0;35m";  // PURPLE
+    public static final String CYAN = "\033[0;36m";    // CYAN
+    public static final String WHITE = "\033[0;37m";   // WHITE
+
+
+    //Simple and efficient main method
     public static void main(String[] args) throws FileNotFoundException{
         welcomeToTheQuiz();
     }
@@ -85,18 +100,19 @@ public class TriviaDriver {
                     //Converts the integer
                     TriviaGame.totalPts += Integer.valueOf(ask.getPtVal());
                     System.out.println();
-                    System.out.println("Nice " + response.toUpperCase(Locale.ROOT) + " is right. That would be +" + ask.getPtVal() + " points.");
+                    String output = ("Nice " + response.toUpperCase(Locale.ROOT) + ", is right. That would be +" + ask.getPtVal() + " points.");
+                    System.out.println(GREEN + output);
                     System.out.println("****Current Score****");
                     System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
-                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far.");
+                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
                 }else{
                     TriviaGame.totalPts -= Integer.valueOf(ask.getPtVal());
                     TriviaGame.currStreak = 0;
                     System.out.println();
-                    System.out.println("Oh no, you got it wrong, " + right.toUpperCase() + " is the right answer" + " that's -" + ask.getPtVal() + " points.");
+                    System.out.println(RED + "Oh no, you got it wrong, " + right.toUpperCase() + " is the right answer" + " that's -" + ask.getPtVal() + " points.");
                     System.out.println("****Current Score****");
                     System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
-                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far.");
+                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
                 }
 
                 if(count == 12){
@@ -107,8 +123,14 @@ public class TriviaDriver {
 
                 System.out.println();
                 Scanner next = new Scanner(System.in);
-                System.out.println("Do you want to continue or end? (Yes or No)");
+                System.out.println("Do you want to continue or end? (Yes or End)");
                 String nextInput = next.nextLine();
+
+                //Catches the input when the user does not type yes or no
+                if(nextInput.equalsIgnoreCase("yes") != true && nextInput.equalsIgnoreCase("End") != true){
+                    System.out.println("Oh no, looks like you mis-typed, Retype your choice:");
+                    nextInput = next.nextLine();
+                }
 
                 if(nextInput.equalsIgnoreCase("yes")){
                     random = (int) (Math.random() * randomIncrement) + 0;
@@ -135,11 +157,11 @@ public class TriviaDriver {
      */
         public static void endGameSummary(int count, int correct){
             System.out.println();
-            System.out.println("****Final Score****");
+            System.out.println(YELLOW+ "****Final Score****");
             System.out.println("Total points earned: " + TriviaGame.totalPts + ".");
-            System.out.println("You answered " + correct + " questions correctly.");
+            System.out.println("You answered " + correct + "/" + count + " questions correctly.");
             double percentage = (double) correct/ count;
-            System.out.println("You answered " + (int)percentage * 100 + "% questions correctly.");
+            System.out.println("You answered " + (int)(percentage * 100) + "% questions correctly." + RESET);
         }
 
     }

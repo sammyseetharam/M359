@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -300,8 +298,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java</url>
-          <line>9</line>
-          <properties class="Unit6_Arrays.TriviaGame.TriviaDriver" method="main">
+          <line>10</line>
+          <properties class="Unit6_Arrays.TriviaGame.TriviaDriver">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="69" />
@@ -353,7 +351,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java</url>
-          <line>42</line>
+          <line>46</line>
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
