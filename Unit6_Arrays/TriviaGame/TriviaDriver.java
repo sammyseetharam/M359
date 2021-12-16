@@ -1,6 +1,5 @@
 package Unit6_Arrays.TriviaGame;
-import javax.swing.table.TableRowSorter;
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.util.Locale;
 import java.util.Scanner;
@@ -58,16 +57,16 @@ public class TriviaDriver {
         String wantToPlay = userInput.nextLine();
 
         if(wantToPlay.equalsIgnoreCase("y")){
-                gameInstructions();
-                System.out.println("Excellent, so here is your first question:");
-                System.out.println();
+            gameInstructions();
+            System.out.println("Excellent, so here is your first question:");
+            System.out.println();
 
-                TriviaGame myNewGame = new TriviaGame();
-                Question[] questions = myNewGame.getAllQuestions();
-                questionChecker(questions);
-            }else{
-                System.out.println("Okay then, have a nice day!");
-            }
+            TriviaGame myNewGame = new TriviaGame();
+            Question[] questions = myNewGame.getAllQuestions();
+            questionChecker(questions);
+        }else{
+            System.out.println("Okay then, have a nice day!");
+        }
     }
 
     /**
@@ -95,58 +94,58 @@ public class TriviaDriver {
             ask.setUsed(true);
 
             if(response.equalsIgnoreCase(right)) {
-                    correct++;
-                    TriviaGame.currStreak++;
-                    //Converts the integer
-                    TriviaGame.totalPts += Integer.valueOf(ask.getPtVal());
-                    System.out.println();
-                    String output = ("Nice " + response.toUpperCase(Locale.ROOT) + ", is right. That would be +" + ask.getPtVal() + " points.");
-                    System.out.println(GREEN + output);
-                    System.out.println("****Current Score****");
-                    System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
-                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
-                }else{
-                    TriviaGame.totalPts -= Integer.valueOf(ask.getPtVal());
-                    TriviaGame.currStreak = 0;
-                    System.out.println();
-                    System.out.println(RED + "Oh no, you got it wrong, " + right.toUpperCase() + " is the right answer" + " that's -" + ask.getPtVal() + " points.");
-                    System.out.println("****Current Score****");
-                    System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
-                    System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
-                }
-
-                if(count == 12){
-                    endGameSummary(count, correct);
-                    isDone = false;
-                    break;
-                }
-
+                correct++;
+                TriviaGame.currStreak++;
+                //Converts the integer
+                TriviaGame.totalPts += Integer.valueOf(ask.getPtVal());
                 System.out.println();
-                Scanner next = new Scanner(System.in);
-                System.out.println("Do you want to continue or end? (Yes or End)");
-                String nextInput = next.nextLine();
+                String output = ("Nice " + response.toUpperCase(Locale.ROOT) + ", is right. That would be +" + ask.getPtVal() + " points.");
+                System.out.println(GREEN + output);
+                System.out.println("****Current Score****");
+                System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
+                System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
+            }else{
+                TriviaGame.totalPts -= Integer.valueOf(ask.getPtVal());
+                TriviaGame.currStreak = 0;
+                System.out.println();
+                System.out.println(RED + "Oh no, you got it wrong, " + right.toUpperCase() + " is the right answer" + " that's -" + ask.getPtVal() + " points.");
+                System.out.println("****Current Score****");
+                System.out.println("You have earned: " + TriviaGame.totalPts + " so far.");
+                System.out.println("You have a " + TriviaGame.currStreak + " question answer streak so far." + RESET);
+            }
 
-                //Catches the input when the user does not type yes or no
-                if(nextInput.equalsIgnoreCase("yes") != true && nextInput.equalsIgnoreCase("End") != true){
-                    System.out.println("Oh no, looks like you mis-typed, Retype your choice:");
-                    nextInput = next.nextLine();
-                }
+            if(count == 12){
+                endGameSummary(count, correct);
+                isDone = false;
+                break;
+            }
 
-                if(nextInput.equalsIgnoreCase("yes")){
+            System.out.println();
+            Scanner next = new Scanner(System.in);
+            System.out.println("Do you want to continue or end? (Yes or End)");
+            String nextInput = next.nextLine();
+
+            //Catches the input when the user does not type yes or no
+            if(nextInput.equalsIgnoreCase("yes") != true && nextInput.equalsIgnoreCase("End") != true){
+                System.out.println("Oh no, looks like you mis-typed, Retype your choice:");
+                nextInput = next.nextLine();
+            }
+
+            if(nextInput.equalsIgnoreCase("yes")){
+                random = (int) (Math.random() * randomIncrement) + 0;
+                count++;
+                while(questions[random].isUsed() == true) {
                     random = (int) (Math.random() * randomIncrement) + 0;
-                    count++;
-                    while(questions[random].isUsed() == true) {
-                        random = (int) (Math.random() * randomIncrement) + 0;
-                    }
-                    // at this point, random is guaranteed to be good
-                }else{
-                    endGameSummary(count, correct);
-                    //do the restarting thing. 
-                    isDone = false;
-                    break;
                 }
+                // at this point, random is guaranteed to be good
+            }else{
+                endGameSummary(count, correct);
+                //do the restarting thing.
+                isDone = false;
+                break;
             }
         }
+    }
 
 
     /**
@@ -155,14 +154,14 @@ public class TriviaDriver {
      * @param correct
      * @return this doesn't return but instead prints out the total points earned, # of correctly answered questions, a final percentage.
      */
-        public static void endGameSummary(int count, int correct){
-            System.out.println();
-            System.out.println(YELLOW+ "****Final Score****");
-            System.out.println("Total points earned: " + TriviaGame.totalPts + ".");
-            System.out.println("You answered " + correct + "/" + count + " questions correctly.");
-            double percentage = (double) correct/ count;
-            System.out.println("You answered " + (int)(percentage * 100) + "% questions correctly." + RESET);
-        }
-
+    public static void endGameSummary(int count, int correct){
+        System.out.println();
+        System.out.println(YELLOW+ "****Final Score****");
+        System.out.println("Total points earned: " + TriviaGame.totalPts + ".");
+        System.out.println("You answered " + correct + "/" + count + " questions correctly.");
+        double percentage = (double) correct/ count;
+        System.out.println("You answered " + (int)(percentage * 100) + "% questions correctly." + RESET);
     }
+
+}
 

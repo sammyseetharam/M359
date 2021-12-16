@@ -1,7 +1,5 @@
 package Unit6_Arrays.TriviaGame;
 
-import Unit6_Arrays.CourseExample.Student;
-
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
