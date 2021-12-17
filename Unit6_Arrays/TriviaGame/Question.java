@@ -9,7 +9,7 @@ public class Question {
     private String correct;
     private String ptVal;
     private String placeHolder;
-
+    //made in order to keep track of if a question was used or not
     private boolean used;
 
 

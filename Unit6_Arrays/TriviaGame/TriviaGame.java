@@ -6,9 +6,11 @@ import java.io.FileNotFoundException;
 
 public class TriviaGame{
     public Question[] allQuestions;
+    //Static variables to keep track of points and streak.
     public static int totalPts = 0;
     public static int currStreak = 0;
 
+    //Creates the triviaGame object based of the fillArray method
     public TriviaGame() throws FileNotFoundException {
         allQuestions = fillArray();
     }
