@@ -22,7 +22,7 @@ public class Question {
         this.d = d;
         this.ptVal = ptVal;
         this.correct = correct;
-        this.used = false;
+        this.used = true;
     }
 
     public String getQuestionTxt() {
