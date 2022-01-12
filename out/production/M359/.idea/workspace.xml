@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit6_Arrays/TriviaGame/TriviaGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit6_Arrays/TriviaGame/TriviaGame.class" afterDir="false" />
-    </list>
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +48,7 @@
       <recent name="C:\Users\seetharam1725\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TriviaDriver">
+  <component name="RunManager" selected="Application.Notes_7_3_Examples">
     <configuration name="CourseTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.CourseTester" />
       <module name="M359" />
@@ -82,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScheduleReadingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.ScheduleReadingExample" />
+    <configuration name="Notes_7_3_Examples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.Notes_7_3_Examples" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit6_Arrays.CourseExample.*" />
+          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit5_Writing.PartnerLab.Tester" />
+    <configuration name="ScheduleReadingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.ScheduleReadingExample" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit5_Writing.PartnerLab.*" />
+          <option name="PATTERN" value="Unit6_Arrays.CourseExample.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Notes_7_3_Examples" />
         <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.ScheduleReadingExample" />
         <item itemvalue="Application.FileReadingExample" />
         <item itemvalue="Application.CourseTester" />
-        <item itemvalue="Application.Tester" />
       </list>
     </recent_temporary>
   </component>
