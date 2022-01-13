@@ -302,6 +302,22 @@
           </properties>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/Show.java</url>
+          <line>25</line>
+          <properties class="Unit7_ArrayList.TicketMasterLab.Show" method="getPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/Show.java</url>
+          <line>49</line>
+          <properties class="Unit7_ArrayList.TicketMasterLab.Show" method="getCity">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
           <line>2</line>
