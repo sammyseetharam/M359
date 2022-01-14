@@ -63,6 +63,10 @@ public class ArrayListExamples {
         System.out.println("Traverse Remove: " + list2);
 
 
+        removeEvensForward(vals);
+
+        System.out.println("New test" + vals);;
+
         // SO DOES THIS MEAN REMOVING ELEMENTS WORKS THE SAME REGARDLESS OF HOW YOU
         // TRAVERSE THE ARRAY (FORWARD OR BACKWARD)?
         // TALK TO YOUR NEIGHBOR!!!!

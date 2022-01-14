@@ -48,13 +48,13 @@
       <recent name="C:\Users\seetharam1725\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Notes_7_3_Examples">
-    <configuration name="CourseTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit6_Arrays.CourseExample.CourseTester" />
+  <component name="RunManager" selected="Application.ArrayListExamples">
+    <configuration name="ArrayListExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.ArrayListExamples" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Unit6_Arrays.CourseExample.*" />
+          <option name="PATTERN" value="Unit7_ArrayList.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayListExamples" />
         <item itemvalue="Application.Notes_7_3_Examples" />
         <item itemvalue="Application.TriviaDriver" />
         <item itemvalue="Application.ScheduleReadingExample" />
         <item itemvalue="Application.FileReadingExample" />
-        <item itemvalue="Application.CourseTester" />
       </list>
     </recent_temporary>
   </component>
@@ -293,6 +293,30 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/ArrayListExamples.java</url>
+          <line>4</line>
+          <properties class="Unit7_ArrayList.examples.ArrayListExamples" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/Show.java</url>
+          <line>25</line>
+          <properties class="Unit7_ArrayList.TicketMasterLab.Show" method="getPrice">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/Show.java</url>
+          <line>49</line>
+          <properties class="Unit7_ArrayList.TicketMasterLab.Show" method="getCity">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
