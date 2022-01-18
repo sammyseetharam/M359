@@ -54,9 +54,20 @@ public class TicketMaster {
         Scanner ask = new Scanner(System.in);
         System.out.println("Which performer would you like to see?");
         String output = ask.nextLine();
+    }
 
+    public void sortByPrice(){
+        ArrayList<Double> sortUp= new ArrayList<Double>();
+
+        for(int i = 0; i < list.size() - 1; i++){
+            if(list.get(i) ){
+
+            }
+        }
 
     }
+
+
 
     public String toString(){
         String result = "";
