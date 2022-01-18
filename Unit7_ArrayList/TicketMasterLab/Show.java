@@ -57,7 +57,7 @@ public class Show {
 
     public String toString(){
         String row = date;
-        row += "\t" + price + "\t" + quantity + "\t" + performer + "\t" + "\t" + city;
+        row += "\t" + price + "\t" + quantity + "\t" + performer + "\t" + "\t" + city + "\n";
         return row;
     }
 }

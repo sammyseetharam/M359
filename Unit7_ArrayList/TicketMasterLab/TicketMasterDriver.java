@@ -7,5 +7,7 @@ public class TicketMasterDriver {
         TicketMaster master = new TicketMaster();
         master.fillArrayList();
         System.out.println(master);
+        System.out.println();
+        master.citySearch();
     }
 }

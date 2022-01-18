@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class TicketMaster {
-    public ArrayList<Show> list;
+    private ArrayList<Show> list;
 
     public TicketMaster() {
         this.list = new ArrayList<Show>();
@@ -33,11 +33,35 @@ public class TicketMaster {
         }
     }
 
+    public void citySearch(){
+        ArrayList<Show> displayVenue = new ArrayList<>();
+
+        Scanner askSearch = new Scanner(System.in);
+        System.out.println("City Search: ");
+        String askInput = askSearch.nextLine();
+
+        for(int i = 0; i  < list.size(); i++){
+            if((list.get(i).getCity()).equalsIgnoreCase(askInput)){
+                displayVenue.add(list.get(i));
+            }
+        }
+        System.out.println(displayVenue.toString());
+    }
+
+    public void performerSort(){
+        ArrayList<Show> displayArtist = new ArrayList<>();
+
+        Scanner ask = new Scanner(System.in);
+        System.out.println("Which performer would you like to see?");
+        String output = ask.nextLine();
+
+
+    }
+
     public String toString(){
         String result = "";
-
         for (Show b: list) {
-            result += b + "\n";
+            result += b;
         }
         return result;
     }
