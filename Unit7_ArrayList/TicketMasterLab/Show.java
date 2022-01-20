@@ -56,8 +56,20 @@ public class Show {
     }
 
     public String toString(){
-        String row = date;
-        row += "\t" + price + "\t" + quantity + "\t" + performer + "\t" + "\t" + city + "\n";
-        return row;
+        String row = "";
+        row += date + "\t$" + price + "\t\t" + quantity + "\t\t" + performer;
+        if(performer.length() <= 11 && performer.length() >= 7){
+            row += "\t\t\t\t" + city;
+        }
+        else if(performer.length() <= 15 && performer.length() >= 12){
+            row += "\t\t\t" + city;
+        }
+        else if(performer.length() >= 16){
+            row += "\t\t" + city;
+        }
+        else{
+            row += "\t\t\t\t\t" + city;
+        }
+        return row + "\n";
     }
 }

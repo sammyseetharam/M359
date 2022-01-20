@@ -66,6 +66,11 @@ public class Examples_7_4 {
         System.out.println("Increase: " + isIncreasing(numsNoRepeats));
         System.out.println("Increase: " + isIncreasing(orderedNums));
         System.out.println("duplicate: " + hasDuplicates(names));
+        System.out.println("Reverse: " + revArrayList(names));
+
+        shiftLeft(names);
+        System.out.println(names);
+
     }
 
     /**
@@ -167,8 +172,14 @@ public class Examples_7_4 {
      * @return new ArrayList of Strings in reverse order
      */
     public static ArrayList<String> revArrayList(ArrayList<String> list) {
-        return list;
+        ArrayList<String> rev = new ArrayList<>();
+
+        for (int i = list.size() - 1; i >= 0; i--) {
+            rev.add(list.get(i));
+        }
+        return rev;
     }
+
 
     /**
      * Shifts all values in list to the Left and the value at index 0 is moved
@@ -176,7 +187,13 @@ public class Examples_7_4 {
      * @param list
      */
     public static void shiftLeft(ArrayList<String> list) {
+        String special = list.get(list.size()-1);
+        list.set(list.size() - 1, list.get(0));
 
+        for (int i = 0; i < list.size() -1; i++) {
+            list.set(i, list.get(i + 1));
+        }
+        list.set(list.size()-2, special);
     }
 
 

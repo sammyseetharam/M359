@@ -45,7 +45,7 @@ public class TicketMaster {
                 displayVenue.add(list.get(i));
             }
         }
-        System.out.println(displayVenue.toString());
+        System.out.println(displayVenue);
     }
 
     public void performerSort(){
