@@ -37,7 +37,7 @@ public class TicketMaster {
         ArrayList<Show> displayVenue = new ArrayList<>();
 
         Scanner askSearch = new Scanner(System.in);
-        System.out.println("City Search: ");
+        System.out.println("Choose a city: ");
         String askInput = askSearch.nextLine();
 
         for(int i = 0; i  < list.size(); i++){
