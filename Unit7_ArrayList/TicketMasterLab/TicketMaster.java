@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class TicketMaster {
-    private ArrayList<Show> list;
+    private static ArrayList<Show> list;
 
     public TicketMaster() {
         this.list = new ArrayList<Show>();
@@ -33,7 +33,7 @@ public class TicketMaster {
         }
     }
 
-    public void citySearch(){
+    public static ArrayList<Show> citySearch(){
         ArrayList<Show> displayVenue = new ArrayList<>();
 
         Scanner askSearch = new Scanner(System.in);
@@ -45,7 +45,7 @@ public class TicketMaster {
                 displayVenue.add(list.get(i));
             }
         }
-        System.out.println(displayVenue);
+        return displayVenue;
     }
 
     public void performerSort(){

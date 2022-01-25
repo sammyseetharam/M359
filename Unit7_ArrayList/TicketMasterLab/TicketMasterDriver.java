@@ -10,6 +10,7 @@ public class TicketMasterDriver {
     }
 
     public static void choices() {
+        System.out.println();
         System.out.println("Pick a filter: ");
         System.out.println("\t" + "1. Sort A-Z");
         System.out.println("\t" + "2. Sort Z-A");
@@ -20,25 +21,71 @@ public class TicketMasterDriver {
     }
 
     public static void userFlow() throws FileNotFoundException{
+        System.out.println("******** Welcome to the Official Ticket Master Program ********");
+        System.out.println();
         TicketMaster master = new TicketMaster();
         master.fillArrayList();
-        System.out.println("********Welcome to the Official Ticket Master Program********");
-        System.out.println();
         choices();
         System.out.println();
 
+        System.out.print("Pick an option: ");
+        int input = 0;
         Scanner userInput = new Scanner(System.in);
-        int input = 6;
-        boolean isDone = true;
 
-        while (isDone == true) {
-            System.out.print("Pick an option: ");
+        while (input < 1 || input > 6){
             try {
                 input = userInput.nextInt();
-                isDone = false;
-                if (input < 1 || input > 6) {
-                    System.out.println("Your input was out of range. Please try again.");
-                    isDone = true;
+
+                if(input < 1 || input > 6){
+                    System.out.println("Your input was out of range. Please Try again: ");
+                    choices();
+                    input = userInput.nextInt();
+                }
+                if (input >= 1 || input <= 6) {
+                    //more to be added
+                    if(input == 1){
+                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        choices();
+                        input = 0;
+                    }
+
+                    if(input == 2){
+                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        choices();
+                        input = 0;
+                    }
+
+                    if(input == 3){
+                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        choices();
+                        input = 0;
+                    }
+
+                    if(input == 4){
+                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        choices();
+                        input = 0;
+                    }
+
+                    if (input == 5) {
+                        System.out.println("**** These are all of our available tickets in ALL cities ****");
+                        System.out.println();
+                        System.out.println(master);
+                        System.out.println(master.citySearch());
+                        choices();
+                        input = 0;
+                    }
+
+                    if(input == 6){
+                        System.out.println("Have a nice day!");
+                        choices();
+                        break;
+                    }
+                }else{
+                    while(input < 1 || input > 6){
+                        System.out.println("Your input was invalid. Try again: ");
+                        userInput.nextInt();
+                    }
                 }
             } catch (InputMismatchException e) {
                 System.out.println("You didn't type an integer. Please try again.");
@@ -46,34 +93,6 @@ public class TicketMasterDriver {
             }
         }
 
-        //more to be added
-        if(input == 1){
-            System.out.println("Sorry, we are under maintenance for this feature :(");
-        }
-
-        if(input == 2){
-            System.out.println("Sorry, we are under maintenance for this feature :(");
-        }
-
-        if(input == 3){
-            System.out.println("Sorry, we are under maintenance for this feature :(");
-        }
-
-        if(input == 4){
-            System.out.println("Sorry, we are under maintenance for this feature :(");
-        }
-
-        if (input == 5) {
-            System.out.println("**** These are all of our available tickets in ALL cities ****");
-            System.out.println();
-            System.out.println(master);
-            master.citySearch();
-
-        }
-
-        if(input == 6){
-            System.out.println("Have a nice day!");
-        }
     }
 
 }
