@@ -1,5 +1,7 @@
 package Unit7_ArrayList.TicketMasterLab;
 
+import jdk.nashorn.internal.runtime.SharedPropertyMap;
+
 import java.util.ArrayList;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -66,6 +68,25 @@ public class TicketMaster {
         }
 
    // }
+
+    public static void selectionSort(ArrayList<Show> list){
+        for (int i = 0; i < list.size() - 1; i++) {
+            int minIndex = i;
+
+            for(int j = i + 1; j < list.size(); j++){
+
+                if(list.get(j).getPerformer().indexOf(list.get(j).getPerformer().substring(0,1))
+                        < list.get(minIndex).getPerformer().indexOf(list.get(minIndex).getPerformer().substring(0,1))){
+                    minIndex = j;
+                }
+            }
+
+            //swap values at i and min index
+            Integer temp = list.get(i);
+            list.set(i, list.get(minIndex));
+            list.set(minIndex, temp);
+        }
+    }
 
 
 

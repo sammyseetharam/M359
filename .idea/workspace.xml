@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/ScrambleWordFRQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMasterDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMasterDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit7_ArrayList/TicketMasterLab/TicketMaster.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit7_ArrayList/TicketMasterLab/TicketMaster.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/M359/Unit7_ArrayList/TicketMasterLab/TicketMasterDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/Unit7_ArrayList/TicketMasterLab/TicketMasterDriver.class" afterDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +54,7 @@
       <recent name="C:\Users\seetharam1725\Documents\GitHub\M359" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TicketMasterDriver">
+  <component name="RunManager" selected="Application.selectionSort">
     <configuration name="BinarySearchExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.BinarySearchExample" />
       <module name="M359" />
@@ -108,8 +107,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TryCatchBlock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.TryCatchBlock" />
+    <configuration name="selectionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit7_ArrayList.examples.selectionSort" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
@@ -123,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.selectionSort" />
         <item itemvalue="Application.TicketMasterDriver" />
         <item itemvalue="Application.BinarySearchExample" />
         <item itemvalue="Application.Examples_7_4" />
         <item itemvalue="Application.Notes_7_4_Examples" />
-        <item itemvalue="Application.TryCatchBlock" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +326,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java</url>
-          <line>14</line>
+          <line>16</line>
           <properties class="Unit7_ArrayList.TicketMasterLab.TicketMaster" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>
@@ -409,7 +408,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java</url>
-          <line>11</line>
+          <line>13</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -421,6 +420,11 @@
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/BinarySearchExample.java</url>
           <line>6</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="97" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.InputMismatchException" package="java.util" />
