@@ -48,6 +48,23 @@ public class TicketMaster {
         return displayVenue;
     }
 
+    public void selectionSort(){
+        for (int i = 0; i < list.size() - 1; i++) {
+            int minIndex = i;
+            for(int j = i + 1; j < list.size(); j++){
+                if(list.get(j).getPerformer().compareTo(list.get(minIndex).getPerformer()) < 0){
+                    minIndex = j;
+                }
+            }
+            //swap values at i and min index
+            Show temp = list.get(i);
+            list.set(i, list.get(minIndex));
+            list.set(minIndex, temp);
+
+        }
+    }
+
+
     public void performerSort(){
         ArrayList<Show> displayArtist = new ArrayList<>();
 
@@ -67,24 +84,7 @@ public class TicketMaster {
 
    // }
 
-    public static void selectionSort(ArrayList<Show> list){
-        for (int i = 0; i < list.size() - 1; i++) {
-            int minIndex = i;
 
-            for(int j = i + 1; j < list.size(); j++){
-
-                if(list.get(j).getPerformer().indexOf(list.get(j).getPerformer().substring(0,1))
-                        < list.get(minIndex).getPerformer().indexOf(list.get(minIndex).getPerformer().substring(0,1))){
-                    minIndex = j;
-                }
-            }
-
-            //swap values at i and min index
-            //Integer temp = list.get(i);
-            list.set(i, list.get(minIndex));
-            //list.set(minIndex, temp);
-        }
-    }
 
 
 
