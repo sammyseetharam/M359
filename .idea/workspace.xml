@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/ScrambleWordFRQ.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/M359/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
@@ -327,7 +326,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/TicketMasterLab/TicketMaster.java</url>
           <line>16</line>
-          <properties class="Unit7_ArrayList.TicketMasterLab.TicketMaster" method="&lt;init&gt;">
+          <properties class="Unit7_ArrayList.TicketMasterLab.TicketMaster">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="66" />
@@ -355,6 +354,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java</url>
+          <line>6</line>
+          <properties class="Unit7_ArrayList.examples.selectionSort" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
@@ -423,8 +430,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Unit7_ArrayList/examples/selectionSort.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="97" />
+          <line>14</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.InputMismatchException" package="java.util" />

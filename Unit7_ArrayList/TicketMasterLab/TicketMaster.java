@@ -1,7 +1,5 @@
 package Unit7_ArrayList.TicketMasterLab;
 
-import jdk.nashorn.internal.runtime.SharedPropertyMap;
-
 import java.util.ArrayList;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -82,9 +80,9 @@ public class TicketMaster {
             }
 
             //swap values at i and min index
-            Integer temp = list.get(i);
+            //Integer temp = list.get(i);
             list.set(i, list.get(minIndex));
-            list.set(minIndex, temp);
+            //list.set(minIndex, temp);
         }
     }
 
