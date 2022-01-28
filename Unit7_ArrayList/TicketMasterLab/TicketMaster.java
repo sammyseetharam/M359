@@ -43,12 +43,15 @@ public class TicketMaster {
         for(int i = 0; i  < list.size(); i++){
             if((list.get(i).getCity()).equalsIgnoreCase(askInput)){
                 displayVenue.add(list.get(i));
+            }else{
+                System.out.println("There are no cities available there, sorry :(");
+                break;
             }
         }
         return displayVenue;
     }
 
-    public void selectionSort(){
+    public void selectionSortA_Z(){
         for (int i = 0; i < list.size() - 1; i++) {
             int minIndex = i;
             for(int j = i + 1; j < list.size(); j++){
@@ -63,6 +66,37 @@ public class TicketMaster {
 
         }
     }
+
+    public void selectionSortZ_A(){
+        for (int i = 0; i < list.size() - 1; i++) {
+            int minIndex = i;
+            for(int j = i + 1; j < list.size(); j++){
+                if(list.get(j).getPerformer().compareTo(list.get(minIndex).getPerformer()) > 0){
+                    minIndex = j;
+                }
+            }
+            //swap values at i and min index
+            Show temp = list.get(i);
+            list.set(i, list.get(minIndex));
+            list.set(minIndex, temp);
+        }
+    }
+
+    public void insertionSortL_H(){
+        for (int j = 1; j < list.size(); j++)
+        {
+            Show temp = list.get(j);
+            int possibleIndex = j;
+
+            while (possibleIndex > 0 && temp.getPrice() < list.get(j-1).getPrice())
+            {
+                list.set(possibleIndex,list.get(possibleIndex -1));
+                possibleIndex--;
+            }
+            list.set(possibleIndex,temp);
+        }
+    }
+
 
 
     public void performerSort(){

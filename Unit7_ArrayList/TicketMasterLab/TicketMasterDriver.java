@@ -45,20 +45,22 @@ public class TicketMasterDriver {
                 if (input >= 1 || input <= 6) {
                     //more to be added
                     if(input == 1){
-                        master.selectionSort();
+                        master.selectionSortA_Z();
                         System.out.println(master);
                         choices();
                         input = 0;
                     }
 
                     if(input == 2){
-                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        master.selectionSortZ_A();
+                        System.out.println(master);
                         choices();
                         input = 0;
                     }
 
                     if(input == 3){
-                        System.out.println("Sorry, we are under maintenance for this feature :(");
+                        master.insertionSortL_H();
+                        System.out.println(master);
                         choices();
                         input = 0;
                     }
