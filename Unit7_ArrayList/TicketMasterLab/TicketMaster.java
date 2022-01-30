@@ -35,7 +35,7 @@ public class TicketMaster {
 
     public static ArrayList<Show> citySearch(){
         ArrayList<Show> displayVenue = new ArrayList<>();
-
+        int count = 0;
         Scanner askSearch = new Scanner(System.in);
         System.out.println("Choose a city: ");
         String askInput = askSearch.nextLine();
@@ -43,12 +43,15 @@ public class TicketMaster {
         for(int i = 0; i  < list.size(); i++){
             if((list.get(i).getCity()).equalsIgnoreCase(askInput)){
                 displayVenue.add(list.get(i));
-            }else{
-                System.out.println("There are no cities available there, sorry :(");
-                break;
+                count ++;
             }
         }
-        return displayVenue;
+        if(count != 0) {
+            return displayVenue;
+        }else{
+            System.out.println("There were no cities in the area :(");
+            return displayVenue;
+        }
     }
 
     public void selectionSortA_Z(){
@@ -97,26 +100,6 @@ public class TicketMaster {
         }
     }
 
-
-
-    public void performerSort(){
-        ArrayList<Show> displayArtist = new ArrayList<>();
-
-        Scanner ask = new Scanner(System.in);
-        System.out.println("Which performer would you like to see?");
-        String output = ask.nextLine();
-    }
-
-    public void sortByPrice(){
-        ArrayList<Double> sortUp= new ArrayList<Double>();
-
-        for(int i = 0; i < list.size() - 1; i++){
-            //if(list.get(i) ){
-
-            }
-        }
-
-   // }
 
 
 

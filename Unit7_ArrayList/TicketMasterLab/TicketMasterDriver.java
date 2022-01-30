@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class TicketMasterDriver {
     public static void main(String[] args) throws FileNotFoundException {
-       userFlow();
+        userFlow();
     }
 
     public static void choices() {
@@ -21,7 +21,7 @@ public class TicketMasterDriver {
         System.out.println("\t" + "6. End");
     }
 
-    public static void userFlow() throws FileNotFoundException{
+    public static void userFlow() throws FileNotFoundException {
         System.out.println("******** Welcome to the Official Ticket Master Program ********");
         System.out.println();
         TicketMaster master = new TicketMaster();
@@ -29,74 +29,69 @@ public class TicketMasterDriver {
         choices();
         System.out.println();
 
-        System.out.print("Pick an option: ");
+
         int input = 0;
         Scanner userInput = new Scanner(System.in);
+        System.out.print("Pick an option: ");
+        boolean isDone = true;
 
-        while (input < 1 || input > 6){
-            try {
-                input = userInput.nextInt();
+        try {
 
-                if(input < 1 || input > 6){
-                    System.out.println("Your input was out of range. Please Try again: ");
+            input = userInput.nextInt();
+            while (isDone == true){
+
+                if (input < 1 || input > 6) {
+                    System.out.println("Your input was a number but out of range. Please Try again: ");
                     choices();
                     input = userInput.nextInt();
                 }
-                if (input >= 1 || input <= 6) {
-                    //more to be added
-                    if(input == 1){
-                        master.selectionSortA_Z();
-                        System.out.println(master);
-                        choices();
-                        input = 0;
-                    }
-
-                    if(input == 2){
-                        master.selectionSortZ_A();
-                        System.out.println(master);
-                        choices();
-                        input = 0;
-                    }
-
-                    if(input == 3){
-                        master.insertionSortL_H();
-                        System.out.println(master);
-                        choices();
-                        input = 0;
-                    }
-
-                    if(input == 4){
-                        System.out.println("Sorry, we are under maintenance for this feature :(");
-                        choices();
-                        input = 0;
-                    }
-
-                    if (input == 5) {
-                        System.out.println("**** These are all of our available tickets in ALL cities ****");
-                        System.out.println();
-                        System.out.println(master);
-                        System.out.println(master.citySearch());
-                        choices();
-                        input = 0;
-                    }
-
-                    if(input == 6){
-                        System.out.println("Have a nice day!");
-                        choices();
-                        break;
-                    }
-                }else{
-                    while(input < 1 || input > 6){
-                        System.out.println("Your input was invalid. Try again: ");
-                        userInput.nextInt();
-                    }
+                if (input == 1) {
+                    master.selectionSortA_Z();
+                    System.out.println(master);
+                    choices();
+                    input = userInput.nextInt();
                 }
-            } catch (InputMismatchException e) {
-                System.out.println("You didn't type an integer. Please try again.");
-                userInput.next();
+
+                if (input == 2) {
+                    master.selectionSortZ_A();
+                    System.out.println(master);
+                    choices();
+                    input = userInput.nextInt();
+                }
+
+                if (input == 3) {
+                    master.insertionSortL_H();
+                    System.out.println(master);
+                    choices();
+                    input = userInput.nextInt();
+                }
+
+                if (input == 4) {
+                    System.out.println("Sorry, we are under maintenance for this feature :(");
+                    choices();
+                    input = userInput.nextInt();
+                }
+
+                if (input == 5) {
+                    System.out.println("**** These are all of our available tickets in ALL cities ****");
+                    System.out.println();
+                    System.out.println(master);
+                    System.out.println(master.citySearch());
+                    choices();
+                    input = userInput.nextInt();
+                }
+
+                if (input == 6) {
+                    System.out.println("Have a nice day!");
+                    isDone = false;
+                }
             }
+        } catch (InputMismatchException e) {
+            System.out.println("You didn't type an integer. Please try again.");
+            input = userInput.nextInt();
         }
-
     }
-
 }
+
+
+
