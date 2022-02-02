@@ -35,60 +35,66 @@ public class TicketMasterDriver {
         System.out.print("Pick an option: ");
         boolean isDone = true;
 
-        try {
+        while (isDone) {
+            try {
 
-            input = userInput.nextInt();
-            while (isDone == true){
+                input = userInput.nextInt();
+                while (isDone == true) {
 
-                if (input < 1 || input > 6) {
-                    System.out.println("Your input was a number but out of range. Please Try again: ");
-                    choices();
-                    input = userInput.nextInt();
-                }
-                if (input == 1) {
-                    master.selectionSortA_Z();
-                    System.out.println(master);
-                    choices();
-                    input = userInput.nextInt();
-                }
+                    if (input < 1 || input > 6) {
+                        System.out.println("Your input was a number but out of range. Please Try again: ");
+                        choices();
+                        input = userInput.nextInt();
+                    }
+                    if (input == 1) {
+                        master.selectionSortA_Z();
+                        System.out.println(master);
+                        choices();
+                        input = userInput.nextInt();
+                    }
 
-                if (input == 2) {
-                    master.selectionSortZ_A();
-                    System.out.println(master);
-                    choices();
-                    input = userInput.nextInt();
-                }
+                    if (input == 2) {
+                        master.selectionSortZ_A();
+                        System.out.println(master);
+                        choices();
+                        input = userInput.nextInt();
+                    }
 
-                if (input == 3) {
-                    master.insertionSortL_H();
-                    System.out.println(master);
-                    choices();
-                    input = userInput.nextInt();
-                }
+                    if (input == 3) {
+                        master.insertionSortH_L();
+                        System.out.println(master);
+                        choices();
+                        input = userInput.nextInt();
+                    }
 
-                if (input == 4) {
-                    System.out.println("Sorry, we are under maintenance for this feature :(");
-                    choices();
-                    input = userInput.nextInt();
-                }
+                    if (input == 4) {
+                        master.insertionSortL_H();
+                        System.out.println(master);
+                        choices();
+                        input = userInput.nextInt();
+                    }
 
-                if (input == 5) {
-                    System.out.println("**** These are all of our available tickets in ALL cities ****");
-                    System.out.println();
-                    System.out.println(master);
-                    System.out.println(master.citySearch());
-                    choices();
-                    input = userInput.nextInt();
-                }
+                    if (input == 5) {
+                        System.out.println("**** These are all of our available tickets in ALL cities ****");
+                        System.out.println();
+                        System.out.println(master);
+                        System.out.println("Choose a city: ");
+                        String askInput = userInput.nextLine();
+                        askInput = userInput.nextLine(); 
+                        System.out.println(master.citySearch(askInput));
+                        choices();
+                        input = userInput.nextInt();
+                    }
 
-                if (input == 6) {
-                    System.out.println("Have a nice day!");
-                    isDone = false;
+                    if (input == 6) {
+                        System.out.println("Have a nice day!");
+                        isDone = false;
+                    }
                 }
+            } catch (InputMismatchException e) {
+                System.out.println("You didn't type an integer. Please try again.");
+                userInput.next();
             }
-        } catch (InputMismatchException e) {
-            System.out.println("You didn't type an integer. Please try again.");
-            input = userInput.nextInt();
         }
     }
 }

@@ -33,15 +33,12 @@ public class TicketMaster {
         }
     }
 
-    public static ArrayList<Show> citySearch(){
+    public static ArrayList<Show> citySearch(String choice){
         ArrayList<Show> displayVenue = new ArrayList<>();
         int count = 0;
-        Scanner askSearch = new Scanner(System.in);
-        System.out.println("Choose a city: ");
-        String askInput = askSearch.nextLine();
 
         for(int i = 0; i  < list.size(); i++){
-            if((list.get(i).getCity()).equalsIgnoreCase(askInput)){
+            if((list.get(i).getCity()).equalsIgnoreCase(choice)){
                 displayVenue.add(list.get(i));
                 count ++;
             }
@@ -85,21 +82,35 @@ public class TicketMaster {
         }
     }
 
-    public void insertionSortL_H(){
-        for (int j = 1; j < list.size(); j++)
-        {
-            Show temp = list.get(j);
-            int possibleIndex = j;
+    public void insertionSortH_L(){
+        for (int i = 0; i < list.size(); i++) {
+            Show valueToSort = list.get(i);
 
-            while (possibleIndex > 0 && temp.getPrice() < list.get(j-1).getPrice())
-            {
-                list.set(possibleIndex,list.get(possibleIndex -1));
-                possibleIndex--;
+            int pos = i;
+            while (pos > 0 && list.get(pos - 1).getPrice() > valueToSort.getPrice()){
+                list.set(pos, list.get(pos - 1)); //shift right
+                pos--; //be able to answer how many times does this statement run?
             }
-            list.set(possibleIndex,temp);
+
+            // means we found the correct position (pos) for valueToInsert
+            list.set(pos, valueToSort);
         }
     }
 
+    public void insertionSortL_H(){
+        for (int i = 0; i < list.size(); i++) {
+            Show valueToSort = list.get(i);
+
+            int pos = i;
+            while (pos > 0 && list.get(pos - 1).getPrice() < valueToSort.getPrice()){
+                list.set(pos, list.get(pos - 1)); //shift right
+                pos--; //be able to answer how many times does this statement run?
+            }
+
+            // means we found the correct position (pos) for valueToInsert
+            list.set(pos, valueToSort);
+        }
+    }
 
 
 
