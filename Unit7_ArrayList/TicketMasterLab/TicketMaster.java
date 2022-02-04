@@ -16,6 +16,10 @@ public class TicketMaster {
         this.list = list;
     }
 
+    /**
+     * This method is meant to fill the TicketMaster arrayList.
+     * @return It doesn't return anything, it just fills in all the arrayList data.
+     */
     public void fillArrayList() throws FileNotFoundException {
         File showData = new File("showData.txt");
         Scanner readMe = new Scanner(showData);
@@ -33,6 +37,11 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * This method is meant to act as a search tool for the program.
+     * @param choice
+     * @return It returns an arrayList of the the cities the user searched for and none, if the typed in an invalid venue
+     */
     public static ArrayList<Show> citySearch(String choice){
         ArrayList<Show> displayVenue = new ArrayList<>();
         int count = 0;
@@ -51,6 +60,10 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * This method uses the selection sort to swap values to make the list organized from the A to Z
+     * @return It doesn't return anything, just prints the formatted array
+     */
     public void selectionSortA_Z(){
         for (int i = 0; i < list.size() - 1; i++) {
             int minIndex = i;
@@ -67,6 +80,10 @@ public class TicketMaster {
         }
     }
 
+    /**
+     * This method uses the selection sort to swap values to make the list organized from the Z to A
+     * @return It doesn't return anything, just prints the formatted array
+     */
     public void selectionSortZ_A(){
         for (int i = 0; i < list.size() - 1; i++) {
             int minIndex = i;
@@ -81,7 +98,10 @@ public class TicketMaster {
             list.set(minIndex, temp);
         }
     }
-
+    /**
+     * This method uses the insertion sort for to swap values to make the list organized from the high price to low
+     * @return It doesn't return anything, just prints the formatted array
+     */
     public void insertionSortH_L(){
         for (int i = 0; i < list.size(); i++) {
             Show valueToSort = list.get(i);
@@ -96,7 +116,10 @@ public class TicketMaster {
             list.set(pos, valueToSort);
         }
     }
-
+    /**
+     * This method uses the insertion sort for to swap values to make the list organized from the low price to high
+     * @return It doesn't return anything, just prints the formatted array
+     */
     public void insertionSortL_H(){
         for (int i = 0; i < list.size(); i++) {
             Show valueToSort = list.get(i);
@@ -115,7 +138,10 @@ public class TicketMaster {
 
 
 
-
+    /**
+     * This method returns the arraylist of rows in the concert
+     * @return this function returns out all of the rows in a concert
+     */
     public String toString(){
         String result = "";
         for (Show b: list) {

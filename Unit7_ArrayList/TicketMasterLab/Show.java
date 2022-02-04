@@ -55,6 +55,10 @@ public class Show {
         this.city = city;
     }
 
+    /**
+     * This method is a toString()
+     * @return It returns a singular row formatted with spaces and padding
+     */
     public String toString(){
         String row = "";
         row += date + "\t$" + price + "\t\t" + quantity + "\t\t" + performer;

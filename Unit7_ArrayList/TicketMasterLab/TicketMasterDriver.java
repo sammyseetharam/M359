@@ -9,7 +9,10 @@ public class TicketMasterDriver {
     public static void main(String[] args) throws FileNotFoundException {
         userFlow();
     }
-
+    /**
+     * This method prints out all of the choices the user has to choose from
+     * @return It doesn't return anything, prints choices
+     */
     public static void choices() {
         System.out.println();
         System.out.println("Pick a filter: ");
@@ -21,6 +24,10 @@ public class TicketMasterDriver {
         System.out.println("\t" + "6. End");
     }
 
+    /**
+     * This method controls the functionality of the program and selecting choices
+     * @return It doesn't return anything, prints users requests
+     */
     public static void userFlow() throws FileNotFoundException {
         System.out.println("******** Welcome to the Official Ticket Master Program ********");
         System.out.println();
