@@ -44,7 +44,6 @@ public class TicketMasterDriver {
 
         while (isDone) {
             try {
-
                 input = userInput.nextInt();
                 while (isDone == true) {
 
