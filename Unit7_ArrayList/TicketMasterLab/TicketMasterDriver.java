@@ -48,7 +48,7 @@ public class TicketMasterDriver {
                 while (isDone == true) {
 
                     if (input < 1 || input > 6) {
-                        System.out.println("Your input was a number but out of range. Please Try again: ");
+                        System.out.println("Your input was out of bounds, please Try again: ");
                         choices();
                         input = userInput.nextInt();
                     }
@@ -99,6 +99,7 @@ public class TicketMasterDriver {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("You didn't type an integer. Please try again.");
+                choices();
                 userInput.next();
             }
         }
