@@ -68,8 +68,13 @@ public class Examples_7_4 {
         System.out.println("duplicate: " + hasDuplicates(names));
         System.out.println("Reverse: " + revArrayList(names));
 
+        System.out.println("Before: " + names);
         shiftLeft(names);
-        System.out.println(names);
+        System.out.println("After: " + names);
+
+        System.out.println("Before: " + names);
+        shiftRight(names);
+        System.out.println("After: " + names);
 
     }
 
@@ -196,5 +201,22 @@ public class Examples_7_4 {
         list.set(list.size()-2, special);
     }
 
+
+    public static void shiftRight(ArrayList<String> list){
+            //make temp variable to hold last element
+            String temp = list.get(list.size()-1);
+
+            //make a loop to run through the array list
+            for(int i = list.size()-1; i > 0; i--)
+            {
+                //set the last element to the value of the 2nd to last element
+                list.set(i,list.get(i-1));
+
+                //set the first element to be the last element
+                list.set(0, temp);
+            }
+
+
+    }
 
 }
