@@ -1,7 +1,6 @@
 package Unit7_ArrayList.TicketMasterLab;
 
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
