@@ -23,4 +23,8 @@ public class Drink extends MenuItem{
         }
     }
 
+    public String toString(){
+        return "this is a drink name: " + this.getName();
+    }
+
 }

@@ -385,6 +385,14 @@
           </properties>
           <option name="timeStamp" value="122" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Unit9_Inheritance/Notes/MenuTester.java</url>
+          <line>3</line>
+          <properties class="Unit9_Inheritance.Notes.MenuTester" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$USER_HOME$/Downloads/ChevyDriverStudent.java</url>
           <line>2</line>
