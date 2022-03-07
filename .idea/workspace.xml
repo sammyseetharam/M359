@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/Shapes/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/Shapes/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/Shapes/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Unit9_Inheritance/Shapes/Square.java" afterDir="false" />
-    </list>
+    <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="" />
     <list id="51ad84bf-58eb-467b-b32d-0e3b0966ad9b" name="Changes by debnath8172" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +54,20 @@
       <recent name="Unit9_Inheritance.Shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShapeTester">
+  <component name="RunManager" selected="Application.AnimalTester">
+    <configuration name="AnimalTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit9_Inheritance.examples.AnimalTester" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit9_Inheritance.examples.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DumbDenna_8_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit8_2DArray.examples.DumbDenna_8_2" />
       <module name="M359" />
@@ -99,19 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Notes_8_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit8_2DArray.examples.Notes_8_1" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit8_2DArray.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ShapeTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit9_Inheritance.Shapes.ShapeTester" />
       <module name="M359" />
@@ -127,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnimalTester" />
         <item itemvalue="Application.ShapeTester" />
         <item itemvalue="Application.MenuTester" />
         <item itemvalue="Application.MethodWritingPractice" />
         <item itemvalue="Application.DumbDenna_8_2" />
-        <item itemvalue="Application.Notes_8_1" />
       </list>
     </recent_temporary>
   </component>

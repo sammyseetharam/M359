@@ -1,4 +1,4 @@
-package unit_9.in_class.animals;
+package Unit9_Inheritance.examples;
 /**
  * The Animal class is created to demonstrate polymorphism
  * 
