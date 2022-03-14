@@ -2,7 +2,7 @@ package Unit9_Inheritance.WorkoutLab;
 
 public class Wellness extends Workout{
     private int numStretches;
-
+    private int calsBurned;
     public Wellness(String name, int workoutNum, int duration, int numStretches) {
         super(name, workoutNum, duration);
         this.numStretches = numStretches;
@@ -10,7 +10,12 @@ public class Wellness extends Workout{
 
     public int StartExercise(){
         int random = (int)(Math.random() * 6) + 5;
-        return random * numStretches;
+        calsBurned = random * numStretches;
+        return calsBurned;
+    }
+
+    public int getCalsBurned() {
+        return calsBurned;
     }
 
     public int getNumStretches() {

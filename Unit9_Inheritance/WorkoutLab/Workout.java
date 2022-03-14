@@ -4,6 +4,7 @@ public class Workout {
     private String name;
     private int workoutNum;
     private int duration;
+    private double cals;
 
     public Workout(){
         this.name = "No name";
@@ -17,7 +18,7 @@ public class Workout {
     }
 
     public String toString(){
-        String output = "Workout#" + workoutNum + ":";
+        String output = "Workout #" + workoutNum + ":";
         output += "\t" + name + "\t" + duration + "\n";
         return output;
     }
@@ -25,6 +26,10 @@ public class Workout {
     public int startExercise(){
         System.out.println("Starting a workout");
         return 0;
+    }
+
+    public double getCals() {
+        return cals;
     }
 
     public String getName() {

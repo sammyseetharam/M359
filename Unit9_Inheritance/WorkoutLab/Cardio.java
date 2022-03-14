@@ -3,10 +3,11 @@ package Unit9_Inheritance.WorkoutLab;
 public class Cardio extends Workout{
     private double distance;
     private double speed;
+    private double calsBurned;
 
-    public Cardio(String name, int workoutNum, int duration, double distance, double speed) {
+    public Cardio(String name, int workoutNum, int duration, double speed) {
         super(name, workoutNum, duration);
-        this.distance = distance;
+        this.distance = speed * duration;
         this.speed = speed;
     }
 
@@ -26,9 +27,14 @@ public class Cardio extends Workout{
         this.speed = speed;
     }
 
+    public double getCalsBurned() {
+        return calsBurned;
+    }
+
     public double StartExercise(){
         int random = (int)(Math.random() * 61) + 80;
-        return random * distance;
+        calsBurned = random * distance;
+        return calsBurned;
     }
 
 }
