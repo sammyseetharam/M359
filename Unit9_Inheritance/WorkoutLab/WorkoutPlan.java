@@ -14,6 +14,7 @@ public class WorkoutPlan {
 
     public WorkoutPlan(int numWeeks) {
         allWorkouts = new Workout[numWeeks][7];
+        fillWeek(allWorkouts);
     }
 
     private void fillWeek(Workout[][] allWorkouts) {
@@ -64,7 +65,7 @@ public class WorkoutPlan {
         }
 
 
-        public String printProgress () {
+        public String printProgress() {
             String output = "*** CURRENT PROGRESS ***" + "\n";
             output += "Number of workouts completed: " + "\t" + compWorkouts;
             output += "\nNumber of workouts skipped: " + "\t" + skipWorkouts;
