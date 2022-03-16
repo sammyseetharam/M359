@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8563a3da-7f7e-400f-aac9-f545fdd61747" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/Workout.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/Workout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/WorkoutDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/WorkoutDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/WorkoutPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/Unit9_Inheritance/WorkoutLab/WorkoutPlan.java" afterDir="false" />
     </list>
@@ -58,26 +60,13 @@
       <recent name="Unit9_Inheritance.Shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AnimalTester">
+  <component name="RunManager" selected="Application.WorkoutDriver">
     <configuration name="AnimalTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Unit9_Inheritance.examples.AnimalTester" />
       <module name="M359" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Unit9_Inheritance.examples.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DumbDenna_8_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Unit8_2DArray.examples.DumbDenna_8_2" />
-      <module name="M359" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Unit8_2DArray.examples.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,13 +113,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WorkoutDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Unit9_Inheritance.WorkoutLab.WorkoutDriver" />
+      <module name="M359" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Unit9_Inheritance.WorkoutLab.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WorkoutDriver" />
         <item itemvalue="Application.AnimalTester" />
         <item itemvalue="Application.ShapeTester" />
         <item itemvalue="Application.MenuTester" />
         <item itemvalue="Application.MethodWritingPractice" />
-        <item itemvalue="Application.DumbDenna_8_2" />
       </list>
     </recent_temporary>
   </component>

@@ -18,14 +18,16 @@ public class WorkoutPlan {
     }
 
     private void fillWeek(Workout[][] allWorkouts) {
-        int randomOne = (int) (Math.random() * 3) + 1;
+        int randomOne = (int)(Math.random() * 3) + 1;
 
         for (int i = 0; i < allWorkouts.length; i++) {
+            randomOne = (int)(Math.random() * 3) + 1;
             for (int k = 0; k < allWorkouts[0].length; k++) {
                 if (randomOne == 1) {
-                    int time = (int) (Math.random() * 31) + 10;
-                    int speed = (int) (Math.random() * 7) + 1;
+                    int time = (int)(Math.random() * 31) + 10;
+                    int speed = (int)(Math.random() * 7) + 1;
                     Cardio c = new Cardio("Running", 0, time, speed);
+                    System.out.println(c);
                     totalMins += time;
                     totalCals += c.StartExercise();
                     allWorkouts[i][k] = c;
@@ -35,6 +37,7 @@ public class WorkoutPlan {
                     int time = (int) (Math.random() * 46) + 15;
                     int weight = (int) (Math.random() * 131) + 95;
                     Strength s = new Strength("Lifting", 0, time, weight);
+                    System.out.println(s);
                     totalMins += time;
                     totalCals += s.StartExercise();
                     allWorkouts[i][k] = s;
@@ -44,6 +47,7 @@ public class WorkoutPlan {
                     int time = (int) (Math.random() * 31) + 30;
                     int numStretches = (int) (Math.random() * 5) + 8;
                     Wellness w = new Wellness("Stretching", 0, time, numStretches);
+                    System.out.println(w);
                     totalMins += time;
                     totalCals += w.StartExercise();
                     allWorkouts[i][k] = w;
@@ -63,7 +67,7 @@ public class WorkoutPlan {
             totalCals -= allWorkouts[nextNum][random].getCals();
             totalMins -= allWorkouts[nextNum][random].getDuration();
         }
-
+    }
 
         public String printProgress() {
             String output = "*** CURRENT PROGRESS ***" + "\n";
@@ -74,4 +78,3 @@ public class WorkoutPlan {
             return output;
         }
     }
-}

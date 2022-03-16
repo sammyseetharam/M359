@@ -1,5 +1,7 @@
 package Unit9_Inheritance.WorkoutLab;
 
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -8,6 +10,8 @@ public class WorkoutDriver {
         System.out.println("************************************************");
         System.out.println("*** Welcome to your customized workout plan! ***");
         System.out.println("************************************************");
+        System.out.println();
+        scheduleWeeks();
     }
 
     public static void scheduleWeeks(){
@@ -15,6 +19,7 @@ public class WorkoutDriver {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Hey, welcome to the program, how many weeks would you like to schedule for: ");
         userInput.nextInt();
+        userInput.next();
 
         boolean isDone = true;
 
@@ -30,6 +35,7 @@ public class WorkoutDriver {
                     if (input >= 0 ) {
                         System.out.println();
                         WorkoutPlan wkPlan = new WorkoutPlan(input);
+                        System.out.println();
                         input = userInput.nextInt();
                     }
                 }

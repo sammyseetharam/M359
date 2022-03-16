@@ -18,7 +18,10 @@ public class Workout {
     }
 
     public String toString(){
-        String output = "Workout #" + workoutNum + ":";
+        int num = 1;
+        String output = "*** WEEK #" + num + " ***" + "\n";
+        output += "WORKOUT NUM" + "\t" + "NAME" + "\t" + "MINUTES" + "\n";
+        output += "Workout #" + workoutNum + ":";
         output += "\t" + name + "\t" + duration + "\n";
         return output;
     }
