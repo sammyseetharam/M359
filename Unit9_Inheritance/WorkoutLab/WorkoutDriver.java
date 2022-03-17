@@ -1,7 +1,4 @@
 package Unit9_Inheritance.WorkoutLab;
-
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -19,7 +16,6 @@ public class WorkoutDriver {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Hey, welcome to the program, how many weeks would you like to schedule for: ");
         userInput.nextInt();
-        userInput.next();
 
         boolean isDone = true;
 
