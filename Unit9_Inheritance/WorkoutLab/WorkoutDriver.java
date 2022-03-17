@@ -15,7 +15,6 @@ public class WorkoutDriver {
         int input = 0;
         Scanner userInput = new Scanner(System.in);
         System.out.println("Hey, welcome to the program, how many weeks would you like to schedule for: ");
-        userInput.nextInt();
 
         boolean isDone = true;
 
@@ -30,8 +29,15 @@ public class WorkoutDriver {
                     }
                     if (input >= 0 ) {
                         System.out.println();
+                        System.out.println("Great, let's take a look at your " + input + " week schedule!");
+                        System.out.println();
                         WorkoutPlan wkPlan = new WorkoutPlan(input);
                         System.out.println();
+                        System.out.println("Time to start to working out!");
+                        System.out.println();
+                        Scanner nextWeek = new Scanner(System.in);
+                        System.out.println("Type" + "\"Start\"" +  " to complete one week of workouts:");
+                        userInput.next(); 
                         input = userInput.nextInt();
                     }
                 }

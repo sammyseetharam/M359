@@ -26,12 +26,13 @@ public class WorkoutPlan {
     private void fillWeek(Workout[][] allWorkouts) {
         int num = 1;
         int weekCount = 1;
-        int randomOne = (int)(Math.random() * 3) + 1;
+
+        int randomOne = 1;
 
         for (int i = 0; i < allWorkouts.length; i++) {
             header(weekCount);
-            randomOne = (int)(Math.random() * 3) + 1;
             for (int k = 0; k < allWorkouts[0].length; k++) {
+                randomOne = (int)(Math.random() * 3) + 1;
                 if (randomOne == 1) {
                     int time = (int)(Math.random() * 31) + 10;
                     int speed = (int)(Math.random() * 7) + 1;
