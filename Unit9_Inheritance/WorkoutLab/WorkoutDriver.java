@@ -35,9 +35,19 @@ public class WorkoutDriver {
                         System.out.println();
                         System.out.println("Time to start to working out!");
                         System.out.println();
+
                         Scanner nextWeek = new Scanner(System.in);
                         System.out.println("Type" + "\"Start\"" +  " to complete one week of workouts:");
-                        userInput.next(); 
+                        String user = nextWeek.nextLine();
+                        while(user.equalsIgnoreCase("Start") == false){
+                            System.out.println("Not ready? Don't worry, you've got this!");
+                            System.out.println();
+                            System.out.println("Type " + "\"Start\"" +  " to complete one week of workouts:");
+                            user = nextWeek.nextLine();
+                        }
+                        wkPlan.workoutNextWeek();
+                        wkPlan.printProgress();
+                        System.out.println();
                         input = userInput.nextInt();
                     }
                 }

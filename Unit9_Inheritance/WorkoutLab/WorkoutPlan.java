@@ -77,7 +77,7 @@ public class WorkoutPlan {
         int chanceSkip = (int) (Math.random() * 5) + 1;
         if (chanceSkip == 1) {
             int random = (int) (Math.random() * 7) + 1;
-            System.out.println("You skipped workout#" + random);
+            System.out.println("You skipped workout #" + random);
             skipWorkouts++;
             totalCals -= allWorkouts[nextNum][random].getCals();
             totalMins -= allWorkouts[nextNum][random].getDuration();
