@@ -16,13 +16,8 @@ public class WorkoutDriver {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Hey, welcome to the program, how many weeks would you like to schedule for: ");
 
-        boolean isDone = true;
-
-        while (isDone) {
             try {
                 input = userInput.nextInt();
-                while (isDone == true) {
-
                     if (input < 0) {
                         System.out.println("Your input was out of bounds, please Try again: ");
                         input = userInput.nextInt();
@@ -42,19 +37,16 @@ public class WorkoutDriver {
                         while(user.equalsIgnoreCase("Start") == false){
                             System.out.println("Not ready? Don't worry, you've got this!");
                             System.out.println();
-                            System.out.println("Type " + "\"Start\"" +  " to complete one week of workouts:");
+                            System.out.println("Type " + "\" Start\"" +  " to complete one week of workouts:");
                             user = nextWeek.nextLine();
                         }
                         wkPlan.workoutNextWeek();
                         wkPlan.printProgress();
                         System.out.println();
-                        input = userInput.nextInt();
                     }
-                }
             } catch (InputMismatchException e) {
                 System.out.println("You didn't type an integer. Please try again.");
                 userInput.next();
             }
-        }
     }
 }
