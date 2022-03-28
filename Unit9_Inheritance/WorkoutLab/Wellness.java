@@ -8,14 +8,20 @@ public class Wellness extends Workout{
         this.numStretches = numStretches;
     }
 
-    public int StartExercise(){
+    public double startExercise(){
         int random = (int)(Math.random() * 6) + 5;
-        calsBurned = random * numStretches;
+        this.calsBurned = random * numStretches;
         return calsBurned;
     }
 
-    public int getCalsBurned() {
+    public double getCals() {
         return calsBurned;
+    }
+
+    public String toString(){
+        String output = "Workout #" + super.getWorkoutNum() + ":";
+        output += "\t" + super.getName() + "\t" + super.getDuration();
+        return output;
     }
 
     public int getNumStretches() {

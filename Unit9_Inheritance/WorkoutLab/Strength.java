@@ -3,7 +3,7 @@ package Unit9_Inheritance.WorkoutLab;
 public class Strength extends Workout{
     //weight in lbs
     private int weight;
-    private int calsBurned;
+    private double calsBurned;
 
     public Strength(String name, int workoutNum, int duration, int weight) {
         super(name, workoutNum, duration);
@@ -18,13 +18,19 @@ public class Strength extends Workout{
         this.weight = weight;
     }
 
-    public int getCalsBurned() {
+    public double getCals() {
         return calsBurned;
     }
 
-    public int StartExercise(){
+    public String toString(){
+        String output = "Workout #" + super.getWorkoutNum() + ":";
+        output += "\t" + super.getName() + "\t\t" + super.getDuration();
+        return output;
+    }
+
+    public double startExercise(){
         int random = (int)(Math.random() * 3) + 1;
-        calsBurned = random * weight;
+        this.calsBurned = random * weight;
         return calsBurned;
     }
 }

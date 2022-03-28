@@ -27,13 +27,19 @@ public class Cardio extends Workout{
         this.speed = speed;
     }
 
-    public double getCalsBurned() {
+    public double getCals() {
         return calsBurned;
     }
 
-    public double StartExercise(){
-        int random = (int)(Math.random() * 61) + 80;
-        calsBurned = random * distance;
+    public String toString(){
+        String output = "Workout #" + super.getWorkoutNum() + ":";
+        output += "\t" + super.getName() + "\t\t" + super.getDuration();
+        return output;
+    }
+
+    public double startExercise(){
+        int burnedPerMile = (int)(Math.random() * 61) + 80;
+        this.calsBurned = (burnedPerMile * distance) / 60;
         return calsBurned;
     }
 

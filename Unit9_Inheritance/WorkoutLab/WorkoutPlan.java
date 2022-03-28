@@ -19,15 +19,14 @@ public class WorkoutPlan {
 
     public void header(int num){
         String output = "*** WEEK #" + num + " ***" + "\n";
-        output += "WORKOUT NUM" + "\t\t" + "NAME" + "\t" + "MINUTES";
+        output += "WORKOUT NUM" + "\t\t" + "NAME" + "\t\t" + "MINUTES";
         System.out.println(output);
     }
 
     private void fillWeek(Workout[][] allWorkouts) {
         int num = 1;
         int weekCount = 1;
-
-        int randomOne = 1;
+        int randomOne;
 
         for (int i = 0; i < allWorkouts.length; i++) {
             header(weekCount);
@@ -38,9 +37,7 @@ public class WorkoutPlan {
                     int speed = (int)(Math.random() * 7) + 1;
                     Cardio c = new Cardio("Running", num, time, speed);
                     num++;
-                    System.out.println(c);
-                    totalMins += time;
-                    totalCals += c.StartExercise();
+                    System.out.printf(" %-50s \n",c);
                     allWorkouts[i][k] = c;
                 }
 
@@ -50,8 +47,6 @@ public class WorkoutPlan {
                     Strength s = new Strength("Lifting", num, time, weight);
                     num++;
                     System.out.println(s);
-                    totalMins += time;
-                    totalCals += s.StartExercise();
                     allWorkouts[i][k] = s;
                 }
 
@@ -61,35 +56,49 @@ public class WorkoutPlan {
                     Wellness w = new Wellness("Stretching", num, time, numStretches);
                     num++;
                     System.out.println(w);
-                    totalMins += time;
-                    totalCals += w.StartExercise();
                     allWorkouts[i][k] = w;
                 }
             }
             System.out.println();
             weekCount++;
         }
-        nextNum++;
     }
 
-    public void workoutNextWeek() {
-        compWorkouts++;
-        int chanceSkip = (int) (Math.random() * 5) + 1;
-        if (chanceSkip == 1) {
-            int random = (int) (Math.random() * 7) + 1;
-            System.out.println("You skipped workout #" + random);
-            skipWorkouts++;
-            totalCals -= allWorkouts[nextNum][random].getCals();
-            totalMins -= allWorkouts[nextNum][random].getDuration();
+    public void workoutNextWeek(int count) {
+        int column = 0;
+        boolean check = false;
+        int chanceSkip;
+        String output = "";
+
+        for(int i = count * 7; i < (count * 7) + 7; i++) {
+            chanceSkip = (int)(Math.random() * 6) + 1;
+            column = i % 7;
+            if (chanceSkip == 1) {
+                check = true;
+                output += "You skipped workout #" + (i + 1) + "\n";
+                skipWorkouts++;
+            }else{
+                totalCals += (allWorkouts[nextNum][column]).startExercise();
+                totalMins += allWorkouts[nextNum][column].getDuration();
+                compWorkouts++;
+            }
         }
+        if(check == true){
+            System.out.println("Skipped Workouts: ");
+            System.out.println(output);
+        }else{
+            System.out.println("Skipped Workouts: ");
+            System.out.println("No workouts were skipped :)");
+        }
+        nextNum++;
     }
 
         public String printProgress() {
             String output = "*** CURRENT PROGRESS ***" + "\n";
             output += "Number of workouts completed: " + "\t" + compWorkouts;
             output += "\nNumber of workouts skipped: " + "\t" + skipWorkouts;
-            output += "\nTotal minutes of exercise: " + "\t" + totalMins;
-            output += "\nTotal calories burned: " + "\t" + totalCals;
+            output += "\nTotal minutes of exercise:    " + "\t" + totalMins;
+            output += "\nTotal calories burned:       " + "\t" + (int)totalCals;
             return output;
         }
     }

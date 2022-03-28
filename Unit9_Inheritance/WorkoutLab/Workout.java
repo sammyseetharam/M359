@@ -19,11 +19,11 @@ public class Workout {
 
     public String toString(){
         String output = "Workout #" + workoutNum + ":";
-        output += "\t\t" + name + "\t" + duration;
+        output += "\t" + name + "\t\t" + duration;
         return output;
     }
 
-    public int startExercise(){
+    public double startExercise(){
         System.out.println("Starting a workout");
         return 0;
     }

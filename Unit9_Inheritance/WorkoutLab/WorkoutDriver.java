@@ -11,6 +11,15 @@ public class WorkoutDriver {
         scheduleWeeks();
     }
 
+    public static void workoutSummary(int input, WorkoutPlan plan){
+        System.out.println("*** CONGRATULATIONS! ***");
+        System.out.println("You have completed your " + input + " week program!");
+        System.out.println("Here is a summary of your entire plan: \n");
+        System.out.println(plan.printProgress());
+        System.out.println();
+        System.out.println("We hope you continue to progress towards your fitness goals :)");
+    }
+
     public static void scheduleWeeks(){
         int input = 0;
         Scanner userInput = new Scanner(System.in);
@@ -31,22 +40,34 @@ public class WorkoutDriver {
                         System.out.println("Time to start to working out!");
                         System.out.println();
 
-                        Scanner nextWeek = new Scanner(System.in);
-                        System.out.println("Type" + "\"Start\"" +  " to complete one week of workouts:");
-                        String user = nextWeek.nextLine();
-                        while(user.equalsIgnoreCase("Start") == false){
-                            System.out.println("Not ready? Don't worry, you've got this!");
+                        for(int i = 0; i < input; i++) {
+                            Scanner nextWeek = new Scanner(System.in);
+                            System.out.println("Type " + "\"Start\"" + " to complete one week of workouts:");
+                            String user = nextWeek.nextLine();
                             System.out.println();
-                            System.out.println("Type " + "\" Start\"" +  " to complete one week of workouts:");
-                            user = nextWeek.nextLine();
+                            while (user.equalsIgnoreCase("Start") == false) {
+                                System.out.println("Not ready? Don't worry, you've got this!");
+                                System.out.println();
+                                System.out.println("Type " + "\"Start\"" + " to complete one week of workouts:");
+                                user = nextWeek.nextLine();
+                                System.out.println();
+                            }
+                            if(i == input - 1){
+                                wkPlan.workoutNextWeek(i);
+                                System.out.println();
+                                workoutSummary(input, wkPlan);
+                                break;
+                            }else{
+                                wkPlan.workoutNextWeek(i);
+                                System.out.println();
+                                System.out.println(wkPlan.printProgress());
+                                System.out.println();
+                            }
                         }
-                        wkPlan.workoutNextWeek();
-                        wkPlan.printProgress();
-                        System.out.println();
                     }
             } catch (InputMismatchException e) {
                 System.out.println("You didn't type an integer. Please try again.");
-                userInput.next();
+                userInput.nextInt();
             }
     }
 }
