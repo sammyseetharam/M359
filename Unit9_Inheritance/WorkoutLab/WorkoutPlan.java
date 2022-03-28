@@ -37,7 +37,7 @@ public class WorkoutPlan {
                     int speed = (int)(Math.random() * 7) + 1;
                     Cardio c = new Cardio("Running", num, time, speed);
                     num++;
-                    System.out.printf(" %-50s \n",c);
+                    System.out.println(c);
                     allWorkouts[i][k] = c;
                 }
 

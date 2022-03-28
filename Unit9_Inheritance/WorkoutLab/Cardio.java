@@ -31,12 +31,6 @@ public class Cardio extends Workout{
         return calsBurned;
     }
 
-    public String toString(){
-        String output = "Workout #" + super.getWorkoutNum() + ":";
-        output += "\t" + super.getName() + "\t\t" + super.getDuration();
-        return output;
-    }
-
     public double startExercise(){
         int burnedPerMile = (int)(Math.random() * 61) + 80;
         this.calsBurned = (burnedPerMile * distance) / 60;

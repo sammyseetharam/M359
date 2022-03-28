@@ -18,12 +18,6 @@ public class Wellness extends Workout{
         return calsBurned;
     }
 
-    public String toString(){
-        String output = "Workout #" + super.getWorkoutNum() + ":";
-        output += "\t" + super.getName() + "\t" + super.getDuration();
-        return output;
-    }
-
     public int getNumStretches() {
         return numStretches;
     }

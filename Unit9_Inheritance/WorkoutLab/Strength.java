@@ -22,12 +22,6 @@ public class Strength extends Workout{
         return calsBurned;
     }
 
-    public String toString(){
-        String output = "Workout #" + super.getWorkoutNum() + ":";
-        output += "\t" + super.getName() + "\t\t" + super.getDuration();
-        return output;
-    }
-
     public double startExercise(){
         int random = (int)(Math.random() * 3) + 1;
         this.calsBurned = random * weight;

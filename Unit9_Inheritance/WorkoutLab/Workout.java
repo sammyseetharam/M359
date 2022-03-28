@@ -19,7 +19,19 @@ public class Workout {
 
     public String toString(){
         String output = "Workout #" + workoutNum + ":";
-        output += "\t" + name + "\t\t" + duration;
+
+        if(workoutNum > 9) {
+        output += "\t";
+        }else{
+        output += "\t\t";
+        }
+
+        if(name.length() == 7){
+            output += name + "\t\t" ;
+        }else{
+            output += name + "\t";
+        }
+        output += duration;
         return output;
     }
 
