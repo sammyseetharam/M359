@@ -4,7 +4,6 @@ public class Workout {
     private String name;
     private int workoutNum;
     private int duration;
-    private double cals;
 
     public Workout(){
         this.name = "No name";
@@ -25,7 +24,6 @@ public class Workout {
         }else{
         output += "\t\t";
         }
-
         if(name.length() == 7){
             output += name + "\t\t" ;
         }else{
@@ -40,10 +38,6 @@ public class Workout {
         return 0;
     }
 
-    public double getCals() {
-        return cals;
-    }
-
     public String getName() {
         return name;
     }
@@ -52,19 +46,8 @@ public class Workout {
         this.name = name;
     }
 
-    public int getWorkoutNum() {
-        return workoutNum;
-    }
-
-    public void setWorkoutNum(int workoutNum) {
-        this.workoutNum = workoutNum;
-    }
-
     public int getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
-        this.duration = duration;
-    }
 }

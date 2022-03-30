@@ -42,9 +42,9 @@ public class WorkoutDriver {
 
                         for(int i = 0; i < input; i++) {
                             //Scanner nextWeek = new Scanner(System.in);
+                            String user;
                             System.out.println("Type " + "\"Start\"" + " to complete one week of workouts:");
-                            userInput.next();
-                            String user = userInput.nextLine();
+                            user = userInput.nextLine();
                             System.out.println();
                             while (user.equalsIgnoreCase("Start") == false) {
                                 System.out.println("Not ready? Don't worry, you've got this!");

@@ -8,27 +8,6 @@ public class Cardio extends Workout{
     public Cardio(String name, int workoutNum, int duration, double speed) {
         super(name, workoutNum, duration);
         this.distance = speed * duration;
-        this.speed = speed;
-    }
-
-    public double getDistance() {
-        return distance;
-    }
-
-    public void setDistance(double distance) {
-        this.distance = distance;
-    }
-
-    public double getSpeed() {
-        return speed;
-    }
-
-    public void setSpeed(double speed) {
-        this.speed = speed;
-    }
-
-    public double getCals() {
-        return calsBurned;
     }
 
     public double startExercise(){

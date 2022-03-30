@@ -10,18 +10,6 @@ public class Strength extends Workout{
         this.weight = weight;
     }
 
-    public int getWeight() {
-        return weight;
-    }
-
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public double getCals() {
-        return calsBurned;
-    }
-
     public double startExercise(){
         int random = (int)(Math.random() * 3) + 1;
         this.calsBurned = random * weight;

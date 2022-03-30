@@ -3,6 +3,7 @@ package Unit9_Inheritance.WorkoutLab;
 public class Wellness extends Workout{
     private int numStretches;
     private int calsBurned;
+
     public Wellness(String name, int workoutNum, int duration, int numStretches) {
         super(name, workoutNum, duration);
         this.numStretches = numStretches;
@@ -14,15 +15,4 @@ public class Wellness extends Workout{
         return calsBurned;
     }
 
-    public double getCals() {
-        return calsBurned;
-    }
-
-    public int getNumStretches() {
-        return numStretches;
-    }
-
-    public void setNumStretches(int numStretches) {
-        this.numStretches = numStretches;
-    }
 }

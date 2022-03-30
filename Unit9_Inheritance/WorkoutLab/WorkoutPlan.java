@@ -5,7 +5,6 @@ import java.sql.Array;
 public class WorkoutPlan {
     private int compWorkouts;
     private int skipWorkouts;
-    private Workout[] week;
     private int nextNum = 0;
     private double totalCals;
     private int totalMins;
