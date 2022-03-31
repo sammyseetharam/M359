@@ -19,12 +19,10 @@ public class WorkoutDriver {
         System.out.println();
         System.out.println("We hope you continue to progress towards your fitness goals :)");
     }
-
     public static void scheduleWeeks(){
         int input = 0;
         Scanner userInput = new Scanner(System.in);
         System.out.println("Hey, welcome to the program, how many weeks would you like to schedule for: ");
-
             try {
                 input = userInput.nextInt();
                     if (input < 0) {
@@ -39,12 +37,9 @@ public class WorkoutDriver {
                         System.out.println();
                         System.out.println("Time to start to working out!");
                         System.out.println();
-
                         for(int i = 0; i < input; i++) {
-                            //Scanner nextWeek = new Scanner(System.in);
-
                             System.out.println("Type " + "\"Start\"" + " to complete one week of workouts:");
-                            String user = userInput.nextLine();
+                            String user = userInput.next();
                             while (!user.equalsIgnoreCase("Start") ) {
                                 System.out.println("Not ready? Don't worry, you've got this!");
                                 System.out.println();

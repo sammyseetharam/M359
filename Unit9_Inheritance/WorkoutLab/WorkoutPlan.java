@@ -83,9 +83,11 @@ public class WorkoutPlan {
             }
         }
         if(check == true){
+            System.out.println();
             System.out.println("Skipped Workouts: ");
             System.out.println(output);
         }else{
+            System.out.println();
             System.out.println("Skipped Workouts: ");
             System.out.println("No workouts were skipped :)");
         }
