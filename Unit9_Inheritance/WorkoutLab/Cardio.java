@@ -10,6 +10,10 @@ public class Cardio extends Workout{
         this.distance = speed * duration;
     }
 
+    /**
+     * This method is for the amount of calories burned during cardio
+     * @return The calculation of calories burned per mile multiplied by a distance
+     */
     public double startExercise(){
         int burnedPerMile = (int)(Math.random() * 61) + 80;
         this.calsBurned = (burnedPerMile * distance) / 60;

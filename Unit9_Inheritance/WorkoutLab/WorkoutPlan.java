@@ -16,12 +16,22 @@ public class WorkoutPlan {
         fillWeek(allWorkouts);
     }
 
+    /**
+     * This method is header to organize output
+     * @param num represents the number of weeks
+     */
     public void header(int num){
         String output = "*** WEEK #" + num + " ***" + "\n";
         output += "WORKOUT NUM" + "\t\t" + "NAME" + "\t\t" + "MINUTES";
         System.out.println(output);
     }
 
+    /**
+     * @param allWorkouts The total number of workouts spread out through weeks in a 2D array
+     * This method is like the spine of the program and controls a lot of the very important functionality.
+     * It randomizes the chances of each workout and also creates objects based on the numbers set. After this it fills
+     * the array and prints our each workout.
+     */
     private void fillWeek(Workout[][] allWorkouts) {
         int num = 1;
         int weekCount = 1;
@@ -63,6 +73,11 @@ public class WorkoutPlan {
         }
     }
 
+    /**
+     * @param count Keeps track of the workout to use when applying the randomizer
+     * This method is super important because it randomizes the chances of skipping each workout and also displays a
+     * count at the end of each week.
+     */
     public void workoutNextWeek(int count) {
         int column = 0;
         boolean check = false;
@@ -94,6 +109,9 @@ public class WorkoutPlan {
         nextNum++;
     }
 
+    /**
+     * @return This method returns a summary of the different data points at the end of each week.
+     */
         public String printProgress() {
             String output = "*** CURRENT PROGRESS ***" + "\n";
             output += "Number of workouts completed: " + "\t" + compWorkouts;

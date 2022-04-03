@@ -10,6 +10,10 @@ public class Strength extends Workout{
         this.weight = weight;
     }
 
+    /**
+     * This method is for the amount of calories burned during weight training
+     * @return The calculation of calories burned based on multiplier and weight
+     */
     public double startExercise(){
         int random = (int)(Math.random() * 3) + 1;
         this.calsBurned = random * weight;
